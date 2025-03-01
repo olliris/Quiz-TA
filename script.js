@@ -143,15 +143,13 @@ function showQuestion() {
     return;
   }
   if (!shuffledQuiz.length) {
-  questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
-  // Afficher le bouton seulement si vous n'êtes pas sur la page d'accueil (mode non défini)
-  if (mode !== '') {
-    const backButton = document.createElement("button");
-    backButton.textContent = "Retour à l'accueil";
-    backButton.onclick = goBackToHome; // ou resetQuiz selon votre logique
-    questionsDiv.appendChild(backButton);
+      questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
+      const backButton = document.createElement("button");
+      backButton.textContent = "Retourner à l'accueil";
+      backButton.onclick = resetQuiz; // Même comportement que le bouton en mode exercise
+      questionsDiv.appendChild(backButton);
+      return;
   }
-  return;
 }
   const q = shuffledQuiz[currentQuestion];
   const questionDiv = document.createElement("div");
