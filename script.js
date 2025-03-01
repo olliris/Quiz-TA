@@ -1,6 +1,6 @@
 let quiz = [];
 
-// Load questions from questions.json
+// Load quiz questions from questions.json
 fetch("questions.json")
   .then(response => response.json())
   .then(data => {
@@ -102,8 +102,10 @@ function showQuestions() {
   quizToShow.forEach((q, index) => {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
+
     const flagAndQuestion = document.createElement("div");
     flagAndQuestion.classList.add("flag-and-question");
+
     const flagButton = document.createElement("button");
     flagButton.classList.add("flag-button");
     flagButton.setAttribute("data-question", q.question);
@@ -112,10 +114,12 @@ function showQuestions() {
     flagButton.textContent = "⚑";
     flagButton.onclick = () => markQuestion(q);
     flagAndQuestion.appendChild(flagButton);
+
     const questionText = document.createElement("p");
     questionText.textContent = q.question;
     flagAndQuestion.appendChild(questionText);
     questionDiv.appendChild(flagAndQuestion);
+
     const answersDiv = document.createElement("div");
     answersDiv.classList.add("answers");
     q.answers.forEach((ans, ansIndex) => {
@@ -126,6 +130,7 @@ function showQuestions() {
       answersDiv.appendChild(answerButton);
     });
     questionDiv.appendChild(answersDiv);
+
     if (mode === 'exam') {
       document.getElementById("endButton").classList.remove("hidden");
     }
@@ -138,20 +143,36 @@ function showQuestions() {
 function showQuestion() {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
+
+  // If no questions are available (for flagged mode)
   if (!shuffledQuiz.length) {
     questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
-    // Add a "Retour à l'accueil" button if there are no questions
-    const backButton = document.createElement("button");
-    backButton.textContent = "Retour à l'accueil";
-    backButton.onclick = goBackToHome;
-    questionsDiv.appendChild(backButton);
+
+    // Create a button that calls goBackToHome() when pressed.
+    // It will not be visible on the home page because goBackToHome() resets the view.
+    const homeButton = document.createElement("button");
+    homeButton.textContent = "Retour à l'accueil";
+    homeButton.onclick = () => {
+      goBackToHome();
+      // Optionally remove this button (it won’t be visible after goBackToHome() is executed)
+      homeButton.remove();
+    };
+    questionsDiv.appendChild(homeButton);
     return;
   }
+
+  if (currentQuestion >= numQuestions) {
+    showFinalScore();
+    return;
+  }
+
   const q = shuffledQuiz[currentQuestion];
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("question");
+
   const flagAndQuestion = document.createElement("div");
   flagAndQuestion.classList.add("flag-and-question");
+
   const flagButton = document.createElement("button");
   flagButton.classList.add("flag-button");
   flagButton.setAttribute("data-question", q.question);
@@ -160,10 +181,12 @@ function showQuestion() {
   flagButton.textContent = "⚑";
   flagButton.onclick = () => markQuestion(q);
   flagAndQuestion.appendChild(flagButton);
+
   const questionText = document.createElement("p");
   questionText.textContent = q.question;
   flagAndQuestion.appendChild(questionText);
   questionDiv.appendChild(flagAndQuestion);
+
   const answersDiv = document.createElement("div");
   answersDiv.classList.add("answers");
   q.answers.forEach((ans, ansIndex) => {
@@ -174,21 +197,26 @@ function showQuestion() {
     answersDiv.appendChild(answerButton);
   });
   questionDiv.appendChild(answersDiv);
+
   if (mode === 'exercise' || mode === 'flagged') {
     const submitButton = document.createElement("button");
     submitButton.textContent = "Soumettre";
+
     const nextButton = document.createElement("button");
     nextButton.textContent = "Suivant";
     nextButton.style.display = "none";
     nextButton.onclick = nextQuestion;
+
     const endButton = document.createElement("button");
     endButton.textContent = "Terminer";
     endButton.onclick = resetQuiz;
+
     submitButton.onclick = function() {
       checkAnswer(currentQuestion);
       submitButton.style.display = "none";
       nextButton.style.display = "inline-block";
     };
+
     questionDiv.appendChild(submitButton);
     questionDiv.appendChild(nextButton);
     questionDiv.appendChild(endButton);
@@ -360,7 +388,6 @@ function displayHistory() {
   historyContent.appendChild(historyList);
 }
 
-// Function to return to the main (home) page
 function goBackToHome() {
   document.getElementById("exerciseRangePage").classList.add("hidden");
   document.getElementById("historyPage").classList.add("hidden");
