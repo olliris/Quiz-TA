@@ -15,7 +15,7 @@ let score = 0;
 let mode = '';
 let timerInterval;
 let timeLeft;
-let numQuestions = 50;
+let numQuestions = 75;
 let shuffledQuiz = [];
 let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
@@ -24,7 +24,7 @@ const exerciseResults = {};
 function startExam() {
   mode = 'exam';
   timeLeft = 120 * 60;
-  numQuestions = Math.min(50, quiz.length);
+  numQuestions = Math.min(75, quiz.length);
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("game").classList.remove("hidden");
