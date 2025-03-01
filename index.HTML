@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Préparation Technicien Ambulancier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Préparation Technicien Ambulancier</h1>
+    <p>Choisir un mode de jeu :</p>
+    <button onclick="startExam()">Mode Examen (120 min)</button>
+    <button onclick="chooseExerciseRange()">Mode Exercice</button>
+    <button onclick="showMarkedQuestions()">Questions Marquées</button>
+    <button onclick="showHistory()">Historique</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <p id="timer" class="hidden"></p>
+    <div id="questions"></div>
+    <p id="feedback" class="feedback-text hidden"></p>
+    <p id="score" class="hidden"></p>
+    <button id="endButton" class="hidden" onclick="endExam()">Soumettre</button>
+  </div>
+
+  <div id="exerciseRangePage" class="hidden">
+    <h2>Choisissez une plage de questions</h2>
+    <div id="exerciseRangeOptions"></div>
+    <button onclick="goBackToHome()">Retour</button>
+  </div>
+
+  <div id="historyPage" class="hidden">
+    <h2>Historique des examens</h2>
+    <div id="historyContent"></div>
+    <button id="resetCacheButton" onclick="resetCache()">Réinitialiser le cache</button>
+    <button onclick="goBackToHome()">Retour</button>
+  </div>
+
+  <!-- Footer appears only on the home page -->
+  <footer id="footer">
+    Informatisé par Olivier Van Isacker<br>
+    Olivier.vanisacker@cern.ch
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
