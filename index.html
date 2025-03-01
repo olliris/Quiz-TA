@@ -1,4 +1,4 @@
-<index html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -21,6 +21,7 @@
     <div id="questions"></div>
     <p id="feedback" class="feedback-text hidden"></p>
     <p id="score" class="hidden"></p>
+    <!-- Ce bouton est utilisé pour le mode examen -->
     <button id="endButton" class="hidden" onclick="endExam()">Soumettre</button>
   </div>
 
@@ -37,12 +38,12 @@
     <button onclick="goBackToHome()">Retour</button>
   </div>
 
-  <!-- Footer appears only on the home page -->
   <footer id="footer">
     Informatisé par Olivier Van Isacker<br>
     Olivier.vanisacker@cern.ch
   </footer>
 
+  <!-- Le script est placé à la fin pour que le DOM soit entièrement chargé -->
   <script src="script.js"></script>
 </body>
 </html>
