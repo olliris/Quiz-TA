@@ -102,8 +102,10 @@ function showQuestions() {
   quizToShow.forEach((q, index) => {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
+    
     const flagAndQuestion = document.createElement("div");
     flagAndQuestion.classList.add("flag-and-question");
+    
     const flagButton = document.createElement("button");
     flagButton.classList.add("flag-button");
     flagButton.setAttribute("data-question", q.question);
@@ -112,10 +114,13 @@ function showQuestions() {
     flagButton.textContent = "⚑";
     flagButton.onclick = () => markQuestion(q);
     flagAndQuestion.appendChild(flagButton);
+    
     const questionText = document.createElement("p");
     questionText.textContent = q.question;
     flagAndQuestion.appendChild(questionText);
+    
     questionDiv.appendChild(flagAndQuestion);
+    
     const answersDiv = document.createElement("div");
     answersDiv.classList.add("answers");
     q.answers.forEach((ans, ansIndex) => {
@@ -126,6 +131,7 @@ function showQuestions() {
       answersDiv.appendChild(answerButton);
     });
     questionDiv.appendChild(answersDiv);
+    
     if (mode === 'exam') {
       document.getElementById("endButton").classList.remove("hidden");
     }
@@ -135,11 +141,16 @@ function showQuestions() {
   document.getElementById("score").textContent = `Score: ${score}/${numQuestions}`;
 }
 
+// Display one question at a time for exercise/flagged modes.
 function showQuestion() {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
   if (!shuffledQuiz.length) {
     questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
+    const backButton = document.createElement("button");
+    backButton.textContent = "Retourner à l'accueil";
+    backButton.onclick = resetQuiz;
+    questionsDiv.appendChild(backButton);
     return;
   }
   if (currentQuestion >= numQuestions) {
@@ -149,8 +160,10 @@ function showQuestion() {
   const q = shuffledQuiz[currentQuestion];
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("question");
+  
   const flagAndQuestion = document.createElement("div");
   flagAndQuestion.classList.add("flag-and-question");
+  
   const flagButton = document.createElement("button");
   flagButton.classList.add("flag-button");
   flagButton.setAttribute("data-question", q.question);
@@ -159,10 +172,12 @@ function showQuestion() {
   flagButton.textContent = "⚑";
   flagButton.onclick = () => markQuestion(q);
   flagAndQuestion.appendChild(flagButton);
+  
   const questionText = document.createElement("p");
   questionText.textContent = q.question;
   flagAndQuestion.appendChild(questionText);
   questionDiv.appendChild(flagAndQuestion);
+  
   const answersDiv = document.createElement("div");
   answersDiv.classList.add("answers");
   q.answers.forEach((ans, ansIndex) => {
@@ -173,6 +188,7 @@ function showQuestion() {
     answersDiv.appendChild(answerButton);
   });
   questionDiv.appendChild(answersDiv);
+  
   if (mode === 'exercise' || mode === 'flagged') {
     const submitButton = document.createElement("button");
     submitButton.textContent = "Soumettre";
@@ -180,9 +196,6 @@ function showQuestion() {
     nextButton.textContent = "Suivant";
     nextButton.style.display = "none";
     nextButton.onclick = nextQuestion;
-    const endButton = document.createElement("button");
-    endButton.textContent = "Terminer";
-    endButton.onclick = resetQuiz;
     submitButton.onclick = function() {
       checkAnswer(currentQuestion);
       submitButton.style.display = "none";
@@ -190,6 +203,9 @@ function showQuestion() {
     };
     questionDiv.appendChild(submitButton);
     questionDiv.appendChild(nextButton);
+    const endButton = document.createElement("button");
+    endButton.textContent = "Terminer";
+    endButton.onclick = resetQuiz;
     questionDiv.appendChild(endButton);
   }
   questionsDiv.appendChild(questionDiv);
@@ -339,7 +355,7 @@ function resetQuiz() {
 function showHistory() {
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("historyPage").classList.remove("hidden");
-  goBackToHomeFooter(false);
+  // Removed call to undefined goBackToHomeFooter(false)
   displayHistory();
 }
 
