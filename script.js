@@ -1,6 +1,6 @@
 let quiz = [];
 
-// Charger les questions depuis questions.json
+// Load questions from questions.json
 fetch("questions.json")
   .then(response => response.json())
   .then(data => {
@@ -140,16 +140,13 @@ function showQuestion() {
   questionsDiv.innerHTML = "";
   if (!shuffledQuiz.length) {
     questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
+    // Add a "Retour à l'accueil" button if there are no questions
+    const backButton = document.createElement("button");
+    backButton.textContent = "Retour à l'accueil";
+    backButton.onclick = goBackToHome;
+    questionsDiv.appendChild(backButton);
     return;
   }
-  if (!shuffledQuiz.length) {
-  questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
-  const backButton = document.createElement("button");
-  backButton.textContent = "Retour à l'accueil";
-  backButton.onclick = goBackToHome; // ou resetQuiz selon votre logique d'accueil
-  questionsDiv.appendChild(backButton);
-  return;
-}
   const q = shuffledQuiz[currentQuestion];
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("question");
@@ -363,6 +360,7 @@ function displayHistory() {
   historyContent.appendChild(historyList);
 }
 
+// Function to return to the main (home) page
 function goBackToHome() {
   document.getElementById("exerciseRangePage").classList.add("hidden");
   document.getElementById("historyPage").classList.add("hidden");
