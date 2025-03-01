@@ -144,10 +144,13 @@ function showQuestion() {
   }
   if (!shuffledQuiz.length) {
   questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
-  const backButton = document.createElement("button");
-  backButton.textContent = "Retour à l'accueil";
-  backButton.onclick = goBackToHome; // ou resetQuiz selon votre logique d'accueil
-  questionsDiv.appendChild(backButton);
+  // Afficher le bouton seulement si vous n'êtes pas sur la page d'accueil (mode non défini)
+  if (mode !== '') {
+    const backButton = document.createElement("button");
+    backButton.textContent = "Retour à l'accueil";
+    backButton.onclick = goBackToHome; // ou resetQuiz selon votre logique
+    questionsDiv.appendChild(backButton);
+  }
   return;
 }
   const q = shuffledQuiz[currentQuestion];
