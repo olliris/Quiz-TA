@@ -2850,97 +2850,97 @@
             "100"
         ],
         "correct":1
-    },
+    }
     {
-        "questions": "1 - La circulation pulmonaire ou petite circulation comprend?",
-        "answeres": [
+        "question": "1 - La circulation pulmonaire ou petite circulation comprend?",
+        "answers": [
             "les artères pulmonaires",
             "l'aorte",
             "les veines pulmonaires",
             "la veine cave supérieure"
         ],
-        "correct": [0, 2]
-    },
+        "correct": [0, 2],
+    }
     {
-        "questions": "2 - La circulation systémique ou grande circulation comprend :",
-        "answeres": [
+        "question": "2 - La circulation systémique ou grande circulation comprend :",
+        "answers": [
             "l'aorte et ses branches",
             "les artères pulmonaires",
             "le système veineux cave et ses collatérales",
             "les veines pulmonaires"
         ],
-        "correct": [0, 2]
-    },
+        "correct": [0, 2],
+    }
     {
-        "questions": "3 - Les organes en rapport avec le cœur sont :",
-        "answeres": [
+        "question": "3 - Les organes en rapport avec le cœur sont :",
+        "answers": [
             "les poumons",
             "la trachée",
             "l'œsophage",
             "le diaphragme"
         ],
-        "correct": [0, 1, 2, 3]
-    },
+        "correct": [0, 1, 2, 3],
+    }
     {
-        "questions": "4 - La paroi du cœur est constituée de trois couches tissulaires :",
-        "answeres": [
+        "question": "4 - La paroi du cœur est constituée de trois couches tissulaires :",
+        "answers": [
             "le péricarde",
             "le myocarde",
             "l'endocarde",
             "l'endomètre"
         ],
-        "correct": [0, 1, 2]
-    },
+        "correct": [0, 1, 2],
+    }
     {
-        "questions": "5 - Une irrégularité dans la transmission de l'influx nerveux au niveau du cœur correspond à des troubles de la conduction, tels que :",
-        "answeres": [
+        "question": "5 - Une irrégularité dans la transmission de l'influx nerveux au niveau du cœur correspond à des troubles de la conduction, tels que :",
+        "answers": [
             "une bradycardie",
             "une tachycardie",
             "un électrocardiogramme",
             "un électromyogramme"
         ],
-        "correct": [0, 1]
-    },
+        "correct": [0, 1],
+    }
     {
-        "questions": "6 - Le cœur comprend plusieurs valves, mais seulement deux valves atrioventriculaires. En fait (font) partie :",
-        "answeres": [
+        "question": "6 - Le cœur comprend plusieurs valves, mais seulement deux valves atrioventriculaires. En fait (font) partie :",
+        "answers": [
             "la valve tricuspide",
             "la valve pulmonaire",
             "la valve aortique",
             "la valve mitrale"
         ],
-        "correct": [0, 3]
-    },
+        "correct": [0, 3],
+    }
     {
-        "questions": "7 - Un dysfonctionnement d'une valve, une valvulopathie, donne lieu au(x) signe(s) suivant(s) :",
-        "answeres": [
+        "question": "7 - Un dysfonctionnement d'une valve, une valvulopathie, donne lieu au(x) signe(s) suivant(s) :",
+        "answers": [
             "un essoufflement, accentué en position allongée ou par un effort physique",
             "une fatigue",
             "une sensation d'oppression au niveau de la poitrine",
             "des palpitations"
         ],
-        "correct": [0, 1, 2, 3]
-    },
+        "correct": [0, 1, 2, 3],
+    }
     {
-        "questions": "8 - Une hypertension artérielle peut être provoquée de manière temporaire ou non par :",
-        "answeres": [
+        "question": "8 - Une hypertension artérielle peut être provoquée de manière temporaire ou non par :",
+        "answers": [
             "l'obésité",
             "la fièvre",
             "l'activité physique",
             "les émotions"
         ],
-        "correct": [0, 1, 2, 3]
-    },
+        "correct": [0, 1, 2, 3],
+    }
     {
-        "questions": "9 - Une coronaropathie présente comme signe clinique :",
-        "answeres": [
+        "question": "9 - Une coronaropathie présente comme signe clinique :",
+        "answers": [
             "une gêne ou douleur dans l'œsophage",
             "une gêne ou douleur dans la partie gauche de la poitrine irradiant ou non dans l'épaule ou le bras",
             "des difficultés respiratoires",
             "une fatigue extrême à l'effort"
         ],
-        "correct": [1, 2, 3]
-    },
+        "correct": [1, 2, 3],
+    }
     {
         "question": "10 - Le rythme cardiaque normal se situe entre :",
         "answers": [
@@ -3050,7 +3050,7 @@
             "les plaquettes"
         ],
         "correct": [0, 1, 3]
-    },
+    }
     {
         "question": "21 - Le thymus est en rapport anatomique avec :",
         "answers": [
@@ -3350,7 +3350,7 @@
             "hyperpilosité"
         ],
         "correct": [0, 2]
-    },
+    }
     {
         "question": "51 - Sur lequel (lesquels) de ces éléments la triiodothyronine (T3) a-t-elle une action ?",
         "answers": [
@@ -3550,7 +3550,7 @@
             "le passage de la bile par la papille duodénale"
         ],
         "correct": [1, 2, 3]
-    },
+    }
     {
         "question": "71 - Le système urinaire est composé :",
         "answers": [
