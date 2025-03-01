@@ -142,10 +142,14 @@ function showQuestion() {
     questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
     return;
   }
-  if (currentQuestion >= numQuestions) {
-    showFinalScore();
-    return;
-  }
+  if (!shuffledQuiz.length) {
+  questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
+  const backButton = document.createElement("button");
+  backButton.textContent = "Retour à l'accueil";
+  backButton.onclick = goBackToHome; // ou resetQuiz selon votre logique d'accueil
+  questionsDiv.appendChild(backButton);
+  return;
+}
   const q = shuffledQuiz[currentQuestion];
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("question");
