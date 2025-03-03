@@ -5,6 +5,7 @@ fetch("questions.json")
   .then(response => response.json())
   .then(data => {
     quiz = data;
+    initializeButtons(); // Initialize event listeners when quiz is loaded
   })
   .catch(error => {
     console.error("Error loading quiz questions:", error);
@@ -20,6 +21,12 @@ let shuffledQuiz = [];
 let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 const exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
+
+function initializeButtons() {
+  document.getElementById("startExamButton")?.addEventListener("click", startExam);
+  document.getElementById("startExerciseButton")?.addEventListener("click", chooseExerciseRange);
+  document.getElementById("showMarkedButton")?.addEventListener("click", showMarkedQuestions);
+}
 
 function startExam() {
   if (quiz.length === 0) {
@@ -106,7 +113,7 @@ function showQuestion() {
   const submitButton = document.createElement("button");
   submitButton.textContent = "Soumettre";
   submitButton.onclick = () => {
-    checkAnswer(currentQuestion);
+    checkAnswer();
     submitButton.style.display = "none";
     nextButton.style.display = "inline-block";
   };
@@ -126,13 +133,12 @@ function showQuestion() {
   endButton.onclick = showFinalScore;
   questionDiv.appendChild(endButton);
 
-  questionsDiv.appendChild(questionDiv);
-}
+  const homeButton = document.createElement("button");
+  homeButton.textContent = "Retour à l'accueil";
+  homeButton.onclick = goBackToHome;
+  questionDiv.appendChild(homeButton);
 
-function showFinalScore() {
-  const percentage = (score / numQuestions) * 100;
-  alert(`Vous avez terminé l'exercice avec un score de ${percentage.toFixed(2)}%`);
-  goBackToHome();
+  questionsDiv.appendChild(questionDiv);
 }
 
 function goBackToHome() {
