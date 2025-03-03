@@ -28,28 +28,30 @@ function chooseExerciseRange() {
   const exerciseRangeOptions = document.getElementById("exerciseRangeOptions");
   exerciseRangeOptions.innerHTML = '';
 
-  for (let i = 0; i < quiz.length; i += 30) {
+  for (let i = 0; i < quiz.length - 100; i += 30) {
     let start = i + 1;
-    let end = Math.min(i + 30, quiz.length);
+    let end = Math.min(i + 30, quiz.length - 100);
     let rangeKey = `${start}-${end}`;
     
-    if (quiz.length - i <= 100) {
-      if (quiz.length - i === 100) {
-        start = quiz.length - 99;
-        end = quiz.length - 50;
-        rangeKey = "Elsevier 1-50";
-      } else {
-        start = quiz.length - 49;
-        end = quiz.length;
-        rangeKey = "Elsevier 51-100";
-      }
-    }
-
     const rangeButton = document.createElement("button");
     rangeButton.textContent = `${rangeKey} (${exerciseResults[rangeKey] || 0}%)`;
     rangeButton.onclick = () => startExerciseRange(start - 1, end, rangeKey);
     exerciseRangeOptions.appendChild(rangeButton);
   }
+
+  // Add Elsevier groups
+  const elsevier1Key = "Elsevier 1-50";
+  const elsevier2Key = "Elsevier 51-100";
+
+  const elsevier1Button = document.createElement("button");
+  elsevier1Button.textContent = `${elsevier1Key} (${exerciseResults[elsevier1Key] || 0}%)`;
+  elsevier1Button.onclick = () => startExerciseRange(quiz.length - 100, quiz.length - 50, elsevier1Key);
+  exerciseRangeOptions.appendChild(elsevier1Button);
+
+  const elsevier2Button = document.createElement("button");
+  elsevier2Button.textContent = `${elsevier2Key} (${exerciseResults[elsevier2Key] || 0}%)`;
+  elsevier2Button.onclick = () => startExerciseRange(quiz.length - 50, quiz.length, elsevier2Key);
+  exerciseRangeOptions.appendChild(elsevier2Button);
 }
 
 function startExerciseRange(start, end, rangeKey) {
