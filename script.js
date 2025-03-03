@@ -67,7 +67,38 @@ function startExerciseRange(start, end, rangeKey) {
   document.getElementById("timer").classList.add("hidden");
   document.getElementById("score").classList.add("hidden");
   document.getElementById("feedback").classList.add("hidden");
-  showQuestion(rangeKey);
+  showQuestions();
+}
+
+function showQuestions() {
+  const questionsDiv = document.getElementById("questions");
+  questionsDiv.innerHTML = "";
+  
+  shuffledQuiz.forEach((q, index) => {
+    const questionDiv = document.createElement("div");
+    questionDiv.classList.add("question");
+
+    const questionText = document.createElement("p");
+    questionText.textContent = q.question;
+    questionDiv.appendChild(questionText);
+
+    const answersDiv = document.createElement("div");
+    answersDiv.classList.add("answers");
+    q.answers.forEach((ans, ansIndex) => {
+      const answerButton = document.createElement("button");
+      answerButton.textContent = ans;
+      answerButton.classList.add("answer-button");
+      answerButton.onclick = () => selectAnswer(index, ansIndex, answerButton);
+      answersDiv.appendChild(answerButton);
+    });
+    questionDiv.appendChild(answersDiv);
+    questionsDiv.appendChild(questionDiv);
+  });
+}
+
+function selectAnswer(questionIndex, answerIndex, button) {
+  const q = shuffledQuiz[questionIndex];
+  button.classList.toggle("selected");
 }
 
 function showFinalScore(rangeKey) {
