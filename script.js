@@ -21,6 +21,37 @@ let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 const exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
 
+function startExam() {
+  mode = 'exam';
+  timeLeft = 120 * 60;
+  numQuestions = Math.min(75, quiz.length);
+  shuffledQuiz = quiz.slice(0, numQuestions);
+  document.querySelector(".quiz-container").classList.add("hidden");
+  document.getElementById("footer").style.display = "none";
+  document.getElementById("game").classList.remove("hidden");
+  document.getElementById("timer").classList.remove("hidden");
+  document.getElementById("score").classList.remove("hidden");
+  currentQuestion = 0;
+  score = 0;
+  showQuestions();
+  startTimer();
+}
+
+function showMarkedQuestions() {
+  if (markedQuestions.length === 0) {
+    alert("Aucune question marquée.");
+    return;
+  }
+  mode = 'marked';
+  shuffledQuiz = [...markedQuestions];
+  currentQuestion = 0;
+  numQuestions = markedQuestions.length;
+  document.querySelector(".quiz-container").classList.add("hidden");
+  document.getElementById("footer").style.display = "none";
+  document.getElementById("game").classList.remove("hidden");
+  showQuestions();
+}
+
 function chooseExerciseRange() {
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
@@ -101,26 +132,22 @@ function selectAnswer(questionIndex, answerIndex, button) {
   button.classList.toggle("selected");
 }
 
-function showFinalScore(rangeKey) {
-  const percentage = (score / numQuestions) * 100;
-  alert(`Vous avez terminé l'exercice avec un score de ${percentage.toFixed(2)}%`);
-  exerciseResults[rangeKey] = percentage.toFixed(2);
-  localStorage.setItem('exerciseResults', JSON.stringify(exerciseResults));
-  goBackToHome();
+function startTimer() {
+  timerInterval = setInterval(function() {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      endExam();
+      return;
+    }
+    timeLeft--;
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    document.getElementById("timer").textContent = `Temps restant : ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  }, 1000);
 }
 
-function displayHistory() {
-  const historyContent = document.getElementById("historyContent");
-  historyContent.innerHTML = "";
-  if (examHistory.length === 0) {
-    historyContent.textContent = "Aucun examen effectué.";
-    return;
-  }
-  const historyList = document.createElement("ul");
-  examHistory.forEach((score, index) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `Examen ${index + 1}: ${score.toFixed(2)}%`;
-    historyList.appendChild(listItem);
-  });
-  historyContent.appendChild(historyList);
+function endExam() {
+  clearInterval(timerInterval);
+  alert(`Examen terminé ! Score : ${score}/${numQuestions}`);
+  goBackToHome();
 }
