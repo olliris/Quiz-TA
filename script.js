@@ -41,43 +41,6 @@ function startExam() {
   startTimer();
 }
 
-function chooseExerciseRange() {
-  if (quiz.length === 0) {
-    alert("Les questions ne sont pas encore chargées.");
-    return;
-  }
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
-  document.getElementById("exerciseRangePage").classList.remove("hidden");
-  const exerciseRangeOptions = document.getElementById("exerciseRangeOptions");
-  exerciseRangeOptions.innerHTML = '';
-
-  for (let i = 0; i < quiz.length - 100; i += 30) {
-    let start = i + 1;
-    let end = Math.min(i + 30, quiz.length - 100);
-    let rangeKey = `${start}-${end}`;
-    
-    const rangeButton = document.createElement("button");
-    rangeButton.textContent = `${rangeKey} (${exerciseResults[rangeKey] || 0}%)`;
-    rangeButton.onclick = () => startExerciseRange(start - 1, end, rangeKey);
-    exerciseRangeOptions.appendChild(rangeButton);
-  }
-
-  // Add Elsevier groups
-  const elsevier1Key = "Elsevier 1-50";
-  const elsevier2Key = "Elsevier 51-100";
-
-  const elsevier1Button = document.createElement("button");
-  elsevier1Button.textContent = `${elsevier1Key} (${exerciseResults[elsevier1Key] || 0}%)`;
-  elsevier1Button.onclick = () => startExerciseRange(quiz.length - 100, quiz.length - 50, elsevier1Key);
-  exerciseRangeOptions.appendChild(elsevier1Button);
-
-  const elsevier2Button = document.createElement("button");
-  elsevier2Button.textContent = `${elsevier2Key} (${exerciseResults[elsevier2Key] || 0}%)`;
-  elsevier2Button.onclick = () => startExerciseRange(quiz.length - 50, quiz.length, elsevier2Key);
-  exerciseRangeOptions.appendChild(elsevier2Button);
-}
-
 function startExerciseRange(start, end, rangeKey) {
   if (quiz.length === 0) {
     alert("Les questions ne sont pas encore chargées.");
@@ -95,37 +58,7 @@ function startExerciseRange(start, end, rangeKey) {
   document.getElementById("timer").classList.add("hidden");
   document.getElementById("score").classList.add("hidden");
   document.getElementById("feedback").classList.add("hidden");
-  showQuestions();
-}
-
-function showQuestions() {
-  if (shuffledQuiz.length === 0) {
-    alert("Aucune question disponible.");
-    return;
-  }
-  const questionsDiv = document.getElementById("questions");
-  questionsDiv.innerHTML = "";
-  
-  shuffledQuiz.forEach((q, index) => {
-    const questionDiv = document.createElement("div");
-    questionDiv.classList.add("question");
-
-    const questionText = document.createElement("p");
-    questionText.textContent = q.question;
-    questionDiv.appendChild(questionText);
-
-    const answersDiv = document.createElement("div");
-    answersDiv.classList.add("answers");
-    q.answers.forEach((ans, ansIndex) => {
-      const answerButton = document.createElement("button");
-      answerButton.textContent = ans;
-      answerButton.classList.add("answer-button");
-      answerButton.onclick = () => selectAnswer(index, ansIndex, answerButton);
-      answersDiv.appendChild(answerButton);
-    });
-    questionDiv.appendChild(answersDiv);
-    questionsDiv.appendChild(questionDiv);
-  });
+  showQuestion();
 }
 
 function showMarkedQuestions() {
@@ -140,5 +73,70 @@ function showMarkedQuestions() {
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("game").classList.remove("hidden");
-  showQuestions();
+  showQuestion();
+}
+
+function showQuestion() {
+  if (currentQuestion >= numQuestions) {
+    showFinalScore();
+    return;
+  }
+
+  const questionsDiv = document.getElementById("questions");
+  questionsDiv.innerHTML = "";
+  const q = shuffledQuiz[currentQuestion];
+  const questionDiv = document.createElement("div");
+  questionDiv.classList.add("question");
+
+  const questionText = document.createElement("p");
+  questionText.textContent = q.question;
+  questionDiv.appendChild(questionText);
+
+  const answersDiv = document.createElement("div");
+  answersDiv.classList.add("answers");
+  q.answers.forEach((ans, ansIndex) => {
+    const answerButton = document.createElement("button");
+    answerButton.textContent = ans;
+    answerButton.classList.add("answer-button");
+    answerButton.onclick = () => selectAnswer(currentQuestion, ansIndex, answerButton);
+    answersDiv.appendChild(answerButton);
+  });
+  questionDiv.appendChild(answersDiv);
+
+  const submitButton = document.createElement("button");
+  submitButton.textContent = "Soumettre";
+  submitButton.onclick = () => {
+    checkAnswer(currentQuestion);
+    submitButton.style.display = "none";
+    nextButton.style.display = "inline-block";
+  };
+  questionDiv.appendChild(submitButton);
+
+  const nextButton = document.createElement("button");
+  nextButton.textContent = "Suivant";
+  nextButton.style.display = "none";
+  nextButton.onclick = () => {
+    currentQuestion++;
+    showQuestion();
+  };
+  questionDiv.appendChild(nextButton);
+
+  const endButton = document.createElement("button");
+  endButton.textContent = "Terminer";
+  endButton.onclick = showFinalScore;
+  questionDiv.appendChild(endButton);
+
+  questionsDiv.appendChild(questionDiv);
+}
+
+function showFinalScore() {
+  const percentage = (score / numQuestions) * 100;
+  alert(`Vous avez terminé l'exercice avec un score de ${percentage.toFixed(2)}%`);
+  goBackToHome();
+}
+
+function goBackToHome() {
+  document.getElementById("game").classList.add("hidden");
+  document.querySelector(".quiz-container").classList.remove("hidden");
+  document.getElementById("footer").style.display = "block";
 }
