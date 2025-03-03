@@ -22,6 +22,10 @@ let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 const exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
 
 function startExam() {
+  if (quiz.length === 0) {
+    alert("Les questions ne sont pas encore chargées.");
+    return;
+  }
   mode = 'exam';
   timeLeft = 120 * 60;
   numQuestions = Math.min(75, quiz.length);
@@ -38,6 +42,10 @@ function startExam() {
 }
 
 function chooseExerciseRange() {
+  if (quiz.length === 0) {
+    alert("Les questions ne sont pas encore chargées.");
+    return;
+  }
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("exerciseRangePage").classList.remove("hidden");
@@ -71,6 +79,10 @@ function chooseExerciseRange() {
 }
 
 function startExerciseRange(start, end, rangeKey) {
+  if (quiz.length === 0) {
+    alert("Les questions ne sont pas encore chargées.");
+    return;
+  }
   mode = 'exercise';
   numQuestions = end - start;
   shuffledQuiz = quiz.slice(start, end);
@@ -87,6 +99,10 @@ function startExerciseRange(start, end, rangeKey) {
 }
 
 function showQuestions() {
+  if (shuffledQuiz.length === 0) {
+    alert("Aucune question disponible.");
+    return;
+  }
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
   
@@ -125,12 +141,4 @@ function showMarkedQuestions() {
   document.getElementById("footer").style.display = "none";
   document.getElementById("game").classList.remove("hidden");
   showQuestions();
-}
-
-function showFinalScore(rangeKey) {
-  const percentage = (score / numQuestions) * 100;
-  alert(`Vous avez terminé l'exercice avec un score de ${percentage.toFixed(2)}%`);
-  exerciseResults[rangeKey] = percentage.toFixed(2);
-  localStorage.setItem('exerciseResults', JSON.stringify(exerciseResults));
-  goBackToHome();
 }
