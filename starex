@@ -19,6 +19,8 @@ let numQuestions = 90;
 let shuffledQuiz = [];
 let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
+let exerciseStartIndex = 0;
+let exerciseEndIndex = 0;
 const exerciseResults = {};
 
 function startExam() {
@@ -57,6 +59,8 @@ function startExerciseRange(start, end) {
   numQuestions = end - start;
   shuffledQuiz = quiz.slice(start, end);
   shuffledQuiz.sort(() => Math.random() - 0.5);
+  exerciseStartIndex = start;
+  exerciseEndIndex = end;
   document.getElementById("exerciseRangePage").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("game").classList.remove("hidden");
