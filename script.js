@@ -15,7 +15,7 @@ let score = 0;
 let mode = '';
 let timerInterval;
 let timeLeft;
-let numQuestions = 75;
+let numQuestions = 90;
 let shuffledQuiz = [];
 let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
@@ -24,7 +24,7 @@ const exerciseResults = {};
 function startExam() {
   mode = 'exam';
   timeLeft = 120 * 60;
-  numQuestions = Math.min(75, quiz.length);
+  numQuestions = Math.min(90, quiz.length);
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("game").classList.remove("hidden");
@@ -98,7 +98,7 @@ function markQuestion(question) {
 function showQuestions() {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
-  const quizToShow = mode === 'exam' ? quiz.slice(0, numQuestions) : shuffledQuiz;
+  const quizToShow = shuffledQuiz.slice(0, numQuestions);
   quizToShow.forEach((q, index) => {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
@@ -277,17 +277,21 @@ function endExam() {
   clearInterval(timerInterval);
   const questionsDiv = document.getElementById("questions");
   const questionDivs = questionsDiv.querySelectorAll(".question");
+  const quizToShow = shuffledQuiz.slice(0, numQuestions);
+
   questionDivs.forEach((questionDiv, index) => {
-    const q = quiz[index];
+    const q = quizToShow[index];
     const buttons = questionDiv.querySelectorAll(".answer-button");
     let candidateSelected = [];
-    buttons.forEach((button, index) => {
+
+    buttons.forEach((button, i) => {
       if (button.classList.contains("selected")) {
-        candidateSelected.push(index);
+        candidateSelected.push(i);
       }
     });
-    buttons.forEach((button, index) => {
-      if (q.correct.includes(index)) {
+
+    buttons.forEach((button, i) => {
+      if (q.correct.includes(i)) {
         button.classList.add("correct");
         if (button.classList.contains("selected")) {
           if (!button.querySelector(".check-mark")) {
@@ -300,20 +304,31 @@ function endExam() {
         button.classList.remove("selected");
       }
     });
-    const missingCorrect = q.correct.filter(idx => !candidateSelected.includes(idx));
+
+    const missingCorrect = q.correct.filter(i => !candidateSelected.includes(i));
     if (q.correct.length > 1 && missingCorrect.length > 0) {
       const messageElem = document.createElement("p");
       messageElem.className = "missing-message";
       messageElem.textContent = "Attention il y a plusieurs bonnes réponses";
       questionDiv.appendChild(messageElem);
     }
-    if (mode === 'exam' && !markedQuestions.some(markedQ => markedQ.question === q.question)) {
-      markedQuestions.push(q);
+
+    const correctSelected = candidateSelected.filter(ans => q.correct.includes(ans)).length;
+    const incorrectSelected = candidateSelected.length - correctSelected;
+    if (correctSelected === q.correct.length && incorrectSelected === 0) {
+      score++;
+    } else {
+      // In exam mode, flag wrong answers
+      if (mode === 'exam' && !markedQuestions.some(markedQ => markedQ.question === q.question)) {
+        markedQuestions.push(q);
+      }
     }
   });
+
   localStorage.setItem('markedQuestions', JSON.stringify(markedQuestions));
   const percentage = (score / numQuestions) * 100;
   let feedbackMessage = '';
+
   if (percentage < 85) {
     feedbackMessage = "Retourne au fourgon ket";
     document.getElementById("feedback").classList.add("red");
@@ -323,13 +338,17 @@ function endExam() {
     document.getElementById("feedback").classList.add("green");
     document.getElementById("feedback").classList.remove("red");
   }
+
   document.getElementById("feedback").textContent = feedbackMessage;
   document.getElementById("feedback").classList.remove("hidden");
   document.getElementById("score").textContent = `Score final : ${score}/${numQuestions} (${percentage.toFixed(2)}%)`;
+
   examHistory.push(percentage);
   localStorage.setItem('examHistory', JSON.stringify(examHistory));
   displayHistory();
+
   document.getElementById("endButton").classList.add("hidden");
+
   if (!document.getElementById("game").querySelector("button#backButton")) {
     const backButton = document.createElement("button");
     backButton.textContent = "Retourner à l'accueil";
@@ -338,6 +357,7 @@ function endExam() {
     document.getElementById("game").appendChild(backButton);
   }
 }
+
 
 function showFinalScore() {
   const percentage = (score / numQuestions) * 100;
