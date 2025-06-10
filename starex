@@ -22,7 +22,6 @@ let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 let exerciseStartIndex = 0;
 let exerciseEndIndex = 0;
 let exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
-const exerciseResults = {};
 
 function startExam() {
   mode = 'exam';
@@ -367,7 +366,7 @@ function endExam() {
 function showFinalScore() {
   const percentage = (score / numQuestions) * 100;
   alert(`Vous avez terminé l'exercice avec un score de ${percentage.toFixed(2)}%`);
-  const rangeKey = `${currentQuestion - numQuestions + 1}-${currentQuestion}`;
+  const rangeKey = `${exerciseStartIndex + 1}-${exerciseEndIndex}`;
   exerciseResults[rangeKey] = percentage.toFixed(2);
   goBackToHome();
   localStorage.setItem('exerciseResults', JSON.stringify(exerciseResults));
@@ -438,7 +437,9 @@ function startTimer() {
 function resetCache() {
   localStorage.removeItem('examHistory');
   localStorage.removeItem('markedQuestions');
+  localStorage.removeItem('exerciseResults');
   examHistory = [];
   markedQuestions = [];
+  exerciseResults = {};
   alert("Le cache a été réinitialisé.");
 }
