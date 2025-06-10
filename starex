@@ -21,6 +21,7 @@ let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 let exerciseStartIndex = 0;
 let exerciseEndIndex = 0;
+let exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
 const exerciseResults = {};
 
 function startExam() {
@@ -369,6 +370,7 @@ function showFinalScore() {
   const rangeKey = `${currentQuestion - numQuestions + 1}-${currentQuestion}`;
   exerciseResults[rangeKey] = percentage.toFixed(2);
   goBackToHome();
+  localStorage.setItem('exerciseResults', JSON.stringify(exerciseResults));
 }
 
 function resetQuiz() {
