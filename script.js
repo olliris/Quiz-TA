@@ -34,6 +34,8 @@ function startExam() {
   document.getElementById("score").classList.remove("hidden");
   currentQuestion = 0;
   score = 0;
+  shuffledQuiz = [...quiz];
+  shuffledQuiz.sort(() => Math.random() - 0.5);
   showQuestions();
   startTimer();
 }
