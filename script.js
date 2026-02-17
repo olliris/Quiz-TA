@@ -411,6 +411,8 @@ function goBackToHome() {
   document.getElementById("historyPage").classList.add("hidden");
   document.getElementById("flashcardsPage").classList.add("hidden");
   document.getElementById("flashcardDeckPage").classList.add("hidden");
+  document.getElementById("schemasPage").classList.add("hidden");
+  document.getElementById("schemaDetailPage").classList.add("hidden");
   document.querySelector(".quiz-container").classList.remove("hidden");
   document.getElementById("footer").style.display = "block";
 }
@@ -639,4 +641,143 @@ function flipCard() {
     back.classList.add("hidden");
     front.classList.remove("hidden");
   }
+}
+
+// ─── SCHÉMAS ──────────────────────────────────────────────────────────────────
+
+var schemasData = null;
+
+function showSchemas() {
+  document.querySelector(".quiz-container").classList.add("hidden");
+  document.getElementById("footer").style.display = "none";
+  document.getElementById("schemasPage").classList.remove("hidden");
+
+  if (schemasData === null) {
+    fetch("schemas.json")
+      .then(function(r) { return r.json(); })
+      .then(function(data) { schemasData = data; renderSchemasGrid(); })
+      .catch(function() { schemasData = []; renderSchemasGrid(); });
+  } else {
+    renderSchemasGrid();
+  }
+}
+
+function renderSchemasGrid() {
+  var grid = document.getElementById("schemasGrid");
+  grid.innerHTML = "";
+
+  if (!schemasData || schemasData.length === 0) {
+    grid.innerHTML = "<p class='missing-message'>Aucun schéma disponible pour le moment.</p>";
+    return;
+  }
+
+  schemasData.forEach(function(schema, index) {
+    var card = document.createElement("div");
+    card.className = "schema-card";
+    card.setAttribute("data-index", index);
+
+    var img = document.createElement("img");
+    img.src = schema.image;
+    img.alt = schema.name;
+    img.className = "schema-thumb";
+
+    var label = document.createElement("p");
+    label.className = "schema-label";
+    label.textContent = schema.name;
+
+    card.appendChild(img);
+    card.appendChild(label);
+    card.addEventListener("click", function() {
+      openSchema(parseInt(this.getAttribute("data-index")));
+    });
+    grid.appendChild(card);
+  });
+}
+
+function backToSchemas() {
+  document.getElementById("schemaDetailPage").classList.add("hidden");
+  document.getElementById("schemasPage").classList.remove("hidden");
+}
+
+function openSchema(index) {
+  var schema = schemasData[index];
+  document.getElementById("schemasPage").classList.add("hidden");
+  document.getElementById("schemaDetailPage").classList.remove("hidden");
+
+  var content = document.getElementById("schemaDetailContent");
+
+  // Mélanger les options pour les menus déroulants
+  var allAnswers = schema.elements.map(function(e) { return e.answer; });
+  // Dédoublonner pour les cas où le même nom apparaît deux fois
+  var uniqueAnswers = allAnswers.filter(function(v, i, a) { return a.indexOf(v) === i; });
+  uniqueAnswers.sort();
+
+  var html = "<h2>" + schema.name + "</h2>";
+  html += "<img src='" + schema.image + "' class='schema-full-img' alt='" + schema.name + "'>";
+  html += "<div class='schema-elements'>";
+  html += "<p class='schema-instructions'>Associez chaque numéro au bon élément :</p>";
+
+  schema.elements.forEach(function(el) {
+    html += "<div class='schema-row'>";
+    html += "<span class='schema-number'>" + el.number + "</span>";
+    html += "<select class='schema-select' data-answer='" + el.answer.replace(/'/g, "&#39;") + "'>";
+    html += "<option value=''>— Choisir —</option>";
+    uniqueAnswers.forEach(function(ans) {
+      html += "<option value='" + ans.replace(/'/g, "&#39;") + "'>" + ans + "</option>";
+    });
+    html += "</select>";
+    html += "<span class='schema-result'></span>";
+    html += "</div>";
+  });
+
+  html += "</div>";
+  html += "<button onclick='checkSchema()' style='margin-top:15px'>✔ Vérifier</button>";
+  html += "<button onclick='resetSchema()' style='margin-top:15px'>↺ Recommencer</button>";
+  html += "<p id='schemaScore' class='schema-score'></p>";
+
+  content.innerHTML = html;
+}
+
+function checkSchema() {
+  var rows = document.querySelectorAll(".schema-row");
+  var correct = 0;
+  var total = rows.length;
+
+  rows.forEach(function(row) {
+    var select = row.querySelector(".schema-select");
+    var result = row.querySelector(".schema-result");
+    var expected = select.getAttribute("data-answer");
+    var chosen = select.value;
+
+    if (chosen === "") {
+      result.textContent = "";
+      result.className = "schema-result";
+    } else if (chosen === expected) {
+      result.textContent = " ✓";
+      result.className = "schema-result schema-correct";
+      select.style.borderColor = "green";
+      correct++;
+    } else {
+      result.textContent = " ✗ → " + expected;
+      result.className = "schema-result schema-incorrect";
+      select.style.borderColor = "red";
+    }
+  });
+
+  var pct = Math.round((correct / total) * 100);
+  var scoreEl = document.getElementById("schemaScore");
+  scoreEl.textContent = "Score : " + correct + " / " + total + " (" + pct + "%)";
+  scoreEl.className = "schema-score " + (pct >= 80 ? "schema-score-good" : "schema-score-bad");
+}
+
+function resetSchema() {
+  document.querySelectorAll(".schema-select").forEach(function(s) {
+    s.value = "";
+    s.style.borderColor = "";
+  });
+  document.querySelectorAll(".schema-result").forEach(function(r) {
+    r.textContent = "";
+    r.className = "schema-result";
+  });
+  document.getElementById("schemaScore").textContent = "";
 }
