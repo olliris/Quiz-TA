@@ -408,6 +408,8 @@ function displayHistory() {
 function goBackToHome() {
   document.getElementById("exerciseRangePage").classList.add("hidden");
   document.getElementById("historyPage").classList.add("hidden");
+  document.getElementById("flashcardsPage").classList.add("hidden");
+  document.getElementById("flashcardDeckPage").classList.add("hidden");
   document.querySelector(".quiz-container").classList.remove("hidden");
   document.getElementById("footer").style.display = "block";
 }
@@ -490,10 +492,3 @@ function openFlashcardDeck(deckName) {
   content.innerHTML = `<h2>${deckName}</h2><p class="missing-message">Aucune flashcard disponible pour ce dossier pour le moment.</p>`;
 }
 
-// Patch goBackToHome to also hide flashcard pages
-const _origGoBackToHome = goBackToHome;
-goBackToHome = function() {
-  document.getElementById("flashcardsPage").classList.add("hidden");
-  document.getElementById("flashcardDeckPage").classList.add("hidden");
-  _origGoBackToHome();
-};
