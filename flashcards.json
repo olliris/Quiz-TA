@@ -93,8 +93,177 @@
 { "front": "Pression diastolique ?", "back": "Pression repos ventriculaire." }
 
 ],
-  "Système Lymphatique": [],
-  "Système Respiratoire": [],
+  "Système Lymphatique": [
+    { "front": "Le système lymphatique se compose de quoi ?", "back": "La lymphe, les vaisseaux lymphatiques, les ganglions lymphatiques, les organes lymphatiques (rate, thymus…), les tissus lymphoïdes diffus (amygdales…), la moelle osseuse." },
+
+    { "front": "Rôle principal du système lymphatique ?", "back": "Drainage tissulaire." },
+    { "front": "Chaque jour, combien de plasma s’échappe des capillaires vers les tissus ?", "back": "≈ 21 L par jour." },
+    { "front": "Le système lymphatique draine environ combien de liquide par jour ?", "back": "Environ 3 à 4 L de liquide par jour." },
+
+    { "front": "Rôle du système lymphatique dans l’intestin grêle (duodenum) ?", "back": "Récupère des substances liposolubles durant la digestion." },
+    { "front": "Pourquoi la lymphe peut avoir un aspect laiteux ?", "back": "Substances qui se dissolvent dans les graisses (lipides) → appelée chyle." },
+
+    { "front": "Immunité : où sont créés des lymphocytes ?", "back": "Dans la moelle osseuse rouge (considérée comme un tissu lymphoïde)." },
+
+    { "front": "La lymphe : c’est quoi ?", "back": "Un liquide aqueux clair qui ramène dans le système sanguin ce qui a été filtré hors du lit capillaire." },
+    { "front": "La lymphe draine quoi (exemples) ?", "back": "Eau, électrolytes, protéines." },
+    { "front": "Le chyle contient quoi ?", "back": "Triglycérides, chylomicrons, vitamines liposolubles (A D E K)." },
+    { "front": "La lymphe transporte aussi quoi ?", "back": "Débris cellulaires, bactéries." },
+    { "front": "Les ganglions lymphatiques se chargent de quoi ?", "back": "De la destruction des matériaux indésirables." },
+
+    { "front": "Vaisseaux lymphatiques : sens de circulation ?", "back": "Uni-directionnel." },
+    { "front": "Où commencent les vaisseaux lymphatiques ?", "back": "Directement dans les tissus." },
+    { "front": "Que récupèrent les vaisseaux lymphatiques ?", "back": "Eau, protéines, bactéries, débris." },
+    { "front": "Paroi des vaisseaux lymphatiques vs capillaires sanguins ?", "back": "Beaucoup plus perméable." },
+    { "front": "Où ne se situent pas les vaisseaux lymphatiques ?", "back": "Système nerveux central, os, couches superficielles de la peau." },
+
+    { "front": "La lymphe se déplace grâce à quoi ?", "back": "Contractions des parois lymphatiques, pulsations artères, contractions musculaires, valvules (demi-lune) anti-retours." },
+
+    { "front": "Conduit thoracique : commence où ?", "back": "Dans la citerne du chyle (réservoir lymphatique abdominal) devant L1–L2." },
+    { "front": "Conduit thoracique : se jette où ?", "back": "Veine sous-clavière gauche." },
+    { "front": "Conduit thoracique : draine quoi ?", "back": "2 jambes, abdomen, côté gauche du thorax, bras gauche, côté gauche tête/cou, 2/3 du corps." },
+
+    { "front": "Conduit lymphatique droit : siège où ?", "back": "Dans le cou." },
+    { "front": "Conduit lymphatique droit : se jette où ?", "back": "Veine sous-clavière droite (jonction veine jugulaire)." },
+    { "front": "Conduit lymphatique droit : draine quoi ?", "back": "Bras droit, côté droit tête/cou, côté droit du thorax." },
+
+    { "front": "Ganglions lymphatiques (nœuds) : rôle ?", "back": "Station de filtration + centre de commandement immunitaire." },
+    { "front": "Ganglions : formés de quoi ?", "back": "Tissus lymphoïdes (contient essentiellement des lymphocytes et des macrophages)." },
+    { "front": "Ganglion : particularité des vaisseaux afférents/efférent ?", "back": "Reçoit 4 ou 5 vaisseaux afférents et 1 seul sort → ralentit la lymphe → meilleur filtrage (entre sale → sort propre)." },
+    { "front": "Dans le ganglion, déchets détruits par ?", "back": "Macrophages et anticorps." },
+    { "front": "Autre fonction des ganglions ?", "back": "Multiplication des lymphocytes T et B." },
+    { "front": "Les anticorps produits passent où ?", "back": "Dans la lymphe et le sang qui draine le ganglion." },
+
+    { "front": "Ganglion : capsule = quoi ?", "back": "Coque externe fibreuse protégeant le ganglion." },
+    { "front": "Ganglion : travées = quoi ?", "back": "Cloisons internes qui structurent le ganglion." },
+    { "front": "Ganglion : tissu réticulaire = quoi ?", "back": "Charpente interne (éponge)." },
+    { "front": "Ganglion : tissu lymphatique = quoi ?", "back": "Zones pleines de lymphocytes B et T." },
+    { "front": "Vaisseaux lymphatiques afférents ?", "back": "Entrées de lymphe sale." },
+    { "front": "Vaisseau lymphatique efférent ?", "back": "Sortie de lymphe propre." },
+
+    { "front": "Organes lymphatiques ?", "back": "Rate, Thymus." },
+    { "front": "Tissus lymphoïdes diffus ?", "back": "Amygdales, plaques de Peyer." },
+
+    { "front": "Rate : c’est quoi (structure générale) ?", "back": "Organe spongieux → pulpe splénique." },
+    { "front": "Rate : 2 sortes de pulpe ?", "back": "Pulpe rouge (beaucoup de globules rouges) et pulpe blanche (lymphocytes et macrophages)." },
+    { "front": "Fonction rate : stockage de sang ?", "back": "Peut contenir 350 ml." },
+    { "front": "Fonction rate : filtre le sang comment ?", "back": "Détruit globules rouges vieux ou anormaux, détruit plaquettes âgées, mange déchets et bactéries." },
+    { "front": "Rate : immunité ?", "back": "Contient lymphocytes B et T → production d’anticorps → réponse immunitaire contre bactéries dans le sang." },
+    { "front": "Rate : hématopoïèse ?", "back": "Produit cellules sanguines (fœtus)." },
+
+    { "front": "Thymus : rôle principal ?", "back": "Développement des lymphocytes « immunitaires »." },
+    { "front": "Dans le thymus, les lymphocytes deviennent quoi ?", "back": "Lymphocytes « T »." },
+    { "front": "Lymphocytes T : rôle ?", "back": "Distinguent tissus de l’organisme vs étrangers." },
+    { "front": "Avec l’âge, la réponse des lymphocytes T ?", "back": "Décline." },
+
+    { "front": "Tissus lymphoïdes diffus : caractéristiques ?", "back": "Se retrouvent dans tout l’organisme, pas encadrés dans une capsule, contiennent lymphocytes B et T, première barrière contre agressions microbactériennes, ne filtre pas la lymphe." },
+    { "front": "Amygdales : rôle ?", "back": "Fond de la bouche et gorge, détruisent antigènes inhalés ou avalés." },
+    { "front": "Plaques de Peyer : rôle ?", "back": "Présentes dans l’intestin grêle, attrapent antigènes déglutis." }
+  ],
+  
+  "Système Respiratoire": [
+    
+    { "front": "Liste des éléments du système respiratoire ?", "back": "Nez, pharynx, larynx (UAS), trachée, bronches souches, bronchioles, canaux alvéoliques, alvéoles." },
+
+    { "front": "Nez : fonctions ?", "back": "Respiratoire, olfactif, phonation." },
+    { "front": "Nez : mission sur l’air inspiré ?", "back": "Réchauffer, filtrer, humidifier." },
+    { "front": "Pourquoi l’air est humidifié au niveau du nez ?", "back": "Passe dans une grande muqueuse qui le sature en vapeur d’eau." },
+    { "front": "Rôle du mucus dans le nez ?", "back": "Protection/filtre : particules et poussières collent au mucus." },
+    { "front": "Comment les particules piégées remontent vers la gorge ?", "back": "Battements synchronisés de cils vibratiles." },
+    { "front": "Sinus : à quoi servent-ils ?", "back": "Cavités d’air : caisse de résonance aux sons + allègent les os du crâne." },
+    { "front": "Les sinus communiquent avec quoi ?", "back": "La cavité nasale (par de petits trous)." },
+
+    { "front": "Pharynx : c’est quoi (trajet) ?", "back": "Partie allant de la cavité nasale à la cavité buccale jusqu’au carrefour aérodigestif." },
+    { "front": "Pharynx : rôle alimentaire ?", "back": "Voie de passage des aliments (carrefour entre aliments et air)." },
+    { "front": "Pharynx : rôle sur l’air ?", "back": "Réchauffement et humidification de l’air." },
+    { "front": "Pharynx : audition ?", "back": "Équilibre les pressions de l’oreille moyenne via les trompes d’Eustache." },
+    { "front": "Pharynx : protection ?", "back": "Grâce aux amygdales pharyngées et palatines." },
+    { "front": "Pharynx : phonation ?", "back": "Phonation." },
+    { "front": "Pharynx : 3 parties ?", "back": "Nasopharynx (rhinopharynx), oropharynx, laryngopharynx." },
+
+    { "front": "Naso- / rhinopharynx : localisation ?", "back": "Partie supérieure du pharynx, derrière le nez." },
+    { "front": "Naso- / rhinopharynx : particularité ?", "back": "Orifices des trompes d’Eustache → équilibre pression oreille moyenne." },
+
+    { "front": "Oropharynx : localisation ?", "back": "Partie buccale du pharynx, derrière la bouche." },
+    { "front": "Oropharynx : tissus lymphoïdes ?", "back": "Amygdales." },
+    { "front": "Pendant la déglutition, séparation nasale/orale se fait par quoi ?", "back": "Palais mou." },
+
+    { "front": "Laryngopharynx : localisation/continuité ?", "back": "Partie basse du pharynx, va de l’oropharynx à l’œsophage." },
+
+    { "front": "Larynx : fonction principale ?", "back": "Phonation." },
+    { "front": "Cordes vocales : s’attachent où ?", "back": "De la paroi interne du cartilage thyroïde (devant) au cartilage aryténoïde (derrière)." },
+    { "front": "Larynx : rôle de protection ?", "back": "Protège les VA inférieures en fermant l’accès lors de la déglutition." },
+    { "front": "Larynx : continue quelles fonctions sur l’air ?", "back": "Réchauffer, filtrer, humidifier l’air." },
+
+    { "front": "Cartilage thyroïde : particularité ?", "back": "Pomme d’Adam, s’articule aux cartilages cricoïdes et aryténoïdes." },
+    { "front": "Cartilage cricoïde : articulations ?", "back": "Avec thyroïde en bas et aryténoïde en haut ; bord inférieur = limite des UAS." },
+    { "front": "Cartilage aryténoïde : particularité ?", "back": "Double (il y en a 2) ; les cordes vocales s’y attachent." },
+    { "front": "Épiglotte : type de cartilage ?", "back": "Cartilage fibroélastique." },
+    { "front": "Déglutition : mouvements ?", "back": "Trachée monte, épiglotte descend, palais mou remonte → séparation nasopharynx et oropharynx." },
+
+    { "front": "Trachée : va de où à où ?", "back": "Larynx → carène." },
+    { "front": "Trachée : anneaux cartilagineux ?", "back": "16 à 20 anneaux incomplets en cartilage hyalin." },
+    { "front": "Absence de cartilage à l’arrière permet quoi ?", "back": "Constriction, dilatation de la trachée, passage de substance alimentaire dans l’œsophage." },
+    { "front": "Réflexe de toux : déclenché par quoi ?", "back": "Stimulation des terminaisons nerveuses sensibles à l’irritation." },
+    { "front": "Mucus : évacuation vers où ?", "back": "Vers le pharynx." },
+    { "front": "Trachée : fonctions continues sur l’air ?", "back": "Réchauffement, humidification, filtrage." },
+
+    { "front": "Bronches : commencent où ?", "back": "À la carène." },
+    { "front": "Capteurs du nerf vague : où ?", "back": "Au niveau des bronches (commence à la carène)." },
+    { "front": "Nerf vague : type et innervation ?", "back": "Parasympathique, innerve cœur, poumons, tube digestif ; participe à la phonation et à la déglutition." },
+    { "front": "Bronches souches : droite vs gauche ?", "back": "Droite plus grosse et plus verticale (à cause du cœur à gauche)." },
+    { "front": "Bronches lobaires : nombre droite/gauche ?", "back": "3 à droite et 2 à gauche." },
+    { "front": "Après bronches lobaires : suite ?", "back": "Bronches segmentaires puis bronchioles." },
+
+    { "front": "Poumons : lobes ?", "back": "Supérieur, moyen (que à droite), inférieur." },
+
+    { "front": "Plèvre viscérale : où ?", "back": "Rattachée au poumon en rejoignant les lobes entre eux." },
+    { "front": "Plèvre pariétale : où ?", "back": "Adhère à la paroi interne de la cage thoracique et à la face interne du diaphragme." },
+    { "front": "Cavité pleurale : contient quoi ?", "back": "Liquide séreux." },
+    { "front": "Pression pleurale : particularité ?", "back": "Pression négative → permet aux feuillets de glisser l’un sur l’autre sans s’irriter." },
+    { "front": "Rôle de la pression négative ?", "back": "Maintient une pression résiduelle au niveau des alvéoles, empêche le collaps." },
+    { "front": "Déchirure de la plèvre : conséquence ?", "back": "Alvéoles s’écrasent sur elles-mêmes par manque de pression." },
+
+    { "front": "Médiastin : c’est quoi ?", "back": "Cavité située entre les 2 poumons." },
+    { "front": "Médiastin : contient quoi ?", "back": "Cœur, gros vaisseaux, bronches et trachée." },
+    { "front": "Médiastin : pression ?", "back": "Pression négative qui évite le collapsus des poumons." },
+
+    { "front": "Muscles respiratoires principaux ?", "back": "Diaphragme (75% fonction respiratoire) + muscles intercostaux." },
+    { "front": "Diaphragme : attaches ?", "back": "Dernières côtes, sternum, colonne vertébrale." },
+    { "front": "Diaphragme : innervation ?", "back": "Nerf phrénique (embranchement du nerf vague)." },
+    { "front": "Muscles respiratoires accessoires : quand ?", "back": "Lors de dyspnées." },
+    { "front": "Muscles accessoires ?", "back": "Trapèzes, dorsaux, abdominaux, cou." },
+    { "front": "Muscles accessoires : activés quand ?", "back": "Lors de la toux ou ventilation forcée." },
+
+    { "front": "Respiration : inspiration ?", "back": "Cage thoracique s’ouvre créant une dépression." },
+    { "front": "Respiration : expiration ?", "back": "Cage thoracique se relâche et l’air est expulsé." },
+    { "front": "Respiration : pause ?", "back": "Finit le cycle." },
+
+    { "front": "Volume courant (VC ou VT) ?", "back": "Volume d’air normal entrant et sortant lors d’un cycle respiratoire (≈ 500 ml)." },
+    { "front": "Volume de réserve inspiratoire (VRI) ?", "back": "Volume d’air supplémentaire qui peut être inhalé en cas d’inspiration max (≈ 2 L)." },
+    { "front": "Volume de réserve expiratoire (VRE) ?", "back": "Max volume pouvant être expiré lors d’une expiration forcée." },
+    { "front": "Capacité vitale (CV) ?", "back": "CV = VC + VRI + VRE." },
+
+    { "front": "Contrôle de la respiration : 2 sortes ?", "back": "Lent et rapide." },
+
+    { "front": "Système central (rapide) : où sont les chémorécepteurs centraux ?", "back": "Dans le bulbe rachidien, baigne dans le LCR." },
+    { "front": "Système central (rapide) : baisse du pH du LCR est liée à quoi ?", "back": "Indirectement à l’augmentation du CO₂." },
+    { "front": "Pourquoi le CO₂ influence facilement le LCR ?", "back": "CO₂ traverse facilement la barrière hémato-encéphalique (contrairement aux ions H⁺)." },
+    { "front": "Dans le LCR, CO₂ + H₂O donne quoi ?", "back": "Libération d’ions H⁺ → milieu plus acide → pH baisse." },
+    { "front": "Réponse du système central quand pH LCR baisse ?", "back": "Chémorécepteurs centraux → signal au centre respiratoire → ventilation augmente → élimine plus de CO₂ → pH remonte." },
+
+    { "front": "Système périphérique (lent) : CO₂ augmente où ?", "back": "Directement dans le sang." },
+    { "front": "Système périphérique (lent) : effet sur pH sanguin ?", "back": "CO₂ ↑ → ions H⁺ ↑ → pH sanguin baisse." },
+    { "front": "Chémorécepteurs périphériques : où ?", "back": "Carotides et crosse de l’aorte." },
+    { "front": "Chémorécepteurs périphériques : stimulus principal ?", "back": "Manque d’oxygène." },
+    { "front": "Chémorécepteurs périphériques : détectent aussi quoi ?", "back": "Excès CO₂ et acidité du sang (pH)." },
+    { "front": "Réponse du système périphérique ?", "back": "Message nerveux au bulbe rachidien → centre respiratoire augmente la ventilation → CO₂ éliminé → O₂ remonte." },
+
+    { "front": "Système lent : particularités ?", "back": "Toujours activé ; peut prendre relais du système lors de maladie (BPCO…)." },
+    { "front": "Augmentation du CO₂ sanguin entraîne quoi ?", "back": "H⁺ ↑ et pH ↓ (acidose métabolique) → stimule chémorécepteurs → ventilation accrue." },
+    { "front": "CO₂ : vient d’où ?", "back": "Déchet du corps produit quand les cellules produisent de l’énergie." },
+    { "front": "Équation énergie ?", "back": "Glucose + O₂ → Énergie (ATP) + CO₂ + H₂O." }
+  ],
   "Système Nerveux": [],
   "Système Endocrinien": [],
   "Système Digestif": [],
