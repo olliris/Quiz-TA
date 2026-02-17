@@ -490,11 +490,28 @@ function renderFlashcardFolders() {
   var container = document.getElementById("flashcardsFolders");
   container.innerHTML = "";
 
+  var markedCount = markedFlashcards.length;
   var markedBtn = document.createElement("button");
-  markedBtn.className = "fc-folder-btn";
-  markedBtn.textContent = "\u2691 Flashcards Marqu\u00e9es" + (markedFlashcards.length > 0 ? " (" + markedFlashcards.length + ")" : "");
-  markedBtn.addEventListener("click", function() { openMarkedFlashcards(); });
+  markedBtn.className = "exercise-marked-btn";
+  var flagSpan = document.createElement("span");
+  flagSpan.textContent = "\u2691";
+  flagSpan.style.marginRight = "6px";
+  flagSpan.style.color = markedCount > 0 ? "red" : "#555";
+  markedBtn.appendChild(flagSpan);
+  markedBtn.appendChild(document.createTextNode("Flashcards Marqu\u00e9es"));
+  if (markedCount > 0) {
+    var countSpan = document.createElement("span");
+    countSpan.className = "marked-count";
+    countSpan.textContent = " (" + markedCount + ")";
+    markedBtn.appendChild(countSpan);
+  }
+  markedBtn.onclick = function() { openMarkedFlashcards(); };
   container.appendChild(markedBtn);
+
+  var sep = document.createElement("p");
+  sep.className = "exercise-section-label";
+  sep.textContent = "Choisissez un dossier :";
+  container.appendChild(sep);
 
   for (var i = 0; i < flashcardDecks.length; i++) {
     var deckName = flashcardDecks[i];
