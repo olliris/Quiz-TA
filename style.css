@@ -360,3 +360,37 @@ footer {
 }
 .schema-score-good { color: green; }
 .schema-score-bad { color: red; }
+
+/* ── Schéma card flag ── */
+.schema-label-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  gap: 4px;
+}
+.schema-label {
+  font-size: 0.78em;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.2;
+  flex: 1;
+}
+.schema-card-flag {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  min-width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.schema-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.schema-detail-flag {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
