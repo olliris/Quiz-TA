@@ -427,6 +427,7 @@ function resetCache() {
 // ─── FLASHCARDS ───────────────────────────────────────────────────────────────
 
 var flashcardsData = null;
+var markedFlashcards = JSON.parse(localStorage.getItem('markedFlashcards')) || [];
 
 var flashcardDecks = [
   "Physiologie et Chimie",
@@ -450,19 +451,11 @@ function showFlashcards() {
   document.getElementById("footer").style.display = "none";
   document.getElementById("flashcardsPage").classList.remove("hidden");
 
-  // Charger flashcards.json si pas encore chargé
   if (flashcardsData === null) {
     fetch("flashcards.json")
-      .then(function(response) { return response.json(); })
-      .then(function(data) {
-        flashcardsData = data;
-        renderFlashcardFolders();
-      })
-      .catch(function(error) {
-        console.error("Erreur chargement flashcards.json:", error);
-        flashcardsData = {};
-        renderFlashcardFolders();
-      });
+      .then(function(r) { return r.json(); })
+      .then(function(data) { flashcardsData = data; renderFlashcardFolders(); })
+      .catch(function() { flashcardsData = {}; renderFlashcardFolders(); });
   } else {
     renderFlashcardFolders();
   }
@@ -472,12 +465,19 @@ function renderFlashcardFolders() {
   var container = document.getElementById("flashcardsFolders");
   container.innerHTML = "";
 
+  // Bouton "Flashcards Marquées" en premier
+  var markedBtn = document.createElement("button");
+  markedBtn.className = "fc-folder-btn";
+  markedBtn.textContent = "⚑ Flashcards Marquées" + (markedFlashcards.length > 0 ? " (" + markedFlashcards.length + ")" : "");
+  markedBtn.addEventListener("click", function() { openMarkedFlashcards(); });
+  container.appendChild(markedBtn);
+
   for (var i = 0; i < flashcardDecks.length; i++) {
     var deckName = flashcardDecks[i];
     var cards = flashcardsData[deckName];
     var count = (cards && cards.length) ? cards.length : 0;
-
     var btn = document.createElement("button");
+    btn.className = "fc-folder-btn";
     btn.textContent = "📁 " + deckName + (count > 0 ? " (" + count + ")" : "");
     btn.setAttribute("data-deck", deckName);
     btn.addEventListener("click", function() {
@@ -487,9 +487,24 @@ function renderFlashcardFolders() {
   }
 }
 
+function openMarkedFlashcards() {
+  document.getElementById("flashcardsPage").classList.add("hidden");
+  document.getElementById("flashcardDeckPage").classList.remove("hidden");
+  currentDeckCards = markedFlashcards;
+  currentCardIndex = 0;
+  var content = document.getElementById("flashcardDeckContent");
+  if (markedFlashcards.length === 0) {
+    content.innerHTML = "<h2>Flashcards Marquées</h2><p class='missing-message'>Aucune flashcard marquée pour le moment.</p>";
+    return;
+  }
+  content.innerHTML = "<h2>Flashcards Marquées</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
+  renderCard();
+}
+
 function backToFlashcards() {
   document.getElementById("flashcardDeckPage").classList.add("hidden");
   document.getElementById("flashcardsPage").classList.remove("hidden");
+  renderFlashcardFolders(); // Refresh pour mettre à jour le compteur marquées
 }
 
 var currentDeckCards = [];
@@ -504,38 +519,88 @@ function openFlashcardDeck(deckName) {
   currentCardIndex = 0;
 
   var content = document.getElementById("flashcardDeckContent");
-
   if (cards.length === 0) {
     content.innerHTML = "<h2>" + deckName + "</h2><p class='missing-message'>Aucune flashcard disponible pour ce dossier pour le moment.</p>";
     return;
   }
-
   content.innerHTML = "<h2>" + deckName + "</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
   renderCard();
 }
 
+function markFlashcard(card) {
+  var idx = markedFlashcards.findIndex(function(c) { return c.front === card.front; });
+  if (idx === -1) {
+    markedFlashcards.push(card);
+  } else {
+    markedFlashcards.splice(idx, 1);
+  }
+  localStorage.setItem('markedFlashcards', JSON.stringify(markedFlashcards));
+}
+
+function isFlashcardMarked(card) {
+  return markedFlashcards.some(function(c) { return c.front === card.front; });
+}
+
 function renderCard() {
   var area = document.getElementById("flashcardArea");
-  var nav = document.getElementById("flashcardNav");
+  var nav  = document.getElementById("flashcardNav");
   var card = currentDeckCards[currentCardIndex];
 
-  area.innerHTML =
-    "<p class='fc-counter'>" + (currentCardIndex + 1) + " / " + currentDeckCards.length + "</p>" +
-    "<div class='fc-card' id='fcCard'>" +
-      "<div class='fc-front'>" + card.front + "</div>" +
-      "<div class='fc-back hidden'>" + card.back + "</div>" +
-    "</div>" +
-    "<button onclick='flipCard()'>Retourner</button>";
+  // Carte cliquable pour retourner — pas de bouton "Retourner"
+  var cardDiv = document.createElement("div");
+  cardDiv.className = "fc-card";
+  cardDiv.id = "fcCard";
+
+  var front = document.createElement("div");
+  front.className = "fc-front";
+  front.textContent = card.front;
+
+  var back = document.createElement("div");
+  back.className = "fc-back hidden";
+  back.textContent = card.back;
+
+  cardDiv.appendChild(front);
+  cardDiv.appendChild(back);
+  cardDiv.addEventListener("click", function() { flipCard(); });
+
+  // Compteur
+  var counter = document.createElement("p");
+  counter.className = "fc-counter";
+  counter.textContent = (currentCardIndex + 1) + " / " + currentDeckCards.length;
+
+  // Drapeau
+  var flagBtn = document.createElement("button");
+  flagBtn.className = "flag-button" + (isFlashcardMarked(card) ? " red" : "");
+  flagBtn.textContent = "⚑";
+  flagBtn.title = "Marquer cette carte";
+  flagBtn.addEventListener("click", function(e) {
+    e.stopPropagation();
+    markFlashcard(card);
+    flagBtn.className = "flag-button" + (isFlashcardMarked(card) ? " red" : "");
+  });
+
+  // Ligne compteur + drapeau
+  var topRow = document.createElement("div");
+  topRow.className = "fc-top-row";
+  topRow.appendChild(counter);
+  topRow.appendChild(flagBtn);
+
+  var hint = document.createElement("p");
+  hint.className = "fc-hint";
+  hint.textContent = "Cliquez sur la carte pour retourner";
+
+  area.innerHTML = "";
+  area.appendChild(topRow);
+  area.appendChild(cardDiv);
+  area.appendChild(hint);
 
   nav.innerHTML = "";
-
   if (currentCardIndex > 0) {
     var prevBtn = document.createElement("button");
     prevBtn.textContent = "◀ Précédent";
     prevBtn.onclick = function() { currentCardIndex--; renderCard(); };
     nav.appendChild(prevBtn);
   }
-
   if (currentCardIndex < currentDeckCards.length - 1) {
     var nextBtn = document.createElement("button");
     nextBtn.textContent = "Suivant ▶";
@@ -546,7 +611,8 @@ function renderCard() {
 
 function flipCard() {
   var front = document.querySelector("#fcCard .fc-front");
-  var back = document.querySelector("#fcCard .fc-back");
+  var back  = document.querySelector("#fcCard .fc-back");
+  if (!front || !back) return;
   if (back.classList.contains("hidden")) {
     front.classList.add("hidden");
     back.classList.remove("hidden");
