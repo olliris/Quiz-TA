@@ -394,3 +394,67 @@ footer {
   margin: 0;
   flex-shrink: 0;
 }
+
+/* ── Flashcard mode buttons ── */
+.fc-mode-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0 18px 0;
+}
+.fc-mode-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 2px solid #007BFF;
+  background: white;
+  color: #007BFF;
+  font-size: 0.95em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.fc-mode-btn.active {
+  background: #007BFF;
+  color: white;
+}
+.fc-mode-btn:hover {
+  background: #007BFF;
+  color: white;
+}
+
+/* ── Flashcard summary list ── */
+.fc-summary-list {
+  text-align: left;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.fc-summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background 0.15s;
+}
+.fc-summary-item:hover {
+  background: #f0f7ff;
+}
+.fc-summary-item.fc-summary-marked .fc-summary-link::before {
+  content: "⚑ ";
+  color: red;
+}
+.fc-summary-num {
+  color: #007BFF;
+  font-weight: bold;
+  min-width: 28px;
+  flex-shrink: 0;
+  font-size: 0.9em;
+  padding-top: 2px;
+}
+.fc-summary-link {
+  color: #222;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
