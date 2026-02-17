@@ -20,5 +20,90 @@
       { "number": 14, "answer": "Clavicule" },
       { "number": 15, "answer": "Apex du poumon" }
     ]
+  },
+  {
+    "name": "Les principaux points de prise du pouls",
+    "category": "Système Cardio-vasculaire",
+    "image": "schemas/prise_de_pouls.jpg",
+    "elements": [
+      { "number": 1, "answer": "Artère temporale" },
+      { "number": 2, "answer": "Artère faciale" },
+      { "number": 3, "answer": "Artère carotide commune" },
+      { "number": 4, "answer": "Artère brachiale" },
+      { "number": 5, "answer": "Artère radiale" },
+      { "number": 6, "answer": "Artère fémorale" },
+      { "number": 7, "answer": "Artère poplitée (derrière le genou)" },
+      { "number": 8, "answer": "Artère tibiale postérieure" },
+      { "number": 9, "answer": "Artère dorsale du pied" }
+    ]
+  },
+  {
+    "name": "Artères formant le cercle artériel de Willis",
+    "category": "Système Cardio-vasculaire",
+    "image": "schemas/arteres_willis.jpg",
+    "elements": [
+      { "number": 1, "answer": "Artère carotide interne gauche" },
+      { "number": 2, "answer": "Artère carotide commune gauche" },
+      { "number": 3, "answer": "Artère vertébrale gauche" },
+      { "number": 4, "answer": "Artère subclavière gauche" },
+      { "number": 5, "answer": "Artère brachiocéphalique" },
+      { "number": 6, "answer": "Artère subclavière droite" },
+      { "number": 7, "answer": "Artère vertébrale droite" },
+      { "number": 8, "answer": "Artère carotide commune droite" },
+      { "number": 9, "answer": "Artère carotide interne droite" }
+    ]
+  },
+  {
+    "name": "Le système de conduction du cœur",
+    "category": "Système Cardio-vasculaire",
+    "image": "schemas/conduction_du_coeur.jpg",
+    "elements": [
+      { "number": 1, "answer": "Faisceau atrioventriculaire" },
+      { "number": 2, "answer": "Branche gauche du faisceau atrioventriculaire" },
+      { "number": 3, "answer": "Réseau des fibres de Purkinje" },
+      { "number": 4, "answer": "Veine cave inférieure" },
+      { "number": 5, "answer": "Nœud atrioventriculaire" },
+      { "number": 6, "answer": "Nœud sino-atrial" },
+      { "number": 7, "answer": "Veine cave supérieure" }
+    ]
+  },
+  {
+    "name": "Circulation du sang — circulations systémique et pulmonaire",
+    "category": "Système Cardio-vasculaire",
+    "image": "schemas/circulation_du_sang.jpg",
+    "elements": [
+      { "number": 1,  "answer": "Poumons" },
+      { "number": 2,  "answer": "Circulation pulmonaire" },
+      { "number": 3,  "answer": "Veine pulmonaire" },
+      { "number": 4,  "answer": "Côté gauche du cœur" },
+      { "number": 5,  "answer": "Valve atrioventriculaire gauche" },
+      { "number": 6,  "answer": "Circulation systémique" },
+      { "number": 7,  "answer": "Tous les tissus corporels" },
+      { "number": 8,  "answer": "Valve atrioventriculaire droite" },
+      { "number": 9,  "answer": "Côté droit du cœur" },
+      { "number": 10, "answer": "Artère pulmonaire" }
+    ]
+  },
+  {
+    "name": "Intérieur du cœur",
+    "category": "Système Cardio-vasculaire",
+    "image": "schemas/Interieur_du_Coeur.jpg",
+    "elements": [
+      { "number": 1,  "answer": "Arc (crosse) aortique" },
+      { "number": 2,  "answer": "Artère pulmonaire" },
+      { "number": 3,  "answer": "Artère pulmonaire gauche" },
+      { "number": 4,  "answer": "Veines pulmonaires gauches" },
+      { "number": 5,  "answer": "Valve aortique" },
+      { "number": 6,  "answer": "Valve atrioventriculaire gauche (mitrale)" },
+      { "number": 7,  "answer": "Septum" },
+      { "number": 8,  "answer": "Muscle papillaire avec cordages tendineux" },
+      { "number": 9,  "answer": "Aorte" },
+      { "number": 10, "answer": "Veine cave inférieure" },
+      { "number": 11, "answer": "Valve atrioventriculaire droite (valve tricuspide)" },
+      { "number": 12, "answer": "Valve pulmonaire" },
+      { "number": 13, "answer": "Veines pulmonaires droites" },
+      { "number": 14, "answer": "Artère pulmonaire droite" },
+      { "number": 15, "answer": "Veine cave supérieure" }
+    ]
   }
 ]
