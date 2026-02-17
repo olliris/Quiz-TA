@@ -111,6 +111,11 @@ button {
   padding: 10px;
   cursor: pointer;
 }
+#game {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
 footer {
   text-align: center;
   margin-top: 20px;
@@ -126,30 +131,36 @@ footer {
   border-radius: 10px;
 }
 
+/* Dossiers centrés */
 #flashcardsFolders {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 15px;
 }
 
-#flashcardsFolders button {
+.fc-folder-btn {
   width: 80%;
   text-align: left;
 }
 
-/* ── Flashcard carte ── */
+/* ── Flashcard carte cliquable ── */
 .fc-card {
   border: 2px solid #007BFF;
   border-radius: 10px;
   padding: 30px 20px;
-  margin: 20px auto;
+  margin: 15px auto;
   max-width: 500px;
   min-height: 120px;
   font-size: 1.1em;
   background: #f0f7ff;
   cursor: pointer;
+  transition: background 0.2s;
+  user-select: none;
+}
+.fc-card:hover {
+  background: #d8ecff;
 }
 .fc-front {
   font-weight: bold;
@@ -159,8 +170,25 @@ footer {
   color: #1a6e1a;
   font-weight: bold;
 }
+
+/* Ligne compteur + drapeau */
+.fc-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
 .fc-counter {
   color: #888;
   font-size: 0.9em;
-  margin-bottom: 5px;
+  margin: 0;
+}
+
+/* Texte d'aide sous la carte */
+.fc-hint {
+  font-size: 0.8em;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 0;
 }
