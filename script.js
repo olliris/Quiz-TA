@@ -632,7 +632,9 @@ function checkSchema() {
     var expected = select.getAttribute("data-answer");
     var chosen = select.value;
     if (chosen === "") {
-      result.textContent = ""; result.className = "schema-result";
+      result.textContent = " \u2717 \u2192 " + expected;
+      result.className = "schema-result schema-incorrect";
+      select.style.borderColor = "red";
     } else if (chosen === expected) {
       result.textContent = " ✓"; result.className = "schema-result schema-correct";
       select.style.borderColor = "green"; correct++;
