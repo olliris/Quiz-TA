@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Organes en rapport avec le cœur",
+    "category": "Système Cardio-vasculaire",
+    "image": "schemas/coeur-organes.jpg",
+    "elements": [
+      { "number": 1,  "answer": "Œsophage" },
+      { "number": 2,  "answer": "Trachée" },
+      { "number": 3,  "answer": "Veine brachiocéphalique gauche" },
+      { "number": 4,  "answer": "Artère pulmonaire gauche" },
+      { "number": 5,  "answer": "Une veine pulmonaire gauche" },
+      { "number": 6,  "answer": "Poumon gauche (rétracté)" },
+      { "number": 7,  "answer": "Apex du cœur" },
+      { "number": 8,  "answer": "Diaphragme" },
+      { "number": 9,  "answer": "Aorte" },
+      { "number": 10, "answer": "Veine cave inférieure" },
+      { "number": 11, "answer": "Aorte" },
+      { "number": 12, "answer": "Veine cave supérieure" },
+      { "number": 13, "answer": "Clavicule" },
+      { "number": 14, "answer": "Apex du poumon" },
+      { "number": 15, "answer": "Veine brachiocéphalique droite" }
+    ]
+  }
+]
