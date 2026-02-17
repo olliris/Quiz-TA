@@ -458,3 +458,18 @@ footer {
   font-size: 0.95em;
   line-height: 1.4;
 }
+
+/* ── Fix summary alignment on mobile ── */
+@media (max-width: 600px) {
+  .fc-summary-list {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  .fc-summary-item {
+    text-align: left;
+    width: 100%;
+  }
+}
