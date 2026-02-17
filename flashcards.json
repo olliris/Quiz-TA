@@ -1,0 +1,22 @@
+{
+  "Physiologie et Chimie": [
+    { "front": "Qu'est-ce que le pH ?", "back": "Le pH mesure l'acidité ou la basicité d'une solution. Un pH de 7 est neutre, < 7 acide, > 7 basique." },
+    { "front": "Quelle est la formule de l'eau ?", "back": "H₂O — deux atomes d'hydrogène liés à un atome d'oxygène." }
+  ],
+  "La Cellule": [
+    { "front": "Quel est le rôle de la mitochondrie ?", "back": "Production d'énergie (ATP) par la respiration cellulaire. On l'appelle la 'centrale énergétique' de la cellule." },
+    { "front": "Quel est le rôle du noyau ?", "back": "Contient l'ADN et contrôle les activités de la cellule." }
+  ],
+  "Les Tissus": [],
+  "Système Cardio-vasculaire": [],
+  "Système Lymphatique": [],
+  "Système Respiratoire": [],
+  "Système Nerveux": [],
+  "Système Endocrinien": [],
+  "Système Digestif": [],
+  "Système Urinaire": [],
+  "Système Reproducteur": [],
+  "Système Locomoteur": [],
+  "Les Sens": [],
+  "Traumatologie": []
+}
