@@ -14,11 +14,11 @@
       { "number": 8,  "answer": "Diaphragme" },
       { "number": 9,  "answer": "Aorte" },
       { "number": 10, "answer": "Veine cave inférieure" },
-      { "number": 11, "answer": "Aorte" },
-      { "number": 12, "answer": "Veine cave supérieure" },
-      { "number": 13, "answer": "Clavicule" },
-      { "number": 14, "answer": "Apex du poumon" },
-      { "number": 15, "answer": "Veine brachiocéphalique droite" }
+      { "number": 11, "answer": "Veine cave supérieure" },
+      { "number": 12, "answer": "Aorte" },
+      { "number": 13, "answer": "Veine brachiocéphalique droite" },
+      { "number": 14, "answer": "Clavicule" },
+      { "number": 15, "answer": "Apex du poumon" }
     ]
   }
 ]
