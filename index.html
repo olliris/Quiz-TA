@@ -14,7 +14,6 @@
     <p>Choisir un mode de jeu :</p>
     <button onclick="startExam()">Mode Examen (120 min)</button>
     <button onclick="chooseExerciseRange()">Mode Exercice</button>
-    <button onclick="showMarkedQuestions()">Questions Marquées</button>
     <button onclick="showHistory()">Historique</button>
     <button onclick="showFlashcards()">Flashcards</button>
   </div>
@@ -28,7 +27,8 @@
   </div>
 
   <div id="exerciseRangePage" class="hidden">
-    <h2>Choisissez une plage de questions</h2>
+    <h2>Mode Exercice</h2>
+    <div id="exerciseMarkedRow"></div>
     <div id="exerciseRangeOptions"></div>
     <button onclick="goBackToHome()">Retour</button>
   </div>
@@ -53,9 +53,4 @@
 
   <footer id="footer">
     Créé par Olivier Van Isacker<br>
-    erreurs: quiz-ta@cern.ch
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    erreurs: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1b6a6e72
