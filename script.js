@@ -1,9 +1,9 @@
 let quiz = [];
 
 fetch("questions.json")
-  .then(response => response.json())
-  .then(data => { quiz = data; })
-  .catch(error => { console.error("Error loading quiz questions:", error); });
+  .then(function(response) { return response.json(); })
+  .then(function(data) { quiz = data; })
+  .catch(function(error) { console.error("Erreur chargement questions.json:", error); });
 
 let currentQuestion = 0;
 let score = 0;
@@ -17,12 +17,29 @@ let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 let exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
 let currentRangeKey = '';
 
+// ─── UTILITAIRE ───────────────────────────────────────────────────────────────
+
+function hideAll() {
+  var ids = ["game","exerciseRangePage","historyPage","flashcardsPage","flashcardDeckPage","schemasPage","schemaDetailPage"];
+  ids.forEach(function(id) { document.getElementById(id).classList.add("hidden"); });
+  document.querySelector(".quiz-container").classList.add("hidden");
+  document.getElementById("footer").style.display = "none";
+}
+
+function goBackToHome() {
+  var ids = ["game","exerciseRangePage","historyPage","flashcardsPage","flashcardDeckPage","schemasPage","schemaDetailPage"];
+  ids.forEach(function(id) { document.getElementById(id).classList.add("hidden"); });
+  document.querySelector(".quiz-container").classList.remove("hidden");
+  document.getElementById("footer").style.display = "block";
+}
+
+// ─── MODE EXAMEN ──────────────────────────────────────────────────────────────
+
 function startExam() {
   mode = 'exam';
   timeLeft = 120 * 60;
   numQuestions = Math.min(75, quiz.length);
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("game").classList.remove("hidden");
   document.getElementById("timer").classList.remove("hidden");
   document.getElementById("score").classList.remove("hidden");
@@ -32,41 +49,51 @@ function startExam() {
   startTimer();
 }
 
+// ─── MODE EXERCICE ────────────────────────────────────────────────────────────
+
 function chooseExerciseRange() {
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("exerciseRangePage").classList.remove("hidden");
 
-  // Ligne "Questions Marquées" avec drapeau et compteur
   var markedRow = document.getElementById("exerciseMarkedRow");
   var markedCount = markedQuestions.length;
   markedRow.innerHTML = "";
+
   var markedBtn = document.createElement("button");
   markedBtn.className = "exercise-marked-btn";
-  markedBtn.innerHTML = "<span class='flag-button" + (markedCount > 0 ? " red" : "") + "' style='pointer-events:none'>⚑</span> Questions Marquées" + (markedCount > 0 ? " <span class='marked-count'>(" + markedCount + ")</span>" : "");
+  var flagSpan = document.createElement("span");
+  flagSpan.textContent = "\u2691";
+  flagSpan.style.marginRight = "6px";
+  flagSpan.style.color = markedCount > 0 ? "red" : "#555";
+  markedBtn.appendChild(flagSpan);
+  markedBtn.appendChild(document.createTextNode("Questions Marqu\u00e9es"));
+  if (markedCount > 0) {
+    var countSpan = document.createElement("span");
+    countSpan.className = "marked-count";
+    countSpan.textContent = " (" + markedCount + ")";
+    markedBtn.appendChild(countSpan);
+  }
   markedBtn.onclick = function() { showMarkedQuestions(); };
   markedRow.appendChild(markedBtn);
 
-  // Séparateur
   var sep = document.createElement("p");
   sep.className = "exercise-section-label";
   sep.textContent = "Choisissez une plage de questions :";
   markedRow.appendChild(sep);
 
-  // Plages de questions centrées
   var exerciseRangeOptions = document.getElementById("exerciseRangeOptions");
   exerciseRangeOptions.innerHTML = '';
-  for (let i = 0; i < quiz.length; i += 30) {
-    const start = i + 1;
-    const end = Math.min(i + 30, quiz.length);
-    const rangeKey = start + "-" + end;
-    const rangeButton = document.createElement("button");
+  for (var i = 0; i < quiz.length; i += 30) {
+    var start = i + 1;
+    var end = Math.min(i + 30, quiz.length);
+    var rangeKey = start + "-" + end;
+    var rangeButton = document.createElement("button");
     rangeButton.className = "exercise-range-btn";
-    const percentage = exerciseResults[rangeKey];
+    var percentage = exerciseResults[rangeKey];
     if (percentage !== undefined) {
-      rangeButton.textContent = start + " à " + end + "  —  " + percentage + "%";
+      rangeButton.textContent = start + " \u00e0 " + end + "  \u2014  " + percentage + "%";
     } else {
-      rangeButton.textContent = start + " à " + end;
+      rangeButton.textContent = start + " \u00e0 " + end;
     }
     rangeButton.onclick = (function(s, e) {
       return function() { startExerciseRange(s - 1, e); };
@@ -81,14 +108,13 @@ function startExerciseRange(start, end) {
   shuffledQuiz = quiz.slice(start, end);
   shuffledQuiz.sort(function() { return Math.random() - 0.5; });
   currentRangeKey = (start + 1) + "-" + end;
-  document.getElementById("exerciseRangePage").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("game").classList.remove("hidden");
-  currentQuestion = 0;
-  score = 0;
   document.getElementById("timer").classList.add("hidden");
   document.getElementById("score").classList.add("hidden");
   document.getElementById("feedback").classList.add("hidden");
+  currentQuestion = 0;
+  score = 0;
   showQuestion();
 }
 
@@ -97,59 +123,64 @@ function showMarkedQuestions() {
   mode = 'flagged';
   currentQuestion = 0;
   numQuestions = markedQuestions.length;
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("game").classList.remove("hidden");
   showQuestion();
 }
 
+// ─── MARQUER UNE QUESTION ─────────────────────────────────────────────────────
+
 function markQuestion(question) {
-  const index = markedQuestions.findIndex(function(q) { return q.question === question.question; });
+  var index = markedQuestions.findIndex(function(q) { return q.question === question.question; });
   if (index === -1) {
     markedQuestions.push(question);
   } else {
     markedQuestions.splice(index, 1);
   }
   localStorage.setItem('markedQuestions', JSON.stringify(markedQuestions));
-  const flagButton = document.querySelector('.flag-button[data-question="' + question.question + '"]');
+  var flagButton = document.querySelector('.flag-button[data-question="' + question.question.replace(/"/g,'&quot;') + '"]');
   if (flagButton) {
-    const isMarked = markedQuestions.some(function(markedQ) { return markedQ.question === question.question; });
+    var isMarked = markedQuestions.some(function(mq) { return mq.question === question.question; });
     flagButton.classList.toggle("red", isMarked);
-    flagButton.textContent = "⚑";
   }
 }
 
+// ─── AFFICHAGE DES QUESTIONS ──────────────────────────────────────────────────
+
+function makeFlagButton(q) {
+  var flagButton = document.createElement("button");
+  flagButton.classList.add("flag-button");
+  flagButton.setAttribute("data-question", q.question);
+  var isMarked = markedQuestions.some(function(mq) { return mq.question === q.question; });
+  if (isMarked) flagButton.classList.add("red");
+  flagButton.textContent = "\u2691";
+  flagButton.onclick = (function(question) {
+    return function() { markQuestion(question); };
+  })(q);
+  return flagButton;
+}
+
 function showQuestions() {
-  const questionsDiv = document.getElementById("questions");
+  var questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
-  const quizToShow = mode === 'exam' ? quiz.slice(0, numQuestions) : shuffledQuiz;
+  var quizToShow = mode === 'exam' ? quiz.slice(0, numQuestions) : shuffledQuiz;
   quizToShow.forEach(function(q, index) {
-    const questionDiv = document.createElement("div");
+    var questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
 
-    const flagAndQuestion = document.createElement("div");
+    var flagAndQuestion = document.createElement("div");
     flagAndQuestion.classList.add("flag-and-question");
+    flagAndQuestion.appendChild(makeFlagButton(q));
 
-    const flagButton = document.createElement("button");
-    flagButton.classList.add("flag-button");
-    flagButton.setAttribute("data-question", q.question);
-    const isMarked = markedQuestions.some(function(markedQ) { return markedQ.question === q.question; });
-    flagButton.classList.toggle("red", isMarked);
-    flagButton.textContent = "⚑";
-    flagButton.onclick = (function(question) {
-      return function() { markQuestion(question); };
-    })(q);
-    flagAndQuestion.appendChild(flagButton);
-
-    const questionText = document.createElement("p");
-    questionText.innerHTML = q.question.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
+    var questionText = document.createElement("p");
+    questionText.innerHTML = q.question.replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
     flagAndQuestion.appendChild(questionText);
     questionDiv.appendChild(flagAndQuestion);
 
-    const answersDiv = document.createElement("div");
+    var answersDiv = document.createElement("div");
     answersDiv.classList.add("answers");
     q.answers.forEach(function(ans, ansIndex) {
-      const answerButton = document.createElement("button");
+      var answerButton = document.createElement("button");
       answerButton.textContent = ans;
       answerButton.classList.add("answer-button");
       answerButton.onclick = (function(i, ai, btn) {
@@ -169,14 +200,14 @@ function showQuestions() {
 }
 
 function showQuestion() {
-  const questionsDiv = document.getElementById("questions");
+  var questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
 
   if (!shuffledQuiz.length) {
     questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
-    const homeButton = document.createElement("button");
-    homeButton.textContent = "Retour à l'accueil";
-    homeButton.onclick = function() { goBackToHome(); homeButton.remove(); };
+    var homeButton = document.createElement("button");
+    homeButton.textContent = "Retour \u00e0 l'accueil";
+    homeButton.onclick = function() { goBackToHome(); };
     questionsDiv.appendChild(homeButton);
     return;
   }
@@ -186,33 +217,23 @@ function showQuestion() {
     return;
   }
 
-  const q = shuffledQuiz[currentQuestion];
-  const questionDiv = document.createElement("div");
+  var q = shuffledQuiz[currentQuestion];
+  var questionDiv = document.createElement("div");
   questionDiv.classList.add("question");
 
-  const flagAndQuestion = document.createElement("div");
+  var flagAndQuestion = document.createElement("div");
   flagAndQuestion.classList.add("flag-and-question");
+  flagAndQuestion.appendChild(makeFlagButton(q));
 
-  const flagButton = document.createElement("button");
-  flagButton.classList.add("flag-button");
-  flagButton.setAttribute("data-question", q.question);
-  const isMarked = markedQuestions.some(function(markedQ) { return markedQ.question === q.question; });
-  flagButton.classList.toggle("red", isMarked);
-  flagButton.textContent = "⚑";
-  flagButton.onclick = (function(question) {
-    return function() { markQuestion(question); };
-  })(q);
-  flagAndQuestion.appendChild(flagButton);
-
-  const questionText = document.createElement("p");
-  questionText.innerHTML = q.question.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
+  var questionText = document.createElement("p");
+  questionText.innerHTML = q.question.replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
   flagAndQuestion.appendChild(questionText);
   questionDiv.appendChild(flagAndQuestion);
 
-  const answersDiv = document.createElement("div");
+  var answersDiv = document.createElement("div");
   answersDiv.classList.add("answers");
   q.answers.forEach(function(ans, ansIndex) {
-    const answerButton = document.createElement("button");
+    var answerButton = document.createElement("button");
     answerButton.textContent = ans;
     answerButton.classList.add("answer-button");
     answerButton.onclick = (function(ai, btn) {
@@ -223,15 +244,15 @@ function showQuestion() {
   questionDiv.appendChild(answersDiv);
 
   if (mode === 'exercise' || mode === 'flagged') {
-    const submitButton = document.createElement("button");
+    var submitButton = document.createElement("button");
     submitButton.textContent = "Soumettre";
 
-    const nextButton = document.createElement("button");
+    var nextButton = document.createElement("button");
     nextButton.textContent = "Suivant";
     nextButton.style.display = "none";
     nextButton.onclick = nextQuestion;
 
-    const endButton = document.createElement("button");
+    var endButton = document.createElement("button");
     endButton.textContent = "Terminer";
     endButton.onclick = resetQuiz;
 
@@ -258,10 +279,10 @@ function nextQuestion() {
 }
 
 function checkAnswer(questionIndex) {
-  const q = shuffledQuiz[questionIndex];
-  const questionDiv = document.querySelector("#questions .question:nth-child(1)");
-  const buttons = questionDiv.querySelectorAll(".answer-button");
-  let candidateSelected = [];
+  var q = shuffledQuiz[questionIndex];
+  var questionDiv = document.querySelector("#questions .question:nth-child(1)");
+  var buttons = questionDiv.querySelectorAll(".answer-button");
+  var candidateSelected = [];
   buttons.forEach(function(button, index) {
     if (button.classList.contains("selected")) { candidateSelected.push(index); }
   });
@@ -270,7 +291,7 @@ function checkAnswer(questionIndex) {
       button.classList.add("correct");
       if (button.classList.contains("selected")) {
         if (!button.querySelector(".check-mark")) {
-          button.insertAdjacentHTML("afterbegin", "<span class='check-mark'>✓ </span>");
+          button.insertAdjacentHTML("afterbegin", "<span class='check-mark'>\u2713 </span>");
         }
         button.classList.remove("selected");
       }
@@ -279,27 +300,27 @@ function checkAnswer(questionIndex) {
       button.classList.remove("selected");
     }
   });
-  const missingCorrect = q.correct.filter(function(correctIndex) { return !candidateSelected.includes(correctIndex); });
+  var missingCorrect = q.correct.filter(function(ci) { return !candidateSelected.includes(ci); });
   if (q.correct.length > 1 && missingCorrect.length > 0) {
-    const messageElem = document.createElement("p");
-    messageElem.className = "missing-message";
-    messageElem.textContent = "Attention il y a plusieurs bonnes réponses";
-    questionDiv.appendChild(messageElem);
+    var msg = document.createElement("p");
+    msg.className = "missing-message";
+    msg.textContent = "Attention il y a plusieurs bonnes r\u00e9ponses";
+    questionDiv.appendChild(msg);
   }
-  const correctSelected = candidateSelected.filter(function(ans) { return q.correct.includes(ans); }).length;
-  const incorrectSelected = candidateSelected.length - correctSelected;
+  var correctSelected = candidateSelected.filter(function(a) { return q.correct.includes(a); }).length;
+  var incorrectSelected = candidateSelected.length - correctSelected;
   if (correctSelected === q.correct.length && incorrectSelected === 0) { score++; }
   document.getElementById("score").textContent = "Score: " + score + "/" + numQuestions;
 }
 
 function endExam() {
   clearInterval(timerInterval);
-  const questionsDiv = document.getElementById("questions");
-  const questionDivs = questionsDiv.querySelectorAll(".question");
+  var questionsDiv = document.getElementById("questions");
+  var questionDivs = questionsDiv.querySelectorAll(".question");
   questionDivs.forEach(function(questionDiv, index) {
-    const q = quiz[index];
-    const buttons = questionDiv.querySelectorAll(".answer-button");
-    let candidateSelected = [];
+    var q = quiz[index];
+    var buttons = questionDiv.querySelectorAll(".answer-button");
+    var candidateSelected = [];
     buttons.forEach(function(button, i) {
       if (button.classList.contains("selected")) { candidateSelected.push(i); }
     });
@@ -308,7 +329,7 @@ function endExam() {
         button.classList.add("correct");
         if (button.classList.contains("selected")) {
           if (!button.querySelector(".check-mark")) {
-            button.insertAdjacentHTML("afterbegin", "<span class='check-mark'>✓ </span>");
+            button.insertAdjacentHTML("afterbegin", "<span class='check-mark'>\u2713 </span>");
           }
           button.classList.remove("selected");
         }
@@ -317,26 +338,26 @@ function endExam() {
         button.classList.remove("selected");
       }
     });
-    const missingCorrect = q.correct.filter(function(idx) { return !candidateSelected.includes(idx); });
+    var missingCorrect = q.correct.filter(function(idx) { return !candidateSelected.includes(idx); });
     if (q.correct.length > 1 && missingCorrect.length > 0) {
-      const messageElem = document.createElement("p");
-      messageElem.className = "missing-message";
-      messageElem.textContent = "Attention il y a plusieurs bonnes réponses";
-      questionDiv.appendChild(messageElem);
+      var msg = document.createElement("p");
+      msg.className = "missing-message";
+      msg.textContent = "Attention il y a plusieurs bonnes r\u00e9ponses";
+      questionDiv.appendChild(msg);
     }
-    if (mode === 'exam' && !markedQuestions.some(function(markedQ) { return markedQ.question === q.question; })) {
+    if (mode === 'exam' && !markedQuestions.some(function(mq) { return mq.question === q.question; })) {
       markedQuestions.push(q);
     }
   });
   localStorage.setItem('markedQuestions', JSON.stringify(markedQuestions));
-  const percentage = (score / numQuestions) * 100;
-  let feedbackMessage = '';
+  var percentage = (score / numQuestions) * 100;
+  var feedbackMessage = '';
   if (percentage < 85) {
     feedbackMessage = "Retourne au fourgon ket";
     document.getElementById("feedback").classList.add("red");
     document.getElementById("feedback").classList.remove("green");
   } else {
-    feedbackMessage = "Bravo champion tu es prêt!";
+    feedbackMessage = "Bravo champion tu es pr\u00eat!";
     document.getElementById("feedback").classList.add("green");
     document.getElementById("feedback").classList.remove("red");
   }
@@ -348,8 +369,8 @@ function endExam() {
   displayHistory();
   document.getElementById("endButton").classList.add("hidden");
   if (!document.getElementById("game").querySelector("button#backButton")) {
-    const backButton = document.createElement("button");
-    backButton.textContent = "Retourner à l'accueil";
+    var backButton = document.createElement("button");
+    backButton.textContent = "Retourner \u00e0 l'accueil";
     backButton.id = "backButton";
     backButton.onclick = resetQuiz;
     document.getElementById("game").appendChild(backButton);
@@ -357,8 +378,8 @@ function endExam() {
 }
 
 function showFinalScore() {
-  const percentage = (score / numQuestions) * 100;
-  alert("Vous avez terminé l'exercice avec un score de " + percentage.toFixed(2) + "%");
+  var percentage = (score / numQuestions) * 100;
+  alert("Vous avez termin\u00e9 l'exercice avec un score de " + percentage.toFixed(2) + "%");
   if (mode === 'exercise' && currentRangeKey) {
     exerciseResults[currentRangeKey] = percentage.toFixed(2);
     localStorage.setItem('exerciseResults', JSON.stringify(exerciseResults));
@@ -379,42 +400,32 @@ function resetQuiz() {
   document.getElementById("timer").classList.add("hidden");
   document.getElementById("score").classList.add("hidden");
   document.getElementById("feedback").classList.add("hidden");
-  const backButton = document.getElementById("game").querySelector("button#backButton");
+  var backButton = document.getElementById("game").querySelector("button#backButton");
   if (backButton) { backButton.remove(); }
 }
 
+// ─── HISTORIQUE ───────────────────────────────────────────────────────────────
+
 function showHistory() {
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("historyPage").classList.remove("hidden");
   displayHistory();
 }
 
 function displayHistory() {
-  const historyContent = document.getElementById("historyContent");
+  var historyContent = document.getElementById("historyContent");
   historyContent.innerHTML = "";
   if (examHistory.length === 0) {
-    historyContent.textContent = "Aucun examen effectué.";
+    historyContent.textContent = "Aucun examen effectu\u00e9.";
     return;
   }
-  const historyList = document.createElement("ul");
+  var historyList = document.createElement("ul");
   examHistory.forEach(function(s, index) {
-    const listItem = document.createElement("li");
+    var listItem = document.createElement("li");
     listItem.textContent = "Examen " + (index + 1) + ": " + s.toFixed(2) + "%";
     historyList.appendChild(listItem);
   });
   historyContent.appendChild(historyList);
-}
-
-function goBackToHome() {
-  document.getElementById("exerciseRangePage").classList.add("hidden");
-  document.getElementById("historyPage").classList.add("hidden");
-  document.getElementById("flashcardsPage").classList.add("hidden");
-  document.getElementById("flashcardDeckPage").classList.add("hidden");
-  document.getElementById("schemasPage").classList.add("hidden");
-  document.getElementById("schemaDetailPage").classList.add("hidden");
-  document.querySelector(".quiz-container").classList.remove("hidden");
-  document.getElementById("footer").style.display = "block";
 }
 
 function startTimer() {
@@ -425,8 +436,8 @@ function startTimer() {
       return;
     }
     timeLeft--;
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
+    var minutes = Math.floor(timeLeft / 60);
+    var seconds = timeLeft % 60;
     document.getElementById("timer").textContent = "Temps restant : " + minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
   }, 1000);
 }
@@ -435,10 +446,12 @@ function resetCache() {
   localStorage.removeItem('examHistory');
   localStorage.removeItem('markedQuestions');
   localStorage.removeItem('exerciseResults');
+  localStorage.removeItem('markedFlashcards');
   examHistory = [];
   markedQuestions = [];
   exerciseResults = {};
-  alert("Le cache a été réinitialisé.");
+  markedFlashcards = [];
+  alert("Le cache a \u00e9t\u00e9 r\u00e9initialis\u00e9.");
   displayHistory();
   if (!document.getElementById("exerciseRangePage").classList.contains("hidden")) {
     chooseExerciseRange();
@@ -449,29 +462,20 @@ function resetCache() {
 
 var flashcardsData = null;
 var markedFlashcards = JSON.parse(localStorage.getItem('markedFlashcards')) || [];
+var currentDeckCards = [];
+var currentCardIndex = 0;
 
 var flashcardDecks = [
-  "Physiologie et Chimie",
-  "La Cellule",
-  "Les Tissus",
-  "Système Cardio-vasculaire",
-  "Système Lymphatique",
-  "Système Respiratoire",
-  "Système Nerveux",
-  "Système Endocrinien",
-  "Système Digestif",
-  "Système Urinaire",
-  "Système Reproducteur",
-  "Système Locomoteur",
-  "Les Sens",
-  "Traumatologie"
+  "Physiologie et Chimie","La Cellule","Les Tissus",
+  "Syst\u00e8me Cardio-vasculaire","Syst\u00e8me Lymphatique","Syst\u00e8me Respiratoire",
+  "Syst\u00e8me Nerveux","Syst\u00e8me Endocrinien","Syst\u00e8me Digestif",
+  "Syst\u00e8me Urinaire","Syst\u00e8me Reproducteur","Syst\u00e8me Locomoteur",
+  "Les Sens","Traumatologie"
 ];
 
 function showFlashcards() {
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("flashcardsPage").classList.remove("hidden");
-
   if (flashcardsData === null) {
     fetch("flashcards.json")
       .then(function(r) { return r.json(); })
@@ -486,10 +490,9 @@ function renderFlashcardFolders() {
   var container = document.getElementById("flashcardsFolders");
   container.innerHTML = "";
 
-  // Bouton "Flashcards Marquées" en premier
   var markedBtn = document.createElement("button");
   markedBtn.className = "fc-folder-btn";
-  markedBtn.textContent = "⚑ Flashcards Marquées" + (markedFlashcards.length > 0 ? " (" + markedFlashcards.length + ")" : "");
+  markedBtn.textContent = "\u2691 Flashcards Marqu\u00e9es" + (markedFlashcards.length > 0 ? " (" + markedFlashcards.length + ")" : "");
   markedBtn.addEventListener("click", function() { openMarkedFlashcards(); });
   container.appendChild(markedBtn);
 
@@ -499,7 +502,7 @@ function renderFlashcardFolders() {
     var count = (cards && cards.length) ? cards.length : 0;
     var btn = document.createElement("button");
     btn.className = "fc-folder-btn";
-    btn.textContent = "📁 " + deckName + (count > 0 ? " (" + count + ")" : "");
+    btn.textContent = "\uD83D\uDCC1 " + deckName + (count > 0 ? " (" + count + ")" : "");
     btn.setAttribute("data-deck", deckName);
     btn.addEventListener("click", function() {
       openFlashcardDeck(this.getAttribute("data-deck"));
@@ -515,30 +518,25 @@ function openMarkedFlashcards() {
   currentCardIndex = 0;
   var content = document.getElementById("flashcardDeckContent");
   if (markedFlashcards.length === 0) {
-    content.innerHTML = "<h2>Flashcards Marquées</h2><p class='missing-message'>Aucune flashcard marquée pour le moment.</p>";
+    content.innerHTML = "<h2>Flashcards Marqu\u00e9es</h2><p class='missing-message'>Aucune flashcard marqu\u00e9e pour le moment.</p>";
     return;
   }
-  content.innerHTML = "<h2>Flashcards Marquées</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
+  content.innerHTML = "<h2>Flashcards Marqu\u00e9es</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
   renderCard();
 }
 
 function backToFlashcards() {
   document.getElementById("flashcardDeckPage").classList.add("hidden");
   document.getElementById("flashcardsPage").classList.remove("hidden");
-  renderFlashcardFolders(); // Refresh pour mettre à jour le compteur marquées
+  renderFlashcardFolders();
 }
-
-var currentDeckCards = [];
-var currentCardIndex = 0;
 
 function openFlashcardDeck(deckName) {
   document.getElementById("flashcardsPage").classList.add("hidden");
   document.getElementById("flashcardDeckPage").classList.remove("hidden");
-
   var cards = (flashcardsData && flashcardsData[deckName]) ? flashcardsData[deckName] : [];
   currentDeckCards = cards;
   currentCardIndex = 0;
-
   var content = document.getElementById("flashcardDeckContent");
   if (cards.length === 0) {
     content.innerHTML = "<h2>" + deckName + "</h2><p class='missing-message'>Aucune flashcard disponible pour ce dossier pour le moment.</p>";
@@ -567,7 +565,6 @@ function renderCard() {
   var nav  = document.getElementById("flashcardNav");
   var card = currentDeckCards[currentCardIndex];
 
-  // Carte cliquable pour retourner — pas de bouton "Retourner"
   var cardDiv = document.createElement("div");
   cardDiv.className = "fc-card";
   cardDiv.id = "fcCard";
@@ -584,15 +581,13 @@ function renderCard() {
   cardDiv.appendChild(back);
   cardDiv.addEventListener("click", function() { flipCard(); });
 
-  // Compteur
   var counter = document.createElement("p");
   counter.className = "fc-counter";
   counter.textContent = (currentCardIndex + 1) + " / " + currentDeckCards.length;
 
-  // Drapeau
   var flagBtn = document.createElement("button");
   flagBtn.className = "flag-button" + (isFlashcardMarked(card) ? " red" : "");
-  flagBtn.textContent = "⚑";
+  flagBtn.textContent = "\u2691";
   flagBtn.title = "Marquer cette carte";
   flagBtn.addEventListener("click", function(e) {
     e.stopPropagation();
@@ -600,7 +595,6 @@ function renderCard() {
     flagBtn.className = "flag-button" + (isFlashcardMarked(card) ? " red" : "");
   });
 
-  // Ligne compteur + drapeau
   var topRow = document.createElement("div");
   topRow.className = "fc-top-row";
   topRow.appendChild(counter);
@@ -618,13 +612,13 @@ function renderCard() {
   nav.innerHTML = "";
   if (currentCardIndex > 0) {
     var prevBtn = document.createElement("button");
-    prevBtn.textContent = "◀ Précédent";
+    prevBtn.textContent = "\u25c4 Pr\u00e9c\u00e9dent";
     prevBtn.onclick = function() { currentCardIndex--; renderCard(); };
     nav.appendChild(prevBtn);
   }
   if (currentCardIndex < currentDeckCards.length - 1) {
     var nextBtn = document.createElement("button");
-    nextBtn.textContent = "Suivant ▶";
+    nextBtn.textContent = "Suivant \u25ba";
     nextBtn.onclick = function() { currentCardIndex++; renderCard(); };
     nav.appendChild(nextBtn);
   }
@@ -643,15 +637,13 @@ function flipCard() {
   }
 }
 
-// ─── SCHÉMAS ──────────────────────────────────────────────────────────────────
+// ─── SCHEMAS ──────────────────────────────────────────────────────────────────
 
 var schemasData = null;
 
 function showSchemas() {
-  document.querySelector(".quiz-container").classList.add("hidden");
-  document.getElementById("footer").style.display = "none";
+  hideAll();
   document.getElementById("schemasPage").classList.remove("hidden");
-
   if (schemasData === null) {
     fetch("schemas.json")
       .then(function(r) { return r.json(); })
@@ -665,26 +657,21 @@ function showSchemas() {
 function renderSchemasGrid() {
   var grid = document.getElementById("schemasGrid");
   grid.innerHTML = "";
-
   if (!schemasData || schemasData.length === 0) {
-    grid.innerHTML = "<p class='missing-message'>Aucun schéma disponible pour le moment.</p>";
+    grid.innerHTML = "<p class='missing-message'>Aucun sch\u00e9ma disponible pour le moment.</p>";
     return;
   }
-
   schemasData.forEach(function(schema, index) {
     var card = document.createElement("div");
     card.className = "schema-card";
     card.setAttribute("data-index", index);
-
     var img = document.createElement("img");
     img.src = schema.image;
     img.alt = schema.name;
     img.className = "schema-thumb";
-
     var label = document.createElement("p");
     label.className = "schema-label";
     label.textContent = schema.name;
-
     card.appendChild(img);
     card.appendChild(label);
     card.addEventListener("click", function() {
@@ -703,38 +690,32 @@ function openSchema(index) {
   var schema = schemasData[index];
   document.getElementById("schemasPage").classList.add("hidden");
   document.getElementById("schemaDetailPage").classList.remove("hidden");
-
   var content = document.getElementById("schemaDetailContent");
 
-  // Mélanger les options pour les menus déroulants
   var allAnswers = schema.elements.map(function(e) { return e.answer; });
-  // Dédoublonner pour les cas où le même nom apparaît deux fois
   var uniqueAnswers = allAnswers.filter(function(v, i, a) { return a.indexOf(v) === i; });
   uniqueAnswers.sort();
 
   var html = "<h2>" + schema.name + "</h2>";
   html += "<img src='" + schema.image + "' class='schema-full-img' alt='" + schema.name + "'>";
   html += "<div class='schema-elements'>";
-  html += "<p class='schema-instructions'>Associez chaque numéro au bon élément :</p>";
-
+  html += "<p class='schema-instructions'>Associez chaque num\u00e9ro au bon \u00e9l\u00e9ment :</p>";
   schema.elements.forEach(function(el) {
     html += "<div class='schema-row'>";
     html += "<span class='schema-number'>" + el.number + "</span>";
-    html += "<select class='schema-select' data-answer='" + el.answer.replace(/'/g, "&#39;") + "'>";
-    html += "<option value=''>— Choisir —</option>";
+    html += "<select class='schema-select' data-answer='" + el.answer.replace(/'/g,"&#39;") + "'>";
+    html += "<option value=''>\u2014 Choisir \u2014</option>";
     uniqueAnswers.forEach(function(ans) {
-      html += "<option value='" + ans.replace(/'/g, "&#39;") + "'>" + ans + "</option>";
+      html += "<option value='" + ans.replace(/'/g,"&#39;") + "'>" + ans + "</option>";
     });
     html += "</select>";
     html += "<span class='schema-result'></span>";
     html += "</div>";
   });
-
   html += "</div>";
-  html += "<button onclick='checkSchema()' style='margin-top:15px'>✔ Vérifier</button>";
-  html += "<button onclick='resetSchema()' style='margin-top:15px'>↺ Recommencer</button>";
+  html += "<button onclick='checkSchema()' style='margin-top:15px'>\u2714 V\u00e9rifier</button>";
+  html += "<button onclick='resetSchema()' style='margin-top:15px'>\u21ba Recommencer</button>";
   html += "<p id='schemaScore' class='schema-score'></p>";
-
   content.innerHTML = html;
 }
 
@@ -742,28 +723,25 @@ function checkSchema() {
   var rows = document.querySelectorAll(".schema-row");
   var correct = 0;
   var total = rows.length;
-
   rows.forEach(function(row) {
     var select = row.querySelector(".schema-select");
     var result = row.querySelector(".schema-result");
     var expected = select.getAttribute("data-answer");
     var chosen = select.value;
-
     if (chosen === "") {
       result.textContent = "";
       result.className = "schema-result";
     } else if (chosen === expected) {
-      result.textContent = " ✓";
+      result.textContent = " \u2713";
       result.className = "schema-result schema-correct";
       select.style.borderColor = "green";
       correct++;
     } else {
-      result.textContent = " ✗ → " + expected;
+      result.textContent = " \u2717 \u2192 " + expected;
       result.className = "schema-result schema-incorrect";
       select.style.borderColor = "red";
     }
   });
-
   var pct = Math.round((correct / total) * 100);
   var scoreEl = document.getElementById("schemaScore");
   scoreEl.textContent = "Score : " + correct + " / " + total + " (" + pct + "%)";
