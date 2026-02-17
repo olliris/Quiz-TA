@@ -27,6 +27,7 @@ function hideAll() {
 }
 
 function goBackToHome() {
+  window.scrollTo(0,0);
   var ids = ["game","exerciseRangePage","historyPage","flashcardsPage","flashcardDeckPage","schemasPage","schemaDetailPage"];
   ids.forEach(function(id) { document.getElementById(id).classList.add("hidden"); });
   document.querySelector(".quiz-container").classList.remove("hidden");
@@ -36,6 +37,7 @@ function goBackToHome() {
 // ─── MODE EXAMEN ──────────────────────────────────────────────────────────────
 
 function startExam() {
+  window.scrollTo(0,0);
   mode = 'exam';
   timeLeft = 120 * 60;
   numQuestions = Math.min(75, quiz.length);
@@ -52,6 +54,7 @@ function startExam() {
 // ─── MODE EXERCICE ────────────────────────────────────────────────────────────
 
 function chooseExerciseRange() {
+  window.scrollTo(0,0);
   hideAll();
   document.getElementById("exerciseRangePage").classList.remove("hidden");
 
@@ -407,6 +410,7 @@ function resetQuiz() {
 // ─── HISTORIQUE ───────────────────────────────────────────────────────────────
 
 function showHistory() {
+  window.scrollTo(0,0);
   hideAll();
   document.getElementById("historyPage").classList.remove("hidden");
   displayHistory();
@@ -474,6 +478,7 @@ var flashcardDecks = [
 ];
 
 function showFlashcards() {
+  window.scrollTo(0,0);
   hideAll();
   document.getElementById("flashcardsPage").classList.remove("hidden");
   if (flashcardsData === null) {
@@ -543,12 +548,14 @@ function openMarkedFlashcards() {
 }
 
 function backToFlashcards() {
+  window.scrollTo(0,0);
   document.getElementById("flashcardDeckPage").classList.add("hidden");
   document.getElementById("flashcardsPage").classList.remove("hidden");
   renderFlashcardFolders();
 }
 
 function openFlashcardDeck(deckName) {
+  window.scrollTo(0,0);
   document.getElementById("flashcardsPage").classList.add("hidden");
   document.getElementById("flashcardDeckPage").classList.remove("hidden");
   var cards = (flashcardsData && flashcardsData[deckName]) ? flashcardsData[deckName] : [];
@@ -657,15 +664,37 @@ function flipCard() {
 // ─── SCHEMAS ──────────────────────────────────────────────────────────────────
 
 var schemasData = null;
+var schemasLoaded = false;
+var markedSchemas = JSON.parse(localStorage.getItem('markedSchemas')) || [];
+
+function isSchemaMarked(name) {
+  return markedSchemas.indexOf(name) !== -1;
+}
+
+function toggleSchemaMarked(name) {
+  var idx = markedSchemas.indexOf(name);
+  if (idx === -1) { markedSchemas.push(name); }
+  else { markedSchemas.splice(idx, 1); }
+  localStorage.setItem('markedSchemas', JSON.stringify(markedSchemas));
+}
 
 function showSchemas() {
+  window.scrollTo(0,0);
   hideAll();
   document.getElementById("schemasPage").classList.remove("hidden");
-  if (schemasData === null) {
+  if (!schemasLoaded) {
     fetch("schemas.json")
       .then(function(r) { return r.json(); })
-      .then(function(data) { schemasData = data; renderSchemasGrid(); })
-      .catch(function() { schemasData = []; renderSchemasGrid(); });
+      .then(function(data) {
+        schemasData = data;
+        schemasLoaded = true;
+        renderSchemasGrid();
+      })
+      .catch(function(e) {
+        console.error("Erreur chargement schemas.json:", e);
+        schemasData = [];
+        renderSchemasGrid();
+      });
   } else {
     renderSchemasGrid();
   }
@@ -682,15 +711,35 @@ function renderSchemasGrid() {
     var card = document.createElement("div");
     card.className = "schema-card";
     card.setAttribute("data-index", index);
+
     var img = document.createElement("img");
     img.src = schema.image;
     img.alt = schema.name;
     img.className = "schema-thumb";
-    var label = document.createElement("p");
+
+    // Ligne label + drapeau
+    var labelRow = document.createElement("div");
+    labelRow.className = "schema-label-row";
+
+    var cardFlag = document.createElement("button");
+    cardFlag.className = "flag-button schema-card-flag" + (isSchemaMarked(schema.name) ? " red" : "");
+    cardFlag.textContent = "\u2691";
+    cardFlag.title = "Marquer";
+    cardFlag.setAttribute("data-name", schema.name);
+    cardFlag.addEventListener("click", function(e) {
+      e.stopPropagation();
+      toggleSchemaMarked(schema.name);
+      this.className = "flag-button schema-card-flag" + (isSchemaMarked(schema.name) ? " red" : "");
+    });
+
+    var label = document.createElement("span");
     label.className = "schema-label";
     label.textContent = schema.name;
+
+    labelRow.appendChild(cardFlag);
+    labelRow.appendChild(label);
     card.appendChild(img);
-    card.appendChild(label);
+    card.appendChild(labelRow);
     card.addEventListener("click", function() {
       openSchema(parseInt(this.getAttribute("data-index")));
     });
@@ -701,6 +750,8 @@ function renderSchemasGrid() {
 function backToSchemas() {
   document.getElementById("schemaDetailPage").classList.add("hidden");
   document.getElementById("schemasPage").classList.remove("hidden");
+  window.scrollTo(0, 0);
+  renderSchemasGrid();
 }
 
 function openSchema(index) {
@@ -713,7 +764,13 @@ function openSchema(index) {
   var uniqueAnswers = allAnswers.filter(function(v, i, a) { return a.indexOf(v) === i; });
   uniqueAnswers.sort();
 
-  var html = "<h2>" + schema.name + "</h2>";
+  window.scrollTo(0, 0);
+  var marked = isSchemaMarked(schema.name);
+  var html = "<div class='schema-title-row'>";
+  html += "<button class=\"flag-button schema-detail-flag" + (marked ? " red" : "") + "\" ";
+  html += "onclick=\"toggleSchemaMarked('" + schema.name.replace(/'/g,"\\'") + "'); ";
+  html += "this.className='flag-button schema-detail-flag'+(isSchemaMarked('" + schema.name.replace(/'/g,"\\'") + "')?' red':'');\">\u2691</button>";
+  html += "<h2 style='display:inline;margin-left:8px'>" + schema.name + "</h2></div>";
   html += "<img src='" + schema.image + "' class='schema-full-img' alt='" + schema.name + "'>";
   html += "<div class='schema-elements'>";
   html += "<p class='schema-instructions'>Associez chaque num\u00e9ro au bon \u00e9l\u00e9ment :</p>";
