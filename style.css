@@ -121,6 +121,55 @@ footer {
   margin-top: 20px;
   font-size: 0.9em;
 }
+/* ── Page Exercice ── */
+#exerciseRangePage {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#exerciseMarkedRow {
+  margin-bottom: 10px;
+}
+
+.exercise-marked-btn {
+  width: 80%;
+  text-align: left;
+  background-color: #fff3f3;
+  border: 1px solid #ffaaaa;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto 8px auto;
+}
+
+.marked-count {
+  color: red;
+  font-weight: bold;
+}
+
+.exercise-section-label {
+  color: #666;
+  font-size: 0.9em;
+  margin: 12px 0 6px 0;
+}
+
+#exerciseRangeOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.exercise-range-btn {
+  width: 80%;
+  text-align: left;
+}
+
 /* ── Flashcards page ── */
 #flashcardsPage,
 #flashcardDeckPage {
