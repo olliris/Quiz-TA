@@ -36,16 +36,35 @@ function chooseExerciseRange() {
   document.querySelector(".quiz-container").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("exerciseRangePage").classList.remove("hidden");
-  const exerciseRangeOptions = document.getElementById("exerciseRangeOptions");
+
+  // Ligne "Questions Marquées" avec drapeau et compteur
+  var markedRow = document.getElementById("exerciseMarkedRow");
+  var markedCount = markedQuestions.length;
+  markedRow.innerHTML = "";
+  var markedBtn = document.createElement("button");
+  markedBtn.className = "exercise-marked-btn";
+  markedBtn.innerHTML = "<span class='flag-button" + (markedCount > 0 ? " red" : "") + "' style='pointer-events:none'>⚑</span> Questions Marquées" + (markedCount > 0 ? " <span class='marked-count'>(" + markedCount + ")</span>" : "");
+  markedBtn.onclick = function() { showMarkedQuestions(); };
+  markedRow.appendChild(markedBtn);
+
+  // Séparateur
+  var sep = document.createElement("p");
+  sep.className = "exercise-section-label";
+  sep.textContent = "Choisissez une plage de questions :";
+  markedRow.appendChild(sep);
+
+  // Plages de questions centrées
+  var exerciseRangeOptions = document.getElementById("exerciseRangeOptions");
   exerciseRangeOptions.innerHTML = '';
   for (let i = 0; i < quiz.length; i += 30) {
     const start = i + 1;
     const end = Math.min(i + 30, quiz.length);
     const rangeKey = start + "-" + end;
     const rangeButton = document.createElement("button");
+    rangeButton.className = "exercise-range-btn";
     const percentage = exerciseResults[rangeKey];
     if (percentage !== undefined) {
-      rangeButton.textContent = start + " à " + end + " (" + percentage + "%)";
+      rangeButton.textContent = start + " à " + end + "  —  " + percentage + "%";
     } else {
       rangeButton.textContent = start + " à " + end;
     }
