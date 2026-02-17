@@ -138,3 +138,29 @@ footer {
   width: 80%;
   text-align: left;
 }
+
+/* ── Flashcard carte ── */
+.fc-card {
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  min-height: 120px;
+  font-size: 1.1em;
+  background: #f0f7ff;
+  cursor: pointer;
+}
+.fc-front {
+  font-weight: bold;
+  color: #003d80;
+}
+.fc-back {
+  color: #1a6e1a;
+  font-weight: bold;
+}
+.fc-counter {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
