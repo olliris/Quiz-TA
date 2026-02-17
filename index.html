@@ -16,6 +16,7 @@
     <button onclick="chooseExerciseRange()">Mode Exercice</button>
     <button onclick="showMarkedQuestions()">Questions Marquées</button>
     <button onclick="showHistory()">Historique</button>
+    <button onclick="showFlashcards()">Flashcards</button>
   </div>
 
   <div id="game" class="hidden">
@@ -40,12 +41,20 @@
     <button onclick="goBackToHome()">Retour</button>
   </div>
 
+  <div id="flashcardsPage" class="hidden">
+    <h2>Flashcards</h2>
+    <div id="flashcardsFolders"></div>
+    <button onclick="goBackToHome()">Retour</button>
+  </div>
+
+  <div id="flashcardDeckPage" class="hidden">
+    <div id="flashcardDeckContent"></div>
+    <button onclick="backToFlashcards()">Retour</button>
+  </div>
+
   <footer id="footer">
     Créé par Olivier Van Isacker<br>
-    erreurs: quiz-ta@cern.ch
+    erreurs: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6514100c1f481104250600170b4b060d">[email&#160;protected]</a>
   </footer>
 
-  <!-- Le script est placé à la fin pour que le DOM soit entièrement chargé -->
-  <script src="script.js"></script>
-</body>
-</html>
+  <!-- Le script e

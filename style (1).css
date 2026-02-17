@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+}
+.flag-and-question {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.flag-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+  flex-shrink: 0;
+  min-width: 30px;
+  height: 30px;
+  z-index: 1000;
+  position: relative;
+  pointer-events: auto;
+}
+.flag-button:hover {
+  color: #007BFF;
+}
+.flag-button.red {
+  color: red;
+}
+.flag-button.red:hover {
+  color: red;
+}
+.flag-and-question p {
+  flex: 1;
+  margin: 0;
+  pointer-events: none;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 30px;
+}
+.answer-button {
+  background-color: #d3d3d3;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+}
+.answer-button.correct {
+  background-color: green;
+  color: white;
+}
+.answer-button.incorrect {
+  background-color: red;
+  color: white;
+}
+.answer-button.selected {
+  background-color: #555;
+  color: white;
+}
+.check-mark {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.feedback-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.feedback-text.red {
+  color: red;
+}
+.feedback-text.green {
+  color: green;
+}
+.missing-message {
+  color: blue;
+  font-style: italic;
+}
+.hidden {
+  display: none;
+}
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+/* ── Flashcards page ── */
+#flashcardsPage,
+#flashcardDeckPage {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#flashcardsFolders {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+#flashcardsFolders button {
+  width: 80%;
+  text-align: left;
+}
