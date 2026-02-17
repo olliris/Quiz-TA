@@ -8,7 +8,91 @@
     { "front": "Quel est le rôle du noyau ?", "back": "Contient l'ADN et contrôle les activités de la cellule." }
   ],
   "Les Tissus": [],
-  "Système Cardio-vasculaire": [],
+  "Système Cardio-vasculaire": [
+
+{ "front": "Le système vasculaire est quoi ?", "back": "Un réseau de conduits transportant le sang." },
+{ "front": "Quels types de vaisseaux ?", "back": "Artères, Artérioles, Capillaires / sinusoïdes, Veinules, Veines." },
+
+{ "front": "Les vaisseaux ont combien de couches ?", "back": "3 couches." },
+{ "front": "Nom des 3 couches ?", "back": "Intima (interne), Media (milieu), Adventice (externe)." },
+{ "front": "Intima = quoi ?", "back": "Couche d’épithélium pavimenteux très fin." },
+{ "front": "Media = quoi ?", "back": "Muscle lisse circulaire → contraction / dilatation." },
+{ "front": "Adventice = quoi ?", "back": "Tissu fibreux élastique externe." },
+
+{ "front": "Pourquoi les artères ont parois épaisses ?", "back": "Elles supportent la haute pression sanguine." },
+{ "front": "Que se passe-t-il si on coupe une artère ?", "back": "Sang jaillit à haute pression." },
+{ "front": "Si on coupe une veine ?", "back": "Elle se collabe." },
+{ "front": "Les veines ont quoi de particulier ?", "back": "Des valvules (sauf petites veines abdomen/thorax)." },
+
+{ "front": "Structure capillaires ?", "back": "1 seule couche cellulaire." },
+{ "front": "Rôle capillaires ?", "back": "Échanges eau + petites molécules avec tissus." },
+{ "front": "Chemin des échanges ?", "back": "Capillaire → liquide interstitiel → cellule." },
+{ "front": "Sinusoïdes = quoi ?", "back": "Capillaires larges, flux lent, parois fines." },
+{ "front": "Où trouve-t-on des sinusoïdes ?", "back": "Moelle osseuse, Rate, Foie, Glandes endocrines." },
+
+{ "front": "Qui contrôle contraction/dilatation des vaisseaux ?", "back": "Système nerveux autonome." },
+{ "front": "Sympathique → effet ?", "back": "Vasoconstriction." },
+{ "front": "Diminution sympathique → effet ?", "back": "Vasodilatation." },
+{ "front": "Pourquoi important ?", "back": "Régulation pression artérielle." },
+
+{ "front": "3 facteurs de résistance sanguine ?", "back": "Viscosité du sang, Diamètre du vaisseau, Longueur du vaisseau." },
+{ "front": "Le seul facteur variable ?", "back": "Le diamètre." },
+{ "front": "Acide lactique → effet vasculaire ?", "back": "Vasodilatation locale." },
+{ "front": "Hypoxie/inflammation → effet ?", "back": "Vasodilatation locale hormonale." },
+{ "front": "Vasa vasorum = quoi ?", "back": "Petits vaisseaux nourrissant les parois des gros vaisseaux." },
+
+{ "front": "Le sang représente combien du poids corporel ?", "back": "≈ 7 %." },
+{ "front": "Rôles du sang ?", "back": "Transport O₂, nutriments, déchets, hormones + défense immunitaire + coagulation." },
+{ "front": "Deux parties du sang ?", "back": "Plasma (56 %) et éléments figurés (44 %)." },
+
+{ "front": "Composition plasma ?", "back": "90 % eau, 8 % protéines, 2 % ions/glucose/enzymes/hormones." },
+{ "front": "Rôle protéines plasmatiques ?", "back": "Pression osmotique." },
+{ "front": "Si protéines plasmatiques ↓ ?", "back": "Œdèmes." },
+
+{ "front": "Production cellules sanguines ?", "back": "Hématopoïèse." },
+{ "front": "Où chez adulte ?", "back": "Sternum, côtes, bassin, crâne, épiphyses os longs." },
+
+{ "front": "Rôle globules rouges ?", "back": "Transport O₂." },
+{ "front": "Durée de vie GR ?", "back": "≈ 120 jours." },
+{ "front": "Particularité GR ?", "back": "Sans noyau, riches en hémoglobine." },
+{ "front": "Hémoglobine transporte ?", "back": "O₂ et CO₂." },
+{ "front": "Affinité CO vs O₂ ?", "back": "CO = 100× plus forte." },
+{ "front": "Production GR stimulée par ?", "back": "Hypoxie, Hémorragie, Maladies, Altitude." },
+
+{ "front": "Rôle leucocytes ?", "back": "Défense immunitaire." },
+{ "front": "Deux familles leucocytes ?", "back": "Granulocytes et Agranulocytes." },
+{ "front": "Granulocytes fonctions ?", "back": "Neutrophiles: phagocytose. Éosinophiles: toxines. Basophiles: inflammation/allergies." },
+{ "front": "Agranulocytes ?", "back": "Monocytes et Lymphocytes." },
+{ "front": "Lymphocytes agissent contre ?", "back": "Bactéries, virus, champignons, médicaments, cellules cancéreuses." },
+
+{ "front": "Durée de vie plaquettes ?", "back": "≈ 10 jours." },
+{ "front": "Rôle plaquettes ?", "back": "Coagulation." },
+{ "front": "Étapes hémostase ?", "back": "Vasoconstriction → Clou plaquettaire → Coagulation → Fibrinolyse." },
+{ "front": "Transformation clé coagulation ?", "back": "Fibrinogène → Fibrine." },
+
+{ "front": "Type de muscle du cœur ?", "back": "Muscle strié involontaire." },
+{ "front": "3 couches du cœur ?", "back": "Endocarde, Myocarde, Péricarde." },
+{ "front": "Valves droite/gauche ?", "back": "Tricuspide et Mitrale." },
+{ "front": "Valves sigmoïdes ?", "back": "Pulmonaire et Aortique." },
+
+{ "front": "Deux circulations ?", "back": "Pulmonaire (droite basse pression) et Systémique (gauche haute pression)." },
+{ "front": "Rôle coronaires ?", "back": "Apport O₂ au myocarde." },
+
+{ "front": "Ordre conduction cardiaque ?", "back": "SA → AV → His → Branches → Purkinje." },
+{ "front": "Parasympathique effet cœur ?", "back": "↓ fréquence." },
+{ "front": "Sympathique effet cœur ?", "back": "↑ fréquence + force." },
+
+{ "front": "Pouls = quoi ?", "back": "Onde de pression artérielle." },
+{ "front": "Points palpation pouls ?", "back": "Temporale, Carotide, Humérale, Radiale, Fémorale, Poplitée, Tibiale postérieure, Pédieuse." },
+
+{ "front": "Phases ECG ?", "back": "Onde P: systole auriculaire. QRS: systole ventriculaire. Onde T: diastole." },
+{ "front": "Volume éjection ventriculaire ?", "back": "≈ 70 ml/battement." },
+{ "front": "Débit cardiaque ?", "back": "≈ 5 L/min." },
+{ "front": "Retour veineux aidé par ?", "back": "Position du corps, pompe musculaire, pompe respiratoire." },
+{ "front": "Pression systolique ?", "back": "Pression contraction ventriculaire." },
+{ "front": "Pression diastolique ?", "back": "Pression repos ventriculaire." }
+
+],
   "Système Lymphatique": [],
   "Système Respiratoire": [],
   "Système Nerveux": [],
