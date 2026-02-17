@@ -731,8 +731,7 @@ function openMarkedFlashcards() {
     content.innerHTML = "<h2>Flashcards Marquées</h2><p class='missing-message'>Aucune flashcard marquée pour le moment.</p>";
     return;
   }
-  content.innerHTML = "<h2>Flashcards Marquées</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
-  renderCard();
+  renderDeckPage("Flashcards Marquées");
 }
 
 function backToFlashcards() {
@@ -754,7 +753,70 @@ function openFlashcardDeck(deckName) {
     content.innerHTML = "<h2>" + deckName + "</h2><p class='missing-message'>Aucune flashcard disponible pour ce dossier pour le moment.</p>";
     return;
   }
-  content.innerHTML = "<h2>" + deckName + "</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
+  renderDeckPage(deckName);
+}
+
+function renderDeckPage(title) {
+  var content = document.getElementById("flashcardDeckContent");
+  content.innerHTML =
+    "<h2>" + title + "</h2>" +
+    "<div class='fc-mode-btns'>" +
+      "<button class='fc-mode-btn active' id='btnSequential' onclick='switchDeckMode(\"sequential\")'>\u25b6 S\u00e9quentiel</button>" +
+      "<button class='fc-mode-btn' id='btnSummary' onclick='switchDeckMode(\"summary\")'>\u2261 R\u00e9sum\u00e9</button>" +
+    "</div>" +
+    "<div id='flashcardArea'></div>" +
+    "<div id='flashcardNav'></div>";
+  renderCard();
+}
+
+function switchDeckMode(mode) {
+  document.getElementById("btnSequential").className = "fc-mode-btn" + (mode === "sequential" ? " active" : "");
+  document.getElementById("btnSummary").className = "fc-mode-btn" + (mode === "summary" ? " active" : "");
+  if (mode === "sequential") {
+    document.getElementById("flashcardNav").style.display = "";
+    renderCard();
+  } else {
+    renderFlashcardSummary();
+  }
+}
+
+function renderFlashcardSummary() {
+  window.scrollTo(0,0);
+  var area = document.getElementById("flashcardArea");
+  var nav = document.getElementById("flashcardNav");
+  nav.style.display = "none";
+  area.innerHTML = "";
+  var list = document.createElement("div");
+  list.className = "fc-summary-list";
+  currentDeckCards.forEach(function(card, idx) {
+    var item = document.createElement("div");
+    item.className = "fc-summary-item" + (isFlashcardMarked(card) ? " fc-summary-marked" : "");
+    item.setAttribute("data-idx", idx);
+
+    var num = document.createElement("span");
+    num.className = "fc-summary-num";
+    num.textContent = (idx + 1) + ".";
+
+    var link = document.createElement("span");
+    link.className = "fc-summary-link";
+    link.textContent = card.front;
+
+    item.appendChild(num);
+    item.appendChild(link);
+    item.addEventListener("click", function() {
+      openCardFromSummary(parseInt(this.getAttribute("data-idx")));
+    });
+    list.appendChild(item);
+  });
+  area.appendChild(list);
+}
+
+function openCardFromSummary(idx) {
+  window.scrollTo(0,0);
+  currentCardIndex = idx;
+  document.getElementById("btnSequential").className = "fc-mode-btn active";
+  document.getElementById("btnSummary").className = "fc-mode-btn";
+  document.getElementById("flashcardNav").style.display = "";
   renderCard();
 }
 
