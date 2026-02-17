@@ -471,12 +471,15 @@ function showFlashcards() {
 
   const container = document.getElementById("flashcardsFolders");
   container.innerHTML = "";
-  flashcardDecks.forEach(name => {
-    const btn = document.createElement("button");
-    btn.textContent = "📁 " + name;
-    btn.onclick = () => openFlashcardDeck(name);
+  for (var i = 0; i < flashcardDecks.length; i++) {
+    var btn = document.createElement("button");
+    btn.textContent = "📁 " + flashcardDecks[i];
+    btn.setAttribute("data-deck", flashcardDecks[i]);
+    btn.addEventListener("click", function() {
+      openFlashcardDeck(this.getAttribute("data-deck"));
+    });
     container.appendChild(btn);
-  });
+  }
 }
 
 function backToFlashcards() {
