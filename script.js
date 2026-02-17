@@ -1,14 +1,9 @@
 let quiz = [];
 
-// Load quiz questions from questions.json
 fetch("questions.json")
   .then(response => response.json())
-  .then(data => {
-    quiz = data;
-  })
-  .catch(error => {
-    console.error("Error loading quiz questions:", error);
-  });
+  .then(data => { quiz = data; })
+  .catch(error => { console.error("Error loading quiz questions:", error); });
 
 let currentQuestion = 0;
 let score = 0;
@@ -20,7 +15,7 @@ let shuffledQuiz = [];
 let examHistory = JSON.parse(localStorage.getItem('examHistory')) || [];
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 let exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
-let currentRangeKey = ''; // Pour suivre la plage actuelle
+let currentRangeKey = '';
 
 function startExam() {
   mode = 'exam';
@@ -46,18 +41,17 @@ function chooseExerciseRange() {
   for (let i = 0; i < quiz.length; i += 30) {
     const start = i + 1;
     const end = Math.min(i + 30, quiz.length);
-    const rangeKey = `${start}-${end}`;
+    const rangeKey = start + "-" + end;
     const rangeButton = document.createElement("button");
-    
-    // Afficher le pourcentage si disponible
     const percentage = exerciseResults[rangeKey];
     if (percentage !== undefined) {
-      rangeButton.textContent = `${start} à ${end} (${percentage}%)`;
+      rangeButton.textContent = start + " à " + end + " (" + percentage + "%)";
     } else {
-      rangeButton.textContent = `${start} à ${end}`;
+      rangeButton.textContent = start + " à " + end;
     }
-    
-    rangeButton.onclick = () => startExerciseRange(start - 1, end);
+    rangeButton.onclick = (function(s, e) {
+      return function() { startExerciseRange(s - 1, e); };
+    })(start, end);
     exerciseRangeOptions.appendChild(rangeButton);
   }
 }
@@ -66,11 +60,8 @@ function startExerciseRange(start, end) {
   mode = 'exercise';
   numQuestions = end - start;
   shuffledQuiz = quiz.slice(start, end);
-  shuffledQuiz.sort(() => Math.random() - 0.5);
-  
-  // Enregistrer la plage actuelle
-  currentRangeKey = `${start + 1}-${end}`;
-  
+  shuffledQuiz.sort(function() { return Math.random() - 0.5; });
+  currentRangeKey = (start + 1) + "-" + end;
   document.getElementById("exerciseRangePage").classList.add("hidden");
   document.getElementById("footer").style.display = "none";
   document.getElementById("game").classList.remove("hidden");
@@ -94,16 +85,16 @@ function showMarkedQuestions() {
 }
 
 function markQuestion(question) {
-  const index = markedQuestions.findIndex(q => q.question === question.question);
+  const index = markedQuestions.findIndex(function(q) { return q.question === question.question; });
   if (index === -1) {
     markedQuestions.push(question);
   } else {
     markedQuestions.splice(index, 1);
   }
   localStorage.setItem('markedQuestions', JSON.stringify(markedQuestions));
-  const flagButton = document.querySelector(`.flag-button[data-question="${question.question}"]`);
+  const flagButton = document.querySelector('.flag-button[data-question="' + question.question + '"]');
   if (flagButton) {
-    const isMarked = markedQuestions.some(markedQ => markedQ.question === question.question);
+    const isMarked = markedQuestions.some(function(markedQ) { return markedQ.question === question.question; });
     flagButton.classList.toggle("red", isMarked);
     flagButton.textContent = "⚑";
   }
@@ -113,7 +104,7 @@ function showQuestions() {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
   const quizToShow = mode === 'exam' ? quiz.slice(0, numQuestions) : shuffledQuiz;
-  quizToShow.forEach((q, index) => {
+  quizToShow.forEach(function(q, index) {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
 
@@ -123,10 +114,12 @@ function showQuestions() {
     const flagButton = document.createElement("button");
     flagButton.classList.add("flag-button");
     flagButton.setAttribute("data-question", q.question);
-    const isMarked = markedQuestions.some(markedQ => markedQ.question === q.question);
+    const isMarked = markedQuestions.some(function(markedQ) { return markedQ.question === q.question; });
     flagButton.classList.toggle("red", isMarked);
     flagButton.textContent = "⚑";
-    flagButton.onclick = () => markQuestion(q);
+    flagButton.onclick = (function(question) {
+      return function() { markQuestion(question); };
+    })(q);
     flagAndQuestion.appendChild(flagButton);
 
     const questionText = document.createElement("p");
@@ -136,11 +129,13 @@ function showQuestions() {
 
     const answersDiv = document.createElement("div");
     answersDiv.classList.add("answers");
-    q.answers.forEach((ans, ansIndex) => {
+    q.answers.forEach(function(ans, ansIndex) {
       const answerButton = document.createElement("button");
       answerButton.textContent = ans;
       answerButton.classList.add("answer-button");
-      answerButton.onclick = () => selectAnswer(index, ansIndex, answerButton);
+      answerButton.onclick = (function(i, ai, btn) {
+        return function() { selectAnswer(i, ai, btn); };
+      })(index, ansIndex, answerButton);
       answersDiv.appendChild(answerButton);
     });
     questionDiv.appendChild(answersDiv);
@@ -151,23 +146,18 @@ function showQuestions() {
     questionsDiv.appendChild(questionDiv);
   });
   document.getElementById("feedback").textContent = "";
-  document.getElementById("score").textContent = `Score: ${score}/${numQuestions}`;
+  document.getElementById("score").textContent = "Score: " + score + "/" + numQuestions;
 }
 
 function showQuestion() {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
 
-  // If no questions are available (for flagged mode)
   if (!shuffledQuiz.length) {
     questionsDiv.innerHTML = "<p>Aucune question disponible.</p>";
-
     const homeButton = document.createElement("button");
     homeButton.textContent = "Retour à l'accueil";
-    homeButton.onclick = () => {
-      goBackToHome();
-      homeButton.remove();
-    };
+    homeButton.onclick = function() { goBackToHome(); homeButton.remove(); };
     questionsDiv.appendChild(homeButton);
     return;
   }
@@ -187,10 +177,12 @@ function showQuestion() {
   const flagButton = document.createElement("button");
   flagButton.classList.add("flag-button");
   flagButton.setAttribute("data-question", q.question);
-  const isMarked = markedQuestions.some(markedQ => markedQ.question === q.question);
+  const isMarked = markedQuestions.some(function(markedQ) { return markedQ.question === q.question; });
   flagButton.classList.toggle("red", isMarked);
   flagButton.textContent = "⚑";
-  flagButton.onclick = () => markQuestion(q);
+  flagButton.onclick = (function(question) {
+    return function() { markQuestion(question); };
+  })(q);
   flagAndQuestion.appendChild(flagButton);
 
   const questionText = document.createElement("p");
@@ -200,11 +192,13 @@ function showQuestion() {
 
   const answersDiv = document.createElement("div");
   answersDiv.classList.add("answers");
-  q.answers.forEach((ans, ansIndex) => {
+  q.answers.forEach(function(ans, ansIndex) {
     const answerButton = document.createElement("button");
     answerButton.textContent = ans;
     answerButton.classList.add("answer-button");
-    answerButton.onclick = () => selectAnswer(currentQuestion, ansIndex, answerButton);
+    answerButton.onclick = (function(ai, btn) {
+      return function() { selectAnswer(currentQuestion, ai, btn); };
+    })(ansIndex, answerButton);
     answersDiv.appendChild(answerButton);
   });
   questionDiv.appendChild(answersDiv);
@@ -236,7 +230,6 @@ function showQuestion() {
 }
 
 function selectAnswer(questionIndex, answerIndex, button) {
-  const q = shuffledQuiz[questionIndex];
   button.classList.toggle("selected");
 }
 
@@ -250,12 +243,10 @@ function checkAnswer(questionIndex) {
   const questionDiv = document.querySelector("#questions .question:nth-child(1)");
   const buttons = questionDiv.querySelectorAll(".answer-button");
   let candidateSelected = [];
-  buttons.forEach((button, index) => {
-    if (button.classList.contains("selected")) {
-      candidateSelected.push(index);
-    }
+  buttons.forEach(function(button, index) {
+    if (button.classList.contains("selected")) { candidateSelected.push(index); }
   });
-  buttons.forEach((button, index) => {
+  buttons.forEach(function(button, index) {
     if (q.correct.includes(index)) {
       button.classList.add("correct");
       if (button.classList.contains("selected")) {
@@ -269,36 +260,32 @@ function checkAnswer(questionIndex) {
       button.classList.remove("selected");
     }
   });
-  const missingCorrect = q.correct.filter(correctIndex => !candidateSelected.includes(correctIndex));
+  const missingCorrect = q.correct.filter(function(correctIndex) { return !candidateSelected.includes(correctIndex); });
   if (q.correct.length > 1 && missingCorrect.length > 0) {
     const messageElem = document.createElement("p");
     messageElem.className = "missing-message";
     messageElem.textContent = "Attention il y a plusieurs bonnes réponses";
     questionDiv.appendChild(messageElem);
   }
-  const correctSelected = candidateSelected.filter(ans => q.correct.includes(ans)).length;
+  const correctSelected = candidateSelected.filter(function(ans) { return q.correct.includes(ans); }).length;
   const incorrectSelected = candidateSelected.length - correctSelected;
-  if (correctSelected === q.correct.length && incorrectSelected === 0) {
-    score++;
-  }
-  document.getElementById("score").textContent = `Score: ${score}/${numQuestions}`;
+  if (correctSelected === q.correct.length && incorrectSelected === 0) { score++; }
+  document.getElementById("score").textContent = "Score: " + score + "/" + numQuestions;
 }
 
 function endExam() {
   clearInterval(timerInterval);
   const questionsDiv = document.getElementById("questions");
   const questionDivs = questionsDiv.querySelectorAll(".question");
-  questionDivs.forEach((questionDiv, index) => {
+  questionDivs.forEach(function(questionDiv, index) {
     const q = quiz[index];
     const buttons = questionDiv.querySelectorAll(".answer-button");
     let candidateSelected = [];
-    buttons.forEach((button, index) => {
-      if (button.classList.contains("selected")) {
-        candidateSelected.push(index);
-      }
+    buttons.forEach(function(button, i) {
+      if (button.classList.contains("selected")) { candidateSelected.push(i); }
     });
-    buttons.forEach((button, index) => {
-      if (q.correct.includes(index)) {
+    buttons.forEach(function(button, i) {
+      if (q.correct.includes(i)) {
         button.classList.add("correct");
         if (button.classList.contains("selected")) {
           if (!button.querySelector(".check-mark")) {
@@ -311,14 +298,14 @@ function endExam() {
         button.classList.remove("selected");
       }
     });
-    const missingCorrect = q.correct.filter(idx => !candidateSelected.includes(idx));
+    const missingCorrect = q.correct.filter(function(idx) { return !candidateSelected.includes(idx); });
     if (q.correct.length > 1 && missingCorrect.length > 0) {
       const messageElem = document.createElement("p");
       messageElem.className = "missing-message";
       messageElem.textContent = "Attention il y a plusieurs bonnes réponses";
       questionDiv.appendChild(messageElem);
     }
-    if (mode === 'exam' && !markedQuestions.some(markedQ => markedQ.question === q.question)) {
+    if (mode === 'exam' && !markedQuestions.some(function(markedQ) { return markedQ.question === q.question; })) {
       markedQuestions.push(q);
     }
   });
@@ -336,7 +323,7 @@ function endExam() {
   }
   document.getElementById("feedback").textContent = feedbackMessage;
   document.getElementById("feedback").classList.remove("hidden");
-  document.getElementById("score").textContent = `Score final : ${score}/${numQuestions} (${percentage.toFixed(2)}%)`;
+  document.getElementById("score").textContent = "Score final : " + score + "/" + numQuestions + " (" + percentage.toFixed(2) + "%)";
   examHistory.push(percentage);
   localStorage.setItem('examHistory', JSON.stringify(examHistory));
   displayHistory();
@@ -352,14 +339,11 @@ function endExam() {
 
 function showFinalScore() {
   const percentage = (score / numQuestions) * 100;
-  alert(`Vous avez terminé l'exercice avec un score de ${percentage.toFixed(2)}%`);
-  
-  // Sauvegarder le résultat pour la plage de questions
+  alert("Vous avez terminé l'exercice avec un score de " + percentage.toFixed(2) + "%");
   if (mode === 'exercise' && currentRangeKey) {
     exerciseResults[currentRangeKey] = percentage.toFixed(2);
     localStorage.setItem('exerciseResults', JSON.stringify(exerciseResults));
   }
-  
   goBackToHome();
 }
 
@@ -377,15 +361,13 @@ function resetQuiz() {
   document.getElementById("score").classList.add("hidden");
   document.getElementById("feedback").classList.add("hidden");
   const backButton = document.getElementById("game").querySelector("button#backButton");
-  if (backButton) {
-    backButton.remove();
-  }
+  if (backButton) { backButton.remove(); }
 }
 
 function showHistory() {
   document.querySelector(".quiz-container").classList.add("hidden");
+  document.getElementById("footer").style.display = "none";
   document.getElementById("historyPage").classList.remove("hidden");
-  goBackToHomeFooter(false);
   displayHistory();
 }
 
@@ -397,9 +379,9 @@ function displayHistory() {
     return;
   }
   const historyList = document.createElement("ul");
-  examHistory.forEach((score, index) => {
+  examHistory.forEach(function(s, index) {
     const listItem = document.createElement("li");
-    listItem.textContent = `Examen ${index + 1}: ${score.toFixed(2)}%`;
+    listItem.textContent = "Examen " + (index + 1) + ": " + s.toFixed(2) + "%";
     historyList.appendChild(listItem);
   });
   historyContent.appendChild(historyList);
@@ -424,7 +406,7 @@ function startTimer() {
     timeLeft--;
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-    document.getElementById("timer").textContent = `Temps restant : ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    document.getElementById("timer").textContent = "Temps restant : " + minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
   }, 1000);
 }
 
@@ -436,18 +418,17 @@ function resetCache() {
   markedQuestions = [];
   exerciseResults = {};
   alert("Le cache a été réinitialisé.");
-  
-  // Rafraîchir l'affichage de l'historique
   displayHistory();
-  
-  // Si on est sur la page des exercices, rafraîchir les boutons
-  if (document.getElementById("exerciseRangePage").classList.contains("hidden") === false) {
+  if (!document.getElementById("exerciseRangePage").classList.contains("hidden")) {
     chooseExerciseRange();
   }
 }
+
 // ─── FLASHCARDS ───────────────────────────────────────────────────────────────
 
-const flashcardDecks = [
+var flashcardsData = null;
+
+var flashcardDecks = [
   "Physiologie et Chimie",
   "La Cellule",
   "Les Tissus",
@@ -469,12 +450,36 @@ function showFlashcards() {
   document.getElementById("footer").style.display = "none";
   document.getElementById("flashcardsPage").classList.remove("hidden");
 
-  const container = document.getElementById("flashcardsFolders");
+  // Charger flashcards.json si pas encore chargé
+  if (flashcardsData === null) {
+    fetch("flashcards.json")
+      .then(function(response) { return response.json(); })
+      .then(function(data) {
+        flashcardsData = data;
+        renderFlashcardFolders();
+      })
+      .catch(function(error) {
+        console.error("Erreur chargement flashcards.json:", error);
+        flashcardsData = {};
+        renderFlashcardFolders();
+      });
+  } else {
+    renderFlashcardFolders();
+  }
+}
+
+function renderFlashcardFolders() {
+  var container = document.getElementById("flashcardsFolders");
   container.innerHTML = "";
+
   for (var i = 0; i < flashcardDecks.length; i++) {
+    var deckName = flashcardDecks[i];
+    var cards = flashcardsData[deckName];
+    var count = (cards && cards.length) ? cards.length : 0;
+
     var btn = document.createElement("button");
-    btn.textContent = "📁 " + flashcardDecks[i];
-    btn.setAttribute("data-deck", flashcardDecks[i]);
+    btn.textContent = "📁 " + deckName + (count > 0 ? " (" + count + ")" : "");
+    btn.setAttribute("data-deck", deckName);
     btn.addEventListener("click", function() {
       openFlashcardDeck(this.getAttribute("data-deck"));
     });
@@ -487,11 +492,66 @@ function backToFlashcards() {
   document.getElementById("flashcardsPage").classList.remove("hidden");
 }
 
+var currentDeckCards = [];
+var currentCardIndex = 0;
+
 function openFlashcardDeck(deckName) {
   document.getElementById("flashcardsPage").classList.add("hidden");
   document.getElementById("flashcardDeckPage").classList.remove("hidden");
 
-  const content = document.getElementById("flashcardDeckContent");
-  content.innerHTML = `<h2>${deckName}</h2><p class="missing-message">Aucune flashcard disponible pour ce dossier pour le moment.</p>`;
+  var cards = (flashcardsData && flashcardsData[deckName]) ? flashcardsData[deckName] : [];
+  currentDeckCards = cards;
+  currentCardIndex = 0;
+
+  var content = document.getElementById("flashcardDeckContent");
+
+  if (cards.length === 0) {
+    content.innerHTML = "<h2>" + deckName + "</h2><p class='missing-message'>Aucune flashcard disponible pour ce dossier pour le moment.</p>";
+    return;
+  }
+
+  content.innerHTML = "<h2>" + deckName + "</h2><div id='flashcardArea'></div><div id='flashcardNav'></div>";
+  renderCard();
 }
 
+function renderCard() {
+  var area = document.getElementById("flashcardArea");
+  var nav = document.getElementById("flashcardNav");
+  var card = currentDeckCards[currentCardIndex];
+
+  area.innerHTML =
+    "<p class='fc-counter'>" + (currentCardIndex + 1) + " / " + currentDeckCards.length + "</p>" +
+    "<div class='fc-card' id='fcCard'>" +
+      "<div class='fc-front'>" + card.front + "</div>" +
+      "<div class='fc-back hidden'>" + card.back + "</div>" +
+    "</div>" +
+    "<button onclick='flipCard()'>Retourner</button>";
+
+  nav.innerHTML = "";
+
+  if (currentCardIndex > 0) {
+    var prevBtn = document.createElement("button");
+    prevBtn.textContent = "◀ Précédent";
+    prevBtn.onclick = function() { currentCardIndex--; renderCard(); };
+    nav.appendChild(prevBtn);
+  }
+
+  if (currentCardIndex < currentDeckCards.length - 1) {
+    var nextBtn = document.createElement("button");
+    nextBtn.textContent = "Suivant ▶";
+    nextBtn.onclick = function() { currentCardIndex++; renderCard(); };
+    nav.appendChild(nextBtn);
+  }
+}
+
+function flipCard() {
+  var front = document.querySelector("#fcCard .fc-front");
+  var back = document.querySelector("#fcCard .fc-back");
+  if (back.classList.contains("hidden")) {
+    front.classList.add("hidden");
+    back.classList.remove("hidden");
+  } else {
+    back.classList.add("hidden");
+    front.classList.remove("hidden");
+  }
+}
