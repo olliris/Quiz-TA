@@ -265,7 +265,7 @@
     { "front": "Réponse du système périphérique ?", "back": "Message nerveux au bulbe rachidien → centre respiratoire augmente la ventilation → CO₂ éliminé → O₂ remonte." },
 
     { "front": "Système lent : particularités ?", "back": "Toujours activé ; peut prendre relais du système lors de maladie (BPCO…)." },
-    { "front": "Augmentation du CO₂ sanguin entraîne quoi ?", "back": "H⁺ ↑ et pH ↓ (acidose métabolique) → stimule chémorécepteurs → ventilation accrue." },
+    { "front": "Augmentation du CO₂ sanguin entraîne quoi ?", "back": "H⁺ ↑ et pH ↓ (acidose respiratoire) → stimule chémorécepteurs → ventilation accrue." },
     { "front": "CO₂ : vient d’où ?", "back": "Déchet du corps produit quand les cellules produisent de l’énergie." },
     { "front": "Équation énergie ?", "back": "Glucose + O₂ → Énergie (ATP) + CO₂ + H₂O." }
   ],
