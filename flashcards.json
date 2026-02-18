@@ -1,99 +1,104 @@
 {
-  "Physiologie et Chimie": [
+"Physiologie et Chimie": [
     { "front": "Qu'est-ce que le pH ?", "back": "Le pH mesure l'acidité ou la basicité d'une solution. Un pH de 7 est neutre, < 7 acide, > 7 basique." },
     { "front": "Quelle est la formule de l'eau ?", "back": "H₂O — deux atomes d'hydrogène liés à un atome d'oxygène." }
   ],
-  "La Cellule": [
+  
+"La Cellule": [
+    
     { "front": "Quel est le rôle de la mitochondrie ?", "back": "Production d'énergie (ATP) par la respiration cellulaire. On l'appelle la 'centrale énergétique' de la cellule." },
     { "front": "Quel est le rôle du noyau ?", "back": "Contient l'ADN et contrôle les activités de la cellule." }
   ],
-  "Les Tissus": [],
-  "Système Cardio-vasculaire": [
-
-{ "front": "Le système vasculaire est quoi ?", "back": "Un réseau de conduits transportant le sang." },
-{ "front": "Quels types de vaisseaux ?", "back": "Artères, Artérioles, Capillaires / sinusoïdes, Veinules, Veines." },
-
-{ "front": "Les vaisseaux ont combien de couches ?", "back": "3 couches." },
-{ "front": "Nom des 3 couches ?", "back": "Intima (interne), Media (milieu), Adventice (externe)." },
-{ "front": "Intima = quoi ?", "back": "Couche d’épithélium pavimenteux très fin." },
-{ "front": "Media = quoi ?", "back": "Muscle lisse circulaire → contraction / dilatation." },
-{ "front": "Adventice = quoi ?", "back": "Tissu fibreux élastique externe." },
-
-{ "front": "Pourquoi les artères ont parois épaisses ?", "back": "Elles supportent la haute pression sanguine." },
-{ "front": "Que se passe-t-il si on coupe une artère ?", "back": "Sang jaillit à haute pression." },
-{ "front": "Si on coupe une veine ?", "back": "Elle se collabe." },
-{ "front": "Les veines ont quoi de particulier ?", "back": "Des valvules (sauf petites veines abdomen/thorax)." },
-
-{ "front": "Structure capillaires ?", "back": "1 seule couche cellulaire." },
-{ "front": "Rôle capillaires ?", "back": "Échanges eau + petites molécules avec tissus." },
-{ "front": "Chemin des échanges ?", "back": "Capillaire → liquide interstitiel → cellule." },
-{ "front": "Sinusoïdes = quoi ?", "back": "Capillaires larges, flux lent, parois fines." },
-{ "front": "Où trouve-t-on des sinusoïdes ?", "back": "Moelle osseuse, Rate, Foie, Glandes endocrines." },
-
-{ "front": "Qui contrôle contraction/dilatation des vaisseaux ?", "back": "Système nerveux autonome." },
-{ "front": "Sympathique → effet ?", "back": "Vasoconstriction." },
-{ "front": "Diminution sympathique → effet ?", "back": "Vasodilatation." },
-{ "front": "Pourquoi important ?", "back": "Régulation pression artérielle." },
-
-{ "front": "3 facteurs de résistance sanguine ?", "back": "Viscosité du sang, Diamètre du vaisseau, Longueur du vaisseau." },
-{ "front": "Le seul facteur variable ?", "back": "Le diamètre." },
-{ "front": "Acide lactique → effet vasculaire ?", "back": "Vasodilatation locale." },
-{ "front": "Hypoxie/inflammation → effet ?", "back": "Vasodilatation locale hormonale." },
-{ "front": "Vasa vasorum = quoi ?", "back": "Petits vaisseaux nourrissant les parois des gros vaisseaux." },
-
-{ "front": "Le sang représente combien du poids corporel ?", "back": "≈ 7 %." },
-{ "front": "Rôles du sang ?", "back": "Transport O₂, nutriments, déchets, hormones + défense immunitaire + coagulation." },
-{ "front": "Deux parties du sang ?", "back": "Plasma (56 %) et éléments figurés (44 %)." },
-
-{ "front": "Composition plasma ?", "back": "90 % eau, 8 % protéines, 2 % ions/glucose/enzymes/hormones." },
-{ "front": "Rôle protéines plasmatiques ?", "back": "Pression osmotique." },
-{ "front": "Si protéines plasmatiques ↓ ?", "back": "Œdèmes." },
-
-{ "front": "Production cellules sanguines ?", "back": "Hématopoïèse." },
-{ "front": "Où chez adulte ?", "back": "Sternum, côtes, bassin, crâne, épiphyses os longs." },
-
-{ "front": "Rôle globules rouges ?", "back": "Transport O₂." },
-{ "front": "Durée de vie GR ?", "back": "≈ 120 jours." },
-{ "front": "Particularité GR ?", "back": "Sans noyau, riches en hémoglobine." },
-{ "front": "Hémoglobine transporte ?", "back": "O₂ et CO₂." },
-{ "front": "Affinité CO vs O₂ ?", "back": "CO = 100× plus forte." },
-{ "front": "Production GR stimulée par ?", "back": "Hypoxie, Hémorragie, Maladies, Altitude." },
-
-{ "front": "Rôle leucocytes ?", "back": "Défense immunitaire." },
-{ "front": "Deux familles leucocytes ?", "back": "Granulocytes et Agranulocytes." },
-{ "front": "Granulocytes fonctions ?", "back": "Neutrophiles: phagocytose. Éosinophiles: toxines. Basophiles: inflammation/allergies." },
-{ "front": "Agranulocytes ?", "back": "Monocytes et Lymphocytes." },
-{ "front": "Lymphocytes agissent contre ?", "back": "Bactéries, virus, champignons, médicaments, cellules cancéreuses." },
-
-{ "front": "Durée de vie plaquettes ?", "back": "≈ 10 jours." },
-{ "front": "Rôle plaquettes ?", "back": "Coagulation." },
-{ "front": "Étapes hémostase ?", "back": "Vasoconstriction → Clou plaquettaire → Coagulation → Fibrinolyse." },
-{ "front": "Transformation clé coagulation ?", "back": "Fibrinogène → Fibrine." },
-
-{ "front": "Type de muscle du cœur ?", "back": "Muscle strié involontaire." },
-{ "front": "3 couches du cœur ?", "back": "Endocarde, Myocarde, Péricarde." },
-{ "front": "Valves droite/gauche ?", "back": "Tricuspide et Mitrale." },
-{ "front": "Valves sigmoïdes ?", "back": "Pulmonaire et Aortique." },
-
-{ "front": "Deux circulations ?", "back": "Pulmonaire (droite basse pression) et Systémique (gauche haute pression)." },
-{ "front": "Rôle coronaires ?", "back": "Apport O₂ au myocarde." },
-
-{ "front": "Ordre conduction cardiaque ?", "back": "SA → AV → His → Branches → Purkinje." },
-{ "front": "Parasympathique effet cœur ?", "back": "↓ fréquence." },
-{ "front": "Sympathique effet cœur ?", "back": "↑ fréquence + force." },
-
-{ "front": "Pouls = quoi ?", "back": "Onde de pression artérielle." },
-{ "front": "Points palpation pouls ?", "back": "Temporale, Carotide, Humérale, Radiale, Fémorale, Poplitée, Tibiale postérieure, Pédieuse." },
-
-{ "front": "Phases ECG ?", "back": "Onde P: systole auriculaire. QRS: systole ventriculaire. Onde T: diastole." },
-{ "front": "Volume éjection ventriculaire ?", "back": "≈ 70 ml/battement." },
-{ "front": "Débit cardiaque ?", "back": "≈ 5 L/min." },
-{ "front": "Retour veineux aidé par ?", "back": "Position du corps, pompe musculaire, pompe respiratoire." },
-{ "front": "Pression systolique ?", "back": "Pression contraction ventriculaire." },
-{ "front": "Pression diastolique ?", "back": "Pression repos ventriculaire." }
-
-],
-  "Système Lymphatique": [
+  
+"Les Tissus": [],
+  
+"Système Cardio-vasculaire": [
+    
+    { "front": "Le système vasculaire est quoi ?", "back": "Un réseau de conduits transportant le sang." },
+    { "front": "Quels types de vaisseaux ?", "back": "Artères, Artérioles, Capillaires / sinusoïdes, Veinules, Veines." },
+    
+    { "front": "Les vaisseaux ont combien de couches ?", "back": "3 couches." },
+    { "front": "Nom des 3 couches ?", "back": "Intima (interne), Media (milieu), Adventice (externe)." },
+    { "front": "Intima = quoi ?", "back": "Couche d’épithélium pavimenteux très fin." },
+    { "front": "Media = quoi ?", "back": "Muscle lisse circulaire → contraction / dilatation." },
+    { "front": "Adventice = quoi ?", "back": "Tissu fibreux élastique externe." },
+    
+    { "front": "Pourquoi les artères ont parois épaisses ?", "back": "Elles supportent la haute pression sanguine." },
+    { "front": "Que se passe-t-il si on coupe une artère ?", "back": "Sang jaillit à haute pression." },
+    { "front": "Si on coupe une veine ?", "back": "Elle se collabe." },
+    { "front": "Les veines ont quoi de particulier ?", "back": "Des valvules (sauf petites veines abdomen/thorax)." },
+    
+    { "front": "Structure capillaires ?", "back": "1 seule couche cellulaire." },
+    { "front": "Rôle capillaires ?", "back": "Échanges eau + petites molécules avec tissus." },
+    { "front": "Chemin des échanges ?", "back": "Capillaire → liquide interstitiel → cellule." },
+    { "front": "Sinusoïdes = quoi ?", "back": "Capillaires larges, flux lent, parois fines." },
+    { "front": "Où trouve-t-on des sinusoïdes ?", "back": "Moelle osseuse, Rate, Foie, Glandes endocrines." },
+    
+    { "front": "Qui contrôle contraction/dilatation des vaisseaux ?", "back": "Système nerveux autonome." },
+    { "front": "Sympathique → effet ?", "back": "Vasoconstriction." },
+    { "front": "Diminution sympathique → effet ?", "back": "Vasodilatation." },
+    { "front": "Pourquoi important ?", "back": "Régulation pression artérielle." },
+    
+    { "front": "3 facteurs de résistance sanguine ?", "back": "Viscosité du sang, Diamètre du vaisseau, Longueur du vaisseau." },
+    { "front": "Le seul facteur variable ?", "back": "Le diamètre." },
+    { "front": "Acide lactique → effet vasculaire ?", "back": "Vasodilatation locale." },
+    { "front": "Hypoxie/inflammation → effet ?", "back": "Vasodilatation locale hormonale." },
+    { "front": "Vasa vasorum = quoi ?", "back": "Petits vaisseaux nourrissant les parois des gros vaisseaux." },
+    
+    { "front": "Le sang représente combien du poids corporel ?", "back": "≈ 7 %." },
+    { "front": "Rôles du sang ?", "back": "Transport O₂, nutriments, déchets, hormones + défense immunitaire + coagulation." },
+    { "front": "Deux parties du sang ?", "back": "Plasma (56 %) et éléments figurés (44 %)." },
+    
+    { "front": "Composition plasma ?", "back": "90 % eau, 8 % protéines, 2 % ions/glucose/enzymes/hormones." },
+    { "front": "Rôle protéines plasmatiques ?", "back": "Pression osmotique." },
+    { "front": "Si protéines plasmatiques ↓ ?", "back": "Œdèmes." },
+    
+    { "front": "Production cellules sanguines ?", "back": "Hématopoïèse." },
+    { "front": "Où chez adulte ?", "back": "Sternum, côtes, bassin, crâne, épiphyses os longs." },
+    
+    { "front": "Rôle globules rouges ?", "back": "Transport O₂." },
+    { "front": "Durée de vie GR ?", "back": "≈ 120 jours." },
+    { "front": "Particularité GR ?", "back": "Sans noyau, riches en hémoglobine." },
+    { "front": "Hémoglobine transporte ?", "back": "O₂ et CO₂." },
+    { "front": "Affinité CO vs O₂ ?", "back": "CO = 100× plus forte." },
+    { "front": "Production GR stimulée par ?", "back": "Hypoxie, Hémorragie, Maladies, Altitude." },
+    
+    { "front": "Rôle leucocytes ?", "back": "Défense immunitaire." },
+    { "front": "Deux familles leucocytes ?", "back": "Granulocytes et Agranulocytes." },
+    { "front": "Granulocytes fonctions ?", "back": "Neutrophiles: phagocytose. Éosinophiles: toxines. Basophiles: inflammation/allergies." },
+    { "front": "Agranulocytes ?", "back": "Monocytes et Lymphocytes." },
+    { "front": "Lymphocytes agissent contre ?", "back": "Bactéries, virus, champignons, médicaments, cellules cancéreuses." },
+    
+    { "front": "Durée de vie plaquettes ?", "back": "≈ 10 jours." },
+    { "front": "Rôle plaquettes ?", "back": "Coagulation." },
+    { "front": "Étapes hémostase ?", "back": "Vasoconstriction → Clou plaquettaire → Coagulation → Fibrinolyse." },
+    { "front": "Transformation clé coagulation ?", "back": "Fibrinogène → Fibrine." },
+    
+    { "front": "Type de muscle du cœur ?", "back": "Muscle strié involontaire." },
+    { "front": "3 couches du cœur ?", "back": "Endocarde, Myocarde, Péricarde." },
+    { "front": "Valves droite/gauche ?", "back": "Tricuspide et Mitrale." },
+    { "front": "Valves sigmoïdes ?", "back": "Pulmonaire et Aortique." },
+    
+    { "front": "Deux circulations ?", "back": "Pulmonaire (droite basse pression) et Systémique (gauche haute pression)." },
+    { "front": "Rôle coronaires ?", "back": "Apport O₂ au myocarde." },
+    
+    { "front": "Ordre conduction cardiaque ?", "back": "SA → AV → His → Branches → Purkinje." },
+    { "front": "Parasympathique effet cœur ?", "back": "↓ fréquence." },
+    { "front": "Sympathique effet cœur ?", "back": "↑ fréquence + force." },
+    
+    { "front": "Pouls = quoi ?", "back": "Onde de pression artérielle." },
+    { "front": "Points palpation pouls ?", "back": "Temporale, Carotide, Humérale, Radiale, Fémorale, Poplitée, Tibiale postérieure, Pédieuse." },
+    
+    { "front": "Phases ECG ?", "back": "Onde P: systole auriculaire. QRS: systole ventriculaire. Onde T: diastole." },
+    { "front": "Volume éjection ventriculaire ?", "back": "≈ 70 ml/battement." },
+    { "front": "Débit cardiaque ?", "back": "≈ 5 L/min." },
+    { "front": "Retour veineux aidé par ?", "back": "Position du corps, pompe musculaire, pompe respiratoire." },
+    { "front": "Pression systolique ?", "back": "Pression contraction ventriculaire." },
+    { "front": "Pression diastolique ?", "back": "Pression repos ventriculaire." }
+    
+  ],
+  
+"Système Lymphatique": [
     { "front": "Le système lymphatique se compose de quoi ?", "back": "La lymphe, les vaisseaux lymphatiques, les ganglions lymphatiques, les organes lymphatiques (rate, thymus…), les tissus lymphoïdes diffus (amygdales…), la moelle osseuse." },
 
     { "front": "Rôle principal du système lymphatique ?", "back": "Drainage tissulaire." },
@@ -161,7 +166,7 @@
     { "front": "Plaques de Peyer : rôle ?", "back": "Présentes dans l’intestin grêle, attrapent antigènes déglutis." }
   ],
   
-  "Système Respiratoire": [
+"Système Respiratoire": [
     
     { "front": "Liste des éléments du système respiratoire ?", "back": "Nez, pharynx, larynx (UAS), trachée, bronches souches, bronchioles, canaux alvéoliques, alvéoles." },
 
@@ -264,12 +269,332 @@
     { "front": "CO₂ : vient d’où ?", "back": "Déchet du corps produit quand les cellules produisent de l’énergie." },
     { "front": "Équation énergie ?", "back": "Glucose + O₂ → Énergie (ATP) + CO₂ + H₂O." }
   ],
-  "Système Nerveux": [],
-  "Système Endocrinien": [],
-  "Système Digestif": [],
-  "Système Urinaire": [],
-  "Système Reproducteur": [],
-  "Système Locomoteur": [],
-  "Les Sens": [],
-  "Traumatologie": []
+  
+"Système Nerveux": [
+
+    { "front": "De quoi est composé un neurone ?", "back": "Noyau(x), corps cellulaire, dendrites, axone, gaine de myéline, nœuds de Ranvier, boutons terminaux, synapses." },
+    { "front": "Propriété des neurones ?", "back": "Stimulables et conducteurs." },
+    { "front": "Origine des influx nerveux ?", "back": "Stimuli externes (tactiles) et internes (CO₂)." },
+    { "front": "Propagation de l’influx nerveux ?", "back": "Électrique et chimique." },
+    
+    { "front": "Corps cellulaire : rôle ?", "back": "Centre d’analyse de l’information avant envoi du signal." },
+    { "front": "Nom corps cellulaires SNC vs SNP ?", "back": "SNC : noyaux / SNP : ganglions." },
+    { "front": "Les corps cellulaires forment ?", "back": "La substance grise." },
+    
+    { "front": "Dendrites : rôle ?", "back": "Reçoivent l’influx et le transportent vers le corps cellulaire." },
+    { "front": "Axone : rôle ?", "back": "Transporte l’influx vers synapse ou muscle (potentiel d’action)." },
+    { "front": "Les gros axones sont entourés de ?", "back": "Gaine de myéline." },
+    { "front": "Neurones peuvent être ?", "back": "Myélinisés ou non myélinisés." },
+    
+    { "front": "Gaine de myéline composée de ?", "back": "Cellules de Schwann (SNP)." },
+    { "front": "Rôle de la myéline ?", "back": "Isolant électrique qui accélère la conduction." },
+    { "front": "Nœuds de Ranvier ?", "back": "Interruption de myéline permettant conduction saltatoire." },
+    { "front": "Conduction myélinisée vs non ?", "back": "La myélinisée est plus rapide." },
+    
+    { "front": "Synapse ?", "back": "Zone de contact contenant des vésicules de neurotransmetteurs." },
+    { "front": "Neurotransmetteur plaque motrice ?", "back": "Acétylcholine." },
+    { "front": "Un axone peut innerver combien de fibres ?", "back": "Plus de 100 plaques motrices." },
+    
+    { "front": "Substance blanche vs grise ?", "back": "Blanche = transmission / Grise = traitement." },
+    
+    { "front": "Neurotransmetteurs sympathique ?", "back": "Adrénaline et noradrénaline." },
+    { "front": "Effets sympathique ?", "back": "Augmentation FC, PA, bronchodilatation, vigilance." },
+    { "front": "Neurotransmetteur parasympathique ?", "back": "Acétylcholine." },
+    { "front": "Effets parasympathique ?", "back": "Repos et digestion." },
+    
+    { "front": "Dopamine : rôle ?", "back": "Motricité, posture, comportement, motivation." },
+    { "front": "Manque de dopamine ?", "back": "Maladie de Parkinson." },
+    { "front": "Sérotonine : rôle ?", "back": "Humeur, sommeil, dépression." },
+    { "front": "Histamine : rôle ?", "back": "Allergies et vigilance." },
+    { "front": "Endorphines : rôle ?", "back": "Antidouleur, plaisir, bien-être." },
+    
+    { "front": "Deux grands neurotransmetteurs du cerveau ?", "back": "GABA et glutamate." },
+    { "front": "GABA : effet ?", "back": "Ralentit le cerveau (anxiolytique)." },
+    { "front": "Glutamate : effet ?", "back": "Excite les neurones." },
+    
+    { "front": "Potentiel d’action au repos ?", "back": "Extérieur Na⁺ / Intérieur K⁺ (-70 mV)." },
+    { "front": "Dépolarisation ?", "back": "Entrée Na⁺ → intérieur positif." },
+    { "front": "Repolarisation ?", "back": "Sortie K⁺." },
+    { "front": "Période réfractaire ?", "back": "Neurone non réactivable immédiatement." },
+    
+    { "front": "SNC ?", "back": "Cerveau et moelle épinière." },
+    { "front": "Cerveau consomme ?", "back": "≈ 15 % du débit cardiaque." },
+    { "front": "Polygone de Willis ?", "back": "Compensation si artère cérébrale obstruée." },
+    
+    { "front": "Tronc cérébral : parties ?", "back": "Mésencéphale, pont, bulbe rachidien." },
+    { "front": "Corps calleux : rôle ?", "back": "Connexion des deux hémisphères." },
+    { "front": "Hémisphère gauche ?", "back": "Langage et logique." },
+    { "front": "Hémisphère droit ?", "back": "Spatial et créativité." },
+    
+    { "front": "Sillons du cerveau ?", "back": "Augmentent la surface et divisent en lobes." },
+    { "front": "Sillon central ?", "back": "Sépare lobe frontal et pariétal." },
+    { "front": "Sillon latéral ?", "back": "Sépare lobe temporal et frontal-pariétal." },
+    { "front": "Sillon pariéto-occipital ?", "back": "Sépare pariétal et occipital." },
+    
+    { "front": "Thalamus : rôle ?", "back": "Relais sensoriel vers cortex." },
+    { "front": "Hypothalamus : rôle ?", "back": "Contrôle hormones, température, soif, faim, émotions." },
+    
+    { "front": "Pont : rôle ?", "back": "Relais cerveau-cervelet et cycles veille-sommeil." },
+    { "front": "Bulbe rachidien : centres ?", "back": "Cardiaque, respiratoire, vasomoteur." },
+    { "front": "Décussation ?", "back": "Croisement des fibres motrices et sensitives." },
+    
+    { "front": "Cervelet : rôle ?", "back": "Coordination, posture, équilibre." },
+    
+    { "front": "Méninges ?", "back": "Dure-mère, arachnoïde, pie-mère." },
+    { "front": "Espace sous-arachnoïdien ?", "back": "Contient le LCR." },
+    { "front": "LCR : rôle ?", "back": "Protège, amortit et élimine les déchets." },
+    { "front": "LCR produit où ?", "back": "Dans les 4 ventricules." },
+    { "front": "Circulation LCR ?", "back": "Ventricules → espace sous-arachnoïdien → moelle." },
+    
+    { "front": "Substance blanche ?", "back": "Fibres nerveuses ascendantes et descendantes." },
+    { "front": "Substance grise moelle ?", "back": "Neurones sensitifs, moteurs et connecteurs." },
+    
+    { "front": "SNP ?", "back": "Nerfs hors SNC." },
+    { "front": "Nerfs rachidiens ?", "back": "31 paires." },
+    { "front": "Nerfs crâniens ?", "back": "12 paires." },
+  
+    { "front": "Substance blanche = rôle ?", "back": "Transmission des influx nerveux sensitifs vers le cerveau et moteurs vers les muscles." },
+    { "front": "Fibres au niveau du bulbe ?", "back": "Elles se croisent → décussation." },
+    { "front": "Origine des influx sensitifs ?", "back": "Peau, articulations, tendons + informations vision et équilibre." },
+    { "front": "Origine des influx moteurs ?", "back": "Cortex cérébral." },
+    { "front": "Effet stimulation nerf moteur ?", "back": "Contraction des muscles striés." },
+    { "front": "Activation muscles lisses ?", "back": "Via système nerveux autonome (SNA)." },
+    
+    { "front": "Système nerveux périphérique ?", "back": "Toutes les structures nerveuses hors SNC." },
+    { "front": "Nombre de nerfs rachidiens ?", "back": "31 paires." },
+    { "front": "Nombre de nerfs crâniens ?", "back": "12 paires." },
+    
+    { "front": "Structure d’un nerf ?", "back": "Endonèvre, périnèvre, épinèvre." },
+    { "front": "Fonction endonèvre ?", "back": "Recouvre chaque fibre nerveuse." },
+    { "front": "Fonction périnèvre ?", "back": "Entoure chaque faisceau de fibres." },
+    { "front": "Fonction épinèvre ?", "back": "Entoure l’ensemble du nerf." },
+    
+    { "front": "Sortie des nerfs rachidiens ?", "back": "Par deux racines : ventrale motrice et dorsale sensitive." },
+    { "front": "Types de nerfs rachidiens ?", "back": "Nerfs mixtes." },
+    
+    { "front": "Répartition nerfs rachidiens ?", "back": "8 cervicaux, 12 thoraciques, 5 lombaires, 5 sacrés, 1 coccygien." },
+    
+    { "front": "Plexus cervicaux ?", "back": "C1 à C4." },
+    { "front": "Plexus brachial ?", "back": "C5 à T1." },
+    { "front": "Nerfs intercostaux ?", "back": "T2 à T12 (pas de plexus)." },
+    { "front": "Plexus lombaire ?", "back": "L1 à L4." },
+    { "front": "Plexus sacré ?", "back": "L4-S4 → contient nerf sciatique." },
+    
+    { "front": "Sympathique = rôle ?", "back": "Prépare à l’action (fight or flight)." },
+    { "front": "Effets sympathique ?", "back": "↑ FC, ↑ PA, bronchodilatation, pupilles dilatées, libération glucose." },
+    { "front": "Neurotransmetteur sympathique ?", "back": "Noradrénaline." },
+    
+    { "front": "Parasympathique = rôle ?", "back": "Repos et digestion." },
+    { "front": "Effets parasympathique ?", "back": "↓ FC, digestion ↑, broncho-constriction, pupilles contractées." },
+    { "front": "Neurotransmetteur parasympathique ?", "back": "Acétylcholine." },
+    
+    { "front": "Origine sympathique ?", "back": "Moelle T1 à L2." },
+    { "front": "Origine parasympathique ?", "back": "Nerfs crâniens III, VII, IX, X + S2-S4." },
+    
+    { "front": "Nerfs crâniens ?", "back": "12 paires sensitives, motrices ou mixtes." },
+    { "front": "Nerf X ?", "back": "Nerf vague → parasympathique majeur." },
+    { "front": "Fonction nerf vague ?", "back": "Innerve cœur, poumons, tube digestif." },
+    
+    { "front": "Triade de Cushing ?", "back": "Hypertension + bradycardie + respiration irrégulière." },
+    { "front": "Premier signe engagement cérébral ?", "back": "Absence réflexe pupillaire." }
+
+  ],
+  
+"Système Endocrinien": [
+
+    { "front": "Système endocrinien ?", "back": "Système hormonal agissant lentement mais durablement." },
+    { "front": "Glandes endocrines ?", "back": "Libèrent hormones directement dans le sang." },
+    { "front": "Hormone agit comment ?", "back": "Sur cellules possédant récepteurs spécifiques." },
+    
+    { "front": "Types hormones ?", "back": "Protéiques (AA) ou stéroïdes (cholestérol)." },
+    
+    { "front": "Homéostasie ?", "back": "Régulation hormonale par rétroaction." },
+    { "front": "Rétroaction négative ?", "back": "Réponse diminue production hormone." },
+    { "front": "Rétroaction positive ?", "back": "Réponse amplifiée (coagulation, accouchement)." },
+    
+    { "front": "Hypothalamus ?", "back": "Contrôle hypophyse." },
+    { "front": "Hypophyse ?", "back": "Glande maîtresse." },
+    { "front": "Glande pinéale ?", "back": "Mélatonine → sommeil." },
+    
+    { "front": "Thyroïde ?", "back": "Métabolisme, température, énergie." },
+    { "front": "Parathyroïdes ?", "back": "Régulation calcium sanguin." },
+    { "front": "Hypocalcémie ?", "back": "Tétanie." },
+    
+    { "front": "Thymus ?", "back": "Immunité." },
+    { "front": "Surrénales ?", "back": "Adrénaline, cortisol, aldostérone." },
+    { "front": "Pancréas endocrine ?", "back": "Insuline ↓ glycémie / Glucagon ↑ glycémie." },
+    
+    { "front": "Quand glycémie augmente ?", "back": "Insuline → glucose entre dans cellules." },
+    { "front": "Quand glycémie baisse ?", "back": "Glucagon → libération glucose par foie." },
+    
+    { "front": "Signes hypoglycémie ?", "back": "Sueurs, tremblements, tachycardie, confusion." },
+    
+    { "front": "Stress → hormones ?", "back": "Adrénaline immédiate + cortisol durable." },
+    
+    { "front": "Hyperthyroïdie ?", "back": "Tachycardie, agitation, amaigrissement, chaleur." },
+    { "front": "Hypothyroïdie ?", "back": "Fatigue, frilosité, bradycardie, prise de poids." }
+
+  ],
+  
+"Système digestif": [
+    { "front": "Organes digestifs ?", "back": "Bouche, pharynx, œsophage, estomac, intestin grêle, côlon, rectum." },
+
+    { "front": "Péritoine ?", "back": "Membrane entourant organes abdominaux." },
+    { "front": "Rôle péritoine ?", "back": "Barrière contre infections." },
+    
+    { "front": "Organes intrapéritonéaux ?", "back": "Rate, estomac, foie, intestin grêle, côlon." },
+    { "front": "Organes rétro-péritonéaux ?", "back": "Reins, pancréas, duodénum, aorte." },
+    
+    { "front": "Début inflammation abdominale ?", "back": "Douleur vague viscérale." },
+    { "front": "Péritonite ?", "back": "Douleur localisée." },
+    
+    { "front": "Fonctions estomac ?", "back": "Stockage, digestion, brassage, HCl antibactérien." },
+    { "front": "Vitamine B12 ?", "back": "Préparée pour absorption dans l’estomac." },
+    
+    { "front": "Parties intestin grêle ?", "back": "Duodénum, jéjunum, iléon." },
+    { "front": "Fonction intestin grêle ?", "back": "Absorption nutriments." },
+    
+    { "front": "Glucides deviennent ?", "back": "Monosaccharides (glucose)." },
+    { "front": "Protéines deviennent ?", "back": "Acides aminés." },
+    { "front": "Lipides deviennent ?", "back": "Acides gras + glycérol." },
+    
+    { "front": "Absorption lipides ?", "back": "Via système lymphatique." },
+    { "front": "Triglycérides ?", "back": "Réserve énergétique lente." },
+  
+    { "front": "3 grandes glandes salivaires ?", "back": "Parotides, submandibulaires, sublinguales." },
+    { "front": "Localisation glandes parotides ?", "back": "Sous le pavillon de l’oreille." },
+    { "front": "Canal parotide s’ouvre où ?", "back": "Au-dessus de la 2e molaire." },
+    { "front": "Localisation glandes submandibulaires ?", "back": "Sous la mandibule de chaque côté." },
+    { "front": "Canal submandibulaire s’ouvre où ?", "back": "À côté du frein de la langue." },
+    { "front": "Localisation glandes sublinguales ?", "back": "Plancher de la bouche." },
+
+    { "front": "pH du suc gastrique ?", "back": "≈ 1,5 à 3,5 (très acide)." },
+    { "front": "Suc gastrique composé de ?", "back": "Eau + acide chlorhydrique." },
+    { "front": "Rôle acide chlorhydrique ?", "back": "Tue bactéries + active enzymes digestives." },
+    { "front": "Rôle mucus gastrique ?", "back": "Protège la paroi de l’estomac." },
+    
+    { "front": "Suc intestinal provient de ?", "back": "Glandes intestinales de l’intestin grêle." },
+    { "front": "Composition suc intestinal ?", "back": "Eau, mucus, sels minéraux, enzymes." },
+    { "front": "pH suc intestinal ?", "back": "≈ 7,2 à 8 (alcalin)." },
+    
+    { "front": "Suc pancréatique se déverse où ?", "back": "Dans le duodénum." },
+    { "front": "Rôle suc pancréatique ?", "back": "Neutralise acidité du chyme + active enzymes." },
+    { "front": "pH optimal enzymes pancréatiques ?", "back": "≈ 6 à 8." },
+
+    { "front": "Bile produite par ?", "back": "Le foie." },
+    { "front": "Bile stockée où ?", "back": "Vésicule biliaire." },
+    { "front": "Sels biliaires rôle ?", "back": "Émulsifient les graisses." },
+    { "front": "Émulsifier graisses = ?", "back": "Fragmenter en microgouttelettes." },
+    { "front": "Pourquoi émulsifier graisses ?", "back": "Permet action des enzymes digestives." },
+
+    { "front": "Pigment de la bile ?", "back": "Bilirubine." },
+    { "front": "Origine bilirubine ?", "back": "Destruction globules rouges." },
+    { "front": "Excès bilirubine ?", "back": "Jaunisse (ictère)." },
+
+    { "front": "Hormone contraction vésicule biliaire ?", "back": "Cholécystokinine (CCK)." },
+    { "front": "Ouverture sphincter d’Oddi libère ?", "back": "Bile + suc pancréatique." },
+    { "front": "Réabsorption sels biliaires ?", "back": "Iléon terminal." },
+
+    { "front": "Métabolisme = ?", "back": "Ensemble réactions chimiques du corps." },
+    { "front": "2 voies métaboliques ?", "back": "Anabolisme et catabolisme." },
+    { "front": "Anabolisme ?", "back": "Fabrique molécules → consomme ATP." },
+    { "front": "Catabolisme ?", "back": "Casse molécules → produit ATP." },
+
+    { "front": "3 étapes respiration cellulaire ?", "back": "Glycolyse, Cycle de Krebs, Chaîne respiratoire." },
+    { "front": "ATP produit par glucose ?", "back": "≈ 38 ATP." },
+    { "front": "Produits finaux ?", "back": "CO₂ + H₂O." },
+
+    { "front": "Foie rôle glycémie ?", "back": "Maintien glycémie normale." },
+    { "front": "Stockage glucose ?", "back": "Sous forme glycogène." },
+    { "front": "Excès glucides ?", "back": "Transformés en graisses." },
+
+    { "front": "Pancréas = glande ?", "back": "Endocrine et exocrine." },
+    { "front": "Hormones pancréatiques ?", "back": "Insuline et glucagon." },
+    
+    { "front": "Longueur du gros intestin ?", "back": "≈ 1,5 m." },
+    { "front": "Fonction principale du côlon ?", "back": "Réabsorption de l’eau." },
+    { "front": "Le gros intestin entoure ?", "back": "L’intestin grêle." },
+    { "front": "Combien de parties dans le gros intestin ?", "back": "6 parties." },
+    
+    { "front": "Caecum ?", "back": "Région dilatée d’environ 13 cm." },
+    { "front": "Appendice = particularité ?", "back": "Zone propice à l’infection bactérienne." },
+    { "front": "Pourquoi l’appendice s’infecte facilement ?", "back": "Sa forme favorise accumulation bactérienne." },
+    
+    { "front": "Parties du côlon ?", "back": "Ascendant, transverse, descendant, sigmoïde." },
+    { "front": "Rectum ?", "back": "Partie dilatée de la fin du côlon." },
+    { "front": "Canal anal ?", "back": "Terminé par 2 sphincters." },
+    
+    { "front": "Production quotidienne de salive ?", "back": "≈ 1,5 L/jour." },
+    { "front": "Composition principale de la salive ?", "back": "Eau, sels minéraux, mucus, enzymes." },
+    { "front": "Enzyme principale de la salive ?", "back": "Amylase salivaire." },
+    { "front": "Lysozyme ?", "back": "Protéine antibactérienne." },
+    { "front": "La salive contient aussi ?", "back": "Immunoglobulines + facteurs de coagulation." },
+    
+    { "front": "Fonctions de la salive ?", "back": "Début digestion, lubrification, défense, goût." },
+    
+    { "front": "3 glandes salivaires principales ?", "back": "Parotides, submandibulaires, sublinguales." },
+    { "front": "Localisation parotides ?", "back": "Sous le pavillon de l’oreille." },
+    { "front": "Localisation submandibulaires ?", "back": "Sous la mandibule." },
+    { "front": "Localisation sublinguales ?", "back": "Plancher de la bouche." },
+    
+    { "front": "pH du suc gastrique ?", "back": "≈ 1,5 – 3,5." },
+    { "front": "Composant principal du suc gastrique ?", "back": "Acide chlorhydrique." },
+    { "front": "Rôle HCl ?", "back": "Tue microbes + active digestion protéines." },
+    { "front": "Rôle mucus gastrique ?", "back": "Protège la paroi de l’estomac." },
+    
+    { "front": "Suc intestinal composition ?", "back": "Eau, mucus, sels, enzymes." },
+    { "front": "pH suc intestinal ?", "back": "7,2 – 8 (alcalin)." },
+    
+    { "front": "Suc pancréatique arrive où ?", "back": "Dans le duodénum." },
+    { "front": "Rôle suc pancréatique ?", "back": "Neutralise acidité + active enzymes digestives." },
+    
+    { "front": "La bile est produite par ?", "back": "Le foie." },
+    { "front": "La bile est stockée où ?", "back": "Vésicule biliaire." },
+    { "front": "Rôle sels biliaires ?", "back": "Émulsifient les graisses." },
+    { "front": "Pourquoi émulsifier ?", "back": "Fragmenter en micro-gouttes." },
+    
+    { "front": "Couleur bile ?", "back": "Jaune-verte." },
+    { "front": "Origine bilirubine ?", "back": "Destruction globules rouges." },
+    { "front": "Excès bilirubine ?", "back": "Ictère (jaunisse)." },
+    
+    { "front": "Hormone qui contracte vésicule biliaire ?", "back": "Sécrétée par le duodénum." },
+    { "front": "Sels biliaires réabsorbés où ?", "back": "Iléon terminal." },
+    
+    { "front": "Métabolisme = définition ?", "back": "Toutes les réactions chimiques du corps." },
+    { "front": "4 rôles du métabolisme ?", "back": "Produire énergie, construire, réparer, maintenir vie." },
+    
+    { "front": "Anabolisme ?", "back": "Fabriquer → consomme ATP." },
+    { "front": "Catabolisme ?", "back": "Casser → produit ATP + chaleur." },
+    { "front": "Température corporelle maintenue grâce ?", "back": "Production chaleur métabolique." },
+    
+    { "front": "3 étapes respiration cellulaire ?", "back": "Glycolyse, cycle de Krebs, phosphorylation oxydative." },
+    { "front": "ATP total respiration cellulaire ?", "back": "≈ 38 ATP." },
+    
+    { "front": "Sans O2 → ATP ?", "back": "Seulement 2 ATP." },
+    { "front": "Produit final respiration ?", "back": "CO₂ + H₂O." },
+    
+    { "front": "Rôle du foie glycémie ?", "back": "Maintien glycémie." },
+    { "front": "Glucose stocké sous forme ?", "back": "Glycogène." },
+    { "front": "Excès glucides ?", "back": "Transformés en graisses." },
+    
+    { "front": "Hormones hyperglycémiantes ?", "back": "Glucagon, adrénaline, thyroxine." },
+    { "front": "Hormone hypoglycémiante ?", "back": "Insuline." },
+    
+    { "front": "Foie fonctions majeures ?", "back": "Métabolisme, détoxification, stockage vitamines." },
+    { "front": "Foie détruit ?", "back": "Vieux globules rouges." },
+    { "front": "Foie stocke ?", "back": "Vit A, D, B12, fer." },
+    
+    { "front": "Pancréas = type de glande ?", "back": "Endocrine et exocrine." },
+    { "front": "Pancréas endocrine sécrète ?", "back": "Insuline et glucagon." },
+    { "front": "Pancréas exocrine sécrète ?", "back": "Suc pancréatique." },
+    
+    { "front": "Vésicule biliaire rôle ?", "back": "Stockage et concentration de la bile." }
+  
+  ],
+  
+"Système Urinaire": [],
+"Système Reproducteur": [],
+"Système Locomoteur": [],
+"Les Sens": [],
+"Traumatologie": []
 }
