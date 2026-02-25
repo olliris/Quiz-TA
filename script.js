@@ -22,11 +22,46 @@ let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 let exerciseResults = JSON.parse(localStorage.getItem('exerciseResults')) || {};
 let currentRangeKey = ''; // Pour suivre la plage actuelle
 
+function chooseExamRange() {
+  window.scrollTo(0,0);
+  hideAll();
+  document.getElementById("examRangePage").classList.remove("hidden");
+}
+
 function startExam() {
   window.scrollTo(0,0);
   mode = 'exam';
   timeLeft = 120 * 60;
-  numQuestions = Math.min(75, quiz.length);
+  
+  // Limiter aux questions 1-210 uniquement
+  const rangeQuestions = quiz.slice(0, 210);
+  numQuestions = Math.min(75, rangeQuestions.length);
+  
+  // Mélanger les questions de manière aléatoire dans la plage 1-210
+  shuffledQuiz = [...rangeQuestions].sort(() => Math.random() - 0.5).slice(0, numQuestions);
+  
+  hideAll();
+  document.getElementById("game").classList.remove("hidden");
+  document.getElementById("timer").classList.remove("hidden");
+  document.getElementById("score").classList.remove("hidden");
+  currentQuestion = 0;
+  score = 0;
+  showQuestions();
+  startTimer();
+}
+
+function startExamRange(start, end) {
+  window.scrollTo(0,0);
+  mode = 'exam';
+  timeLeft = 120 * 60;
+  
+  // Limiter aux questions de la plage sélectionnée
+  const rangeQuestions = quiz.slice(start - 1, end);
+  numQuestions = Math.min(75, rangeQuestions.length);
+  
+  // Mélanger les questions de manière aléatoire
+  shuffledQuiz = [...rangeQuestions].sort(() => Math.random() - 0.5).slice(0, numQuestions);
+  
   hideAll();
   document.getElementById("game").classList.remove("hidden");
   document.getElementById("timer").classList.remove("hidden");
@@ -135,7 +170,7 @@ function markQuestion(question) {
 function showQuestions() {
   const questionsDiv = document.getElementById("questions");
   questionsDiv.innerHTML = "";
-  const quizToShow = mode === 'exam' ? quiz.slice(0, numQuestions) : shuffledQuiz;
+  const quizToShow = shuffledQuiz;
   quizToShow.forEach((q, index) => {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
@@ -311,17 +346,22 @@ function endExam() {
   clearInterval(timerInterval);
   const questionsDiv = document.getElementById("questions");
   const questionDivs = questionsDiv.querySelectorAll(".question");
+  
+  // Réinitialiser le score avant de recalculer
+  score = 0;
+  
   questionDivs.forEach((questionDiv, index) => {
-    const q = quiz[index];
+    const q = shuffledQuiz[index]; // CORRECTION: utiliser shuffledQuiz au lieu de quiz
     const buttons = questionDiv.querySelectorAll(".answer-button");
     let candidateSelected = [];
-    buttons.forEach((button, index) => {
+    buttons.forEach((button, btnIndex) => {
       if (button.classList.contains("selected")) {
-        candidateSelected.push(index);
+        candidateSelected.push(btnIndex);
       }
     });
-    buttons.forEach((button, index) => {
-      if (q.correct.includes(index)) {
+    
+    buttons.forEach((button, btnIndex) => {
+      if (q.correct.includes(btnIndex)) {
         button.classList.add("correct");
         if (button.classList.contains("selected")) {
           if (!button.querySelector(".check-mark")) {
@@ -334,6 +374,7 @@ function endExam() {
         button.classList.remove("selected");
       }
     });
+    
     const missingCorrect = q.correct.filter(idx => !candidateSelected.includes(idx));
     if (q.correct.length > 1 && missingCorrect.length > 0) {
       const messageElem = document.createElement("p");
@@ -341,8 +382,19 @@ function endExam() {
       messageElem.textContent = "Attention il y a plusieurs bonnes réponses";
       questionDiv.appendChild(messageElem);
     }
-    if (mode === 'exam' && !markedQuestions.some(markedQ => markedQ.question === q.question)) {
-      markedQuestions.push(q);
+    
+    // Calculer le score
+    const correctSelected = candidateSelected.filter(ans => q.correct.includes(ans)).length;
+    const incorrectSelected = candidateSelected.length - correctSelected;
+    const isCorrect = (correctSelected === q.correct.length && incorrectSelected === 0);
+    
+    if (isCorrect) {
+      score++;
+    } else {
+      // CORRECTION: Ajouter aux questions marquées SEULEMENT si la réponse est incorrecte
+      if (mode === 'exam' && !markedQuestions.some(markedQ => markedQ.question === q.question)) {
+        markedQuestions.push(q);
+      }
     }
   });
   localStorage.setItem('markedQuestions', JSON.stringify(markedQuestions));
