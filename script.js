@@ -537,7 +537,7 @@ var schemaCategories = [
   "Système Cardio-vasculaire","Système Lymphatique","Système Respiratoire",
   "Système Nerveux","Système Endocrinien","Système Digestif",
   "Système Urinaire","Système Reproducteur","Système Locomoteur",
-  "Les Sens","Traumatologie"
+  "Les Sens","Traumatologie","Questionnaire d'entraïnement"
 ];
 
 function isSchemaMarked(name) { return markedSchemas.indexOf(name) !== -1; }
@@ -720,7 +720,7 @@ var flashcardDecks = [
   "Système Cardio-vasculaire","Système Lymphatique","Système Respiratoire",
   "Système Nerveux","Système Endocrinien","Système Digestif",
   "Système Urinaire","Système Reproducteur","Système Locomoteur",
-  "Les Sens","Traumatologie"
+  "Les Sens","Traumatologie","Questionnaire d'entraïnement"
 ];
 
 function showFlashcards() {
