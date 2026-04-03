@@ -6,7 +6,7 @@
     },
     {
       "front": "Quelle est la formule de l'eau ?",
-      "back": "H₂O — deux atomes d'hydrogène liés à un atome d'oxygène."
+      "back": "H2O — deux atomes d'hydrogène liés à un atome d'oxygène."
     }
   ],
   "La Cellule": [
@@ -43,7 +43,7 @@
     },
     {
       "front": "Media = quoi ?",
-      "back": "Muscle lisse circulaire → contraction / dilatation."
+      "back": "Muscle lisse circulaire ? contraction / dilatation."
     },
     {
       "front": "Adventice = quoi ?",
@@ -75,7 +75,7 @@
     },
     {
       "front": "Chemin des échanges ?",
-      "back": "Capillaire → liquide interstitiel → cellule."
+      "back": "Capillaire ? liquide interstitiel ? cellule."
     },
     {
       "front": "Sinusoïdes = quoi ?",
@@ -90,11 +90,11 @@
       "back": "Système nerveux autonome."
     },
     {
-      "front": "Sympathique → effet ?",
+      "front": "Sympathique ? effet ?",
       "back": "Vasoconstriction."
     },
     {
-      "front": "Diminution sympathique → effet ?",
+      "front": "Diminution sympathique ? effet ?",
       "back": "Vasodilatation."
     },
     {
@@ -110,11 +110,11 @@
       "back": "Le diamètre."
     },
     {
-      "front": "Acide lactique → effet vasculaire ?",
+      "front": "Acide lactique ? effet vasculaire ?",
       "back": "Vasodilatation locale."
     },
     {
-      "front": "Hypoxie/inflammation → effet ?",
+      "front": "Hypoxie/inflammation ? effet ?",
       "back": "Vasodilatation locale hormonale."
     },
     {
@@ -123,11 +123,11 @@
     },
     {
       "front": "Le sang représente combien du poids corporel ?",
-      "back": "≈ 7 %."
+      "back": "˜ 7 %."
     },
     {
       "front": "Rôles du sang ?",
-      "back": "Transport O₂, nutriments, déchets, hormones + défense immunitaire + coagulation."
+      "back": "Transport O2, nutriments, déchets, hormones + défense immunitaire + coagulation."
     },
     {
       "front": "Deux parties du sang ?",
@@ -142,7 +142,7 @@
       "back": "Pression osmotique."
     },
     {
-      "front": "Si protéines plasmatiques ↓ ?",
+      "front": "Si protéines plasmatiques ? ?",
       "back": "Œdèmes."
     },
     {
@@ -155,11 +155,11 @@
     },
     {
       "front": "Rôle globules rouges ?",
-      "back": "Transport O₂."
+      "back": "Transport O2."
     },
     {
       "front": "Durée de vie GR ?",
-      "back": "≈ 120 jours."
+      "back": "˜ 120 jours."
     },
     {
       "front": "Particularité GR ?",
@@ -167,10 +167,10 @@
     },
     {
       "front": "Hémoglobine transporte ?",
-      "back": "O₂ et CO₂."
+      "back": "O2 et CO2."
     },
     {
-      "front": "Affinité CO vs O₂ ?",
+      "front": "Affinité CO vs O2 ?",
       "back": "CO = 100× plus forte."
     },
     {
@@ -199,7 +199,7 @@
     },
     {
       "front": "Durée de vie plaquettes ?",
-      "back": "≈ 10 jours."
+      "back": "˜ 10 jours."
     },
     {
       "front": "Rôle plaquettes ?",
@@ -207,11 +207,11 @@
     },
     {
       "front": "Étapes hémostase ?",
-      "back": "Vasoconstriction → Clou plaquettaire → Coagulation → Fibrinolyse."
+      "back": "Vasoconstriction ? Clou plaquettaire ? Coagulation ? Fibrinolyse."
     },
     {
       "front": "Transformation clé coagulation ?",
-      "back": "Fibrinogène → Fibrine."
+      "back": "Fibrinogène ? Fibrine."
     },
     {
       "front": "Type de muscle du cœur ?",
@@ -235,19 +235,19 @@
     },
     {
       "front": "Rôle coronaires ?",
-      "back": "Apport O₂ au myocarde."
+      "back": "Apport O2 au myocarde."
     },
     {
       "front": "Ordre conduction cardiaque ?",
-      "back": "SA → AV → His → Branches → Purkinje."
+      "back": "SA ? AV ? His ? Branches ? Purkinje."
     },
     {
       "front": "Parasympathique effet cœur ?",
-      "back": "↓ fréquence."
+      "back": "? fréquence."
     },
     {
       "front": "Sympathique effet cœur ?",
-      "back": "↑ fréquence + force."
+      "back": "? fréquence + force."
     },
     {
       "front": "Pouls = quoi ?",
@@ -263,11 +263,11 @@
     },
     {
       "front": "Volume éjection ventriculaire ?",
-      "back": "≈ 70 ml/battement."
+      "back": "˜ 70 ml/battement."
     },
     {
       "front": "Débit cardiaque ?",
-      "back": "≈ 5 L/min."
+      "back": "˜ 5 L/min."
     },
     {
       "front": "Retour veineux aidé par ?",
@@ -293,7 +293,7 @@
     },
     {
       "front": "Chaque jour, combien de plasma s’échappe des capillaires vers les tissus ?",
-      "back": "≈ 21 L par jour."
+      "back": "˜ 21 L par jour."
     },
     {
       "front": "Le système lymphatique draine environ combien de liquide par jour ?",
@@ -305,7 +305,7 @@
     },
     {
       "front": "Pourquoi la lymphe peut avoir un aspect laiteux ?",
-      "back": "Substances qui se dissolvent dans les graisses (lipides) → appelée chyle."
+      "back": "Substances qui se dissolvent dans les graisses (lipides) ? appelée chyle."
     },
     {
       "front": "Immunité : où sont créés des lymphocytes ?",
@@ -389,7 +389,7 @@
     },
     {
       "front": "Ganglion : particularité des vaisseaux afférents/efférent ?",
-      "back": "Reçoit 4 ou 5 vaisseaux afférents et 1 seul sort → ralentit la lymphe → meilleur filtrage (entre sale → sort propre)."
+      "back": "Reçoit 4 ou 5 vaisseaux afférents et 1 seul sort ? ralentit la lymphe ? meilleur filtrage (entre sale ? sort propre)."
     },
     {
       "front": "Dans le ganglion, déchets détruits par ?",
@@ -437,7 +437,7 @@
     },
     {
       "front": "Rate : c’est quoi (structure générale) ?",
-      "back": "Organe spongieux → pulpe splénique."
+      "back": "Organe spongieux ? pulpe splénique."
     },
     {
       "front": "Rate : 2 sortes de pulpe ?",
@@ -453,7 +453,7 @@
     },
     {
       "front": "Rate : immunité ?",
-      "back": "Contient lymphocytes B et T → production d’anticorps → réponse immunitaire contre bactéries dans le sang."
+      "back": "Contient lymphocytes B et T ? production d’anticorps ? réponse immunitaire contre bactéries dans le sang."
     },
     {
       "front": "Rate : hématopoïèse ?",
@@ -555,7 +555,7 @@
     },
     {
       "front": "Naso- / rhinopharynx : particularité ?",
-      "back": "Orifices des trompes d’Eustache → équilibre pression oreille moyenne."
+      "back": "Orifices des trompes d’Eustache ? équilibre pression oreille moyenne."
     },
     {
       "front": "Oropharynx : localisation ?",
@@ -607,11 +607,11 @@
     },
     {
       "front": "Déglutition : mouvements ?",
-      "back": "Trachée monte, épiglotte descend, palais mou remonte → séparation nasopharynx et oropharynx."
+      "back": "Trachée monte, épiglotte descend, palais mou remonte ? séparation nasopharynx et oropharynx."
     },
     {
       "front": "Trachée : va de où à où ?",
-      "back": "Larynx → carène."
+      "back": "Larynx ? carène."
     },
     {
       "front": "Trachée : anneaux cartilagineux ?",
@@ -675,7 +675,7 @@
     },
     {
       "front": "Pression pleurale : particularité ?",
-      "back": "Pression négative → permet aux feuillets de glisser l’un sur l’autre sans s’irriter."
+      "back": "Pression négative ? permet aux feuillets de glisser l’un sur l’autre sans s’irriter."
     },
     {
       "front": "Rôle de la pression négative ?",
@@ -735,11 +735,11 @@
     },
     {
       "front": "Volume courant (VC ou VT) ?",
-      "back": "Volume d’air normal entrant et sortant lors d’un cycle respiratoire (≈ 500 ml)."
+      "back": "Volume d’air normal entrant et sortant lors d’un cycle respiratoire (˜ 500 ml)."
     },
     {
       "front": "Volume de réserve inspiratoire (VRI) ?",
-      "back": "Volume d’air supplémentaire qui peut être inhalé en cas d’inspiration max (≈ 2 L)."
+      "back": "Volume d’air supplémentaire qui peut être inhalé en cas d’inspiration max (˜ 2 L)."
     },
     {
       "front": "Volume de réserve expiratoire (VRE) ?",
@@ -759,27 +759,27 @@
     },
     {
       "front": "Système central (rapide) : baisse du pH du LCR est liée à quoi ?",
-      "back": "Indirectement à l’augmentation du CO₂."
+      "back": "Indirectement à l’augmentation du CO2."
     },
     {
-      "front": "Pourquoi le CO₂ influence facilement le LCR ?",
-      "back": "CO₂ traverse facilement la barrière hémato-encéphalique (contrairement aux ions H⁺)."
+      "front": "Pourquoi le CO2 influence facilement le LCR ?",
+      "back": "CO2 traverse facilement la barrière hémato-encéphalique (contrairement aux ions H?)."
     },
     {
-      "front": "Dans le LCR, CO₂ + H₂O donne quoi ?",
-      "back": "Libération d’ions H⁺ → milieu plus acide → pH baisse."
+      "front": "Dans le LCR, CO2 + H2O donne quoi ?",
+      "back": "Libération d’ions H? ? milieu plus acide ? pH baisse."
     },
     {
       "front": "Réponse du système central quand pH LCR baisse ?",
-      "back": "Chémorécepteurs centraux → signal au centre respiratoire → ventilation augmente → élimine plus de CO₂ → pH remonte."
+      "back": "Chémorécepteurs centraux ? signal au centre respiratoire ? ventilation augmente ? élimine plus de CO2 ? pH remonte."
     },
     {
-      "front": "Système périphérique (lent) : CO₂ augmente où ?",
+      "front": "Système périphérique (lent) : CO2 augmente où ?",
       "back": "Directement dans le sang."
     },
     {
       "front": "Système périphérique (lent) : effet sur pH sanguin ?",
-      "back": "CO₂ ↑ → ions H⁺ ↑ → pH sanguin baisse."
+      "back": "CO2 ? ? ions H? ? ? pH sanguin baisse."
     },
     {
       "front": "Chémorécepteurs périphériques : où ?",
@@ -791,27 +791,27 @@
     },
     {
       "front": "Chémorécepteurs périphériques : détectent aussi quoi ?",
-      "back": "Excès CO₂ et acidité du sang (pH)."
+      "back": "Excès CO2 et acidité du sang (pH)."
     },
     {
       "front": "Réponse du système périphérique ?",
-      "back": "Message nerveux au bulbe rachidien → centre respiratoire augmente la ventilation → CO₂ éliminé → O₂ remonte."
+      "back": "Message nerveux au bulbe rachidien ? centre respiratoire augmente la ventilation ? CO2 éliminé ? O2 remonte."
     },
     {
       "front": "Système lent : particularités ?",
       "back": "Toujours activé ; peut prendre relais du système lors de maladie (BPCO…)."
     },
     {
-      "front": "Augmentation du CO₂ sanguin entraîne quoi ?",
-      "back": "H⁺ ↑ et pH ↓ (acidose respiratoire) → stimule chémorécepteurs → ventilation accrue."
+      "front": "Augmentation du CO2 sanguin entraîne quoi ?",
+      "back": "H? ? et pH ? (acidose respiratoire) ? stimule chémorécepteurs ? ventilation accrue."
     },
     {
-      "front": "CO₂ : vient d’où ?",
+      "front": "CO2 : vient d’où ?",
       "back": "Déchet du corps produit quand les cellules produisent de l’énergie."
     },
     {
       "front": "Équation énergie ?",
-      "back": "Glucose + O₂ → Énergie (ATP) + CO₂ + H₂O."
+      "back": "Glucose + O2 ? Énergie (ATP) + CO2 + H2O."
     }
   ],
   "Système Nerveux": [
@@ -825,7 +825,7 @@
     },
     {
       "front": "Origine des influx nerveux ?",
-      "back": "Stimuli externes (tactiles) et internes (CO₂)."
+      "back": "Stimuli externes (tactiles) et internes (CO2)."
     },
     {
       "front": "Propagation de l’influx nerveux ?",
@@ -941,15 +941,15 @@
     },
     {
       "front": "Potentiel d’action au repos ?",
-      "back": "Extérieur Na⁺ / Intérieur K⁺ (-70 mV)."
+      "back": "Extérieur Na? / Intérieur K? (-70 mV)."
     },
     {
       "front": "Dépolarisation ?",
-      "back": "Entrée Na⁺ → intérieur positif."
+      "back": "Entrée Na? ? intérieur positif."
     },
     {
       "front": "Repolarisation ?",
-      "back": "Sortie K⁺."
+      "back": "Sortie K?."
     },
     {
       "front": "Période réfractaire ?",
@@ -961,7 +961,7 @@
     },
     {
       "front": "Cerveau consomme ?",
-      "back": "≈ 15 % du débit cardiaque."
+      "back": "˜ 15 % du débit cardiaque."
     },
     {
       "front": "Polygone de Willis ?",
@@ -1041,7 +1041,7 @@
     },
     {
       "front": "Circulation LCR ?",
-      "back": "Ventricules → espace sous-arachnoïdien → moelle."
+      "back": "Ventricules ? espace sous-arachnoïdien ? moelle."
     },
     {
       "front": "Substance blanche ?",
@@ -1069,7 +1069,7 @@
     },
     {
       "front": "Fibres au niveau du bulbe ?",
-      "back": "Elles se croisent → décussation."
+      "back": "Elles se croisent ? décussation."
     },
     {
       "front": "Origine des influx sensitifs ?",
@@ -1145,7 +1145,7 @@
     },
     {
       "front": "Plexus sacré ?",
-      "back": "L4-S4 → contient nerf sciatique."
+      "back": "L4-S4 ? contient nerf sciatique."
     },
     {
       "front": "Sympathique = rôle ?",
@@ -1153,7 +1153,7 @@
     },
     {
       "front": "Effets sympathique ?",
-      "back": "↑ FC, ↑ PA, bronchodilatation, pupilles dilatées, libération glucose."
+      "back": "? FC, ? PA, bronchodilatation, pupilles dilatées, libération glucose."
     },
     {
       "front": "Neurotransmetteur sympathique ?",
@@ -1165,7 +1165,7 @@
     },
     {
       "front": "Effets parasympathique ?",
-      "back": "↓ FC, digestion ↑, broncho-constriction, pupilles contractées."
+      "back": "? FC, digestion ?, broncho-constriction, pupilles contractées."
     },
     {
       "front": "Neurotransmetteur parasympathique ?",
@@ -1185,7 +1185,7 @@
     },
     {
       "front": "Nerf X ?",
-      "back": "Nerf vague → parasympathique majeur."
+      "back": "Nerf vague ? parasympathique majeur."
     },
     {
       "front": "Fonction nerf vague ?",
@@ -1239,7 +1239,7 @@
     },
     {
       "front": "Glande pinéale ?",
-      "back": "Mélatonine → sommeil."
+      "back": "Mélatonine ? sommeil."
     },
     {
       "front": "Thyroïde ?",
@@ -1263,22 +1263,22 @@
     },
     {
       "front": "Pancréas endocrine ?",
-      "back": "Insuline ↓ glycémie / Glucagon ↑ glycémie."
+      "back": "Insuline ? glycémie / Glucagon ? glycémie."
     },
     {
       "front": "Quand glycémie augmente ?",
-      "back": "Insuline → glucose entre dans cellules."
+      "back": "Insuline ? glucose entre dans cellules."
     },
     {
       "front": "Quand glycémie baisse ?",
-      "back": "Glucagon → libération glucose par foie."
+      "back": "Glucagon ? libération glucose par foie."
     },
     {
       "front": "Signes hypoglycémie ?",
       "back": "Sueurs, tremblements, tachycardie, confusion."
     },
     {
-      "front": "Stress → hormones ?",
+      "front": "Stress ? hormones ?",
       "back": "Adrénaline immédiate + cortisol durable."
     },
     {
@@ -1381,7 +1381,7 @@
     },
     {
       "front": "pH du suc gastrique ?",
-      "back": "≈ 1,5 à 3,5 (très acide)."
+      "back": "˜ 1,5 à 3,5 (très acide)."
     },
     {
       "front": "Suc gastrique composé de ?",
@@ -1405,7 +1405,7 @@
     },
     {
       "front": "pH suc intestinal ?",
-      "back": "≈ 7,2 à 8 (alcalin)."
+      "back": "˜ 7,2 à 8 (alcalin)."
     },
     {
       "front": "Suc pancréatique se déverse où ?",
@@ -1417,7 +1417,7 @@
     },
     {
       "front": "pH optimal enzymes pancréatiques ?",
-      "back": "≈ 6 à 8."
+      "back": "˜ 6 à 8."
     },
     {
       "front": "Bile produite par ?",
@@ -1473,11 +1473,11 @@
     },
     {
       "front": "Anabolisme ?",
-      "back": "Fabrique molécules → consomme ATP."
+      "back": "Fabrique molécules ? consomme ATP."
     },
     {
       "front": "Catabolisme ?",
-      "back": "Casse molécules → produit ATP."
+      "back": "Casse molécules ? produit ATP."
     },
     {
       "front": "3 étapes respiration cellulaire ?",
@@ -1485,11 +1485,11 @@
     },
     {
       "front": "ATP produit par glucose ?",
-      "back": "≈ 38 ATP."
+      "back": "˜ 38 ATP."
     },
     {
       "front": "Produits finaux ?",
-      "back": "CO₂ + H₂O."
+      "back": "CO2 + H2O."
     },
     {
       "front": "Foie rôle glycémie ?",
@@ -1513,7 +1513,7 @@
     },
     {
       "front": "Longueur du gros intestin ?",
-      "back": "≈ 1,5 m."
+      "back": "˜ 1,5 m."
     },
     {
       "front": "Fonction principale du côlon ?",
@@ -1553,7 +1553,7 @@
     },
     {
       "front": "Production quotidienne de salive ?",
-      "back": "≈ 1,5 L/jour."
+      "back": "˜ 1,5 L/jour."
     },
     {
       "front": "Composition principale de la salive ?",
@@ -1593,7 +1593,7 @@
     },
     {
       "front": "pH du suc gastrique ?",
-      "back": "≈ 1,5 – 3,5."
+      "back": "˜ 1,5 – 3,5."
     },
     {
       "front": "Composant principal du suc gastrique ?",
@@ -1669,11 +1669,11 @@
     },
     {
       "front": "Anabolisme ?",
-      "back": "Fabriquer → consomme ATP."
+      "back": "Fabriquer ? consomme ATP."
     },
     {
       "front": "Catabolisme ?",
-      "back": "Casser → produit ATP + chaleur."
+      "back": "Casser ? produit ATP + chaleur."
     },
     {
       "front": "Température corporelle maintenue grâce ?",
@@ -1685,15 +1685,15 @@
     },
     {
       "front": "ATP total respiration cellulaire ?",
-      "back": "≈ 38 ATP."
+      "back": "˜ 38 ATP."
     },
     {
-      "front": "Sans O2 → ATP ?",
+      "front": "Sans O2 ? ATP ?",
       "back": "Seulement 2 ATP."
     },
     {
       "front": "Produit final respiration ?",
-      "back": "CO₂ + H₂O."
+      "back": "CO2 + H2O."
     },
     {
       "front": "Rôle du foie glycémie ?",
@@ -1751,907 +1751,907 @@
   "Traumatologie": [],
   "Questionnaire d'entraînement": [
     {
-      "front": "1. Donner la composition de l’air ambiant ?",
+      "front": "Donner la composition de l’air ambiant ?",
       "back": "78 % azote\n21 % oxygène\n1 % gaz rares, dont dioxyde de carbone"
     },
     {
-      "front": "2. Lister toutes les techniques de libération de voies aériennes que vous connaissez en distinguant celles qui relèvent de votre autonomie ?",
+      "front": "Lister toutes les techniques de libération de voies aériennes que vous connaissez en distinguant celles qui relèvent de votre autonomie ?",
       "back": "Autonomie du TA :\n- Manœuvre de Heimlich et variantes\n- Position latérale de sécurité\n- Aspiration\n- Bascule de la tête en arrière\n- Subluxation de la mandibule\n- Traction du menton\n- Canule de Guedel\n\nHors autonomie :\n- Canule de Wendel\n- Dispositifs supraglottiques : i-gel, masque laryngé, tube laryngé\n- Intubation\n- Cricotomie"
     },
     {
-      "front": "3. Lister dans l’ordre toutes les structures composant les voies aériennes ?",
+      "front": "Lister dans l’ordre toutes les structures composant les voies aériennes ?",
       "back": "Nez\nSinus\nNasopharynx\nOropharynx\nHypopharynx\nLarynx\nTrachée\nBronches souches\nBronches lobaires\nBronches segmentaires\nBronchioles\nAlvéoles pulmonaires"
     },
     {
-      "front": "4. Lister les différents rythmes cardiaques pouvant être rencontrés en réanimation en précisant pour chacun si la défibrillation est indiquée, si le massage cardiaque est indiqué, et si le pouls doit être contrôlé ?",
+      "front": "Lister les différents rythmes cardiaques pouvant être rencontrés en réanimation en précisant pour chacun si la défibrillation est indiquée, si le massage cardiaque est indiqué, et si le pouls doit être contrôlé ?",
       "back": "Asystolie :\n- Défibrillation : non\n- Massage cardiaque : oui\n- Pouls : pas besoin de le contrôler\n\nActivité électrique sans pouls :\n- Défibrillation : non\n- Massage cardiaque : oui\n- Pouls : contrôle nécessaire\n\nFibrillation ventriculaire :\n- Défibrillation : oui\n- Massage cardiaque : oui\n- Pouls : pas besoin de le contrôler\n\nTachycardie ventriculaire :\n- Défibrillation : si absence de pouls\n- Massage cardiaque : si absence de pouls\n- Pouls : contrôle nécessaire"
     },
     {
-      "front": "5. Citer les deux muscles respiratoires principaux et les deux muscles respiratoires accessoires ?",
+      "front": "Citer les deux muscles respiratoires principaux et les deux muscles respiratoires accessoires ?",
       "back": "Muscles respiratoires principaux :\n- Diaphragme\n- Muscles intercostaux\n\nMuscles respiratoires accessoires :\n- Sterno-cléido-mastoïdiens\n- Muscles abdominaux"
     },
     {
-      "front": "6. Lister et définir dans l’ordre les différentes étapes concernant la respiration ?",
+      "front": "Lister et définir dans l’ordre les différentes étapes concernant la respiration ?",
       "back": "Ventilation pulmonaire : mouvements de l’air vers et depuis les poumons\nRespiration externe : échanges gazeux entre les alvéoles et le sang\nTransport des gaz : transport de l’oxygène et du dioxyde de carbone par le sang\nRespiration interne : échanges gazeux entre le sang et la cellule"
     },
     {
-      "front": "7. Lister et donner le nombre de vertèbres ?",
+      "front": "Lister et donner le nombre de vertèbres ?",
       "back": "7 cervicales\n12 thoraciques\n5 lombaires\n5 sacrées soudées\n4 coccygiennes soudées"
     },
     {
-      "front": "8. Définir la glycémie et en donner les valeurs physiologiques ?",
+      "front": "Définir la glycémie et en donner les valeurs physiologiques ?",
       "back": "La glycémie est la mesure du taux de glucose sanguin.\nLa norme est comprise entre 4 et 7 mmol/L."
     },
     {
-      "front": "9. Décrire le test de Cincinnati, indication et items ?",
+      "front": "Décrire le test de Cincinnati, indication et items ?",
       "back": "Le test de Cincinnati permet d’évaluer la probabilité d’un AVC.\nIl comprend 3 items.\nSi l’un des items est positif, la probabilité d’un AVC est de 75 %.\n\nItems :\n- Anomalie de la parole : faire répéter une phrase complexe\n- Asymétrie faciale : faire sourire le patient ou gonfler les joues\n- Anomalie de l’extension des membres supérieurs : faire mettre les bras à angle droit par rapport au corps pendant 10 secondes, yeux fermés"
     },
     {
-      "front": "10. Lister dans l’ordre les quatre étapes nécessaires à la coagulation sanguine ?",
+      "front": "Lister dans l’ordre les quatre étapes nécessaires à la coagulation sanguine ?",
       "back": "Vasoconstriction\nHémostase primaire : clou plaquettaire\nHémostase secondaire : coagulation\nFibrinolyse : dissolution du caillot et réparation de la paroi vasculaire"
     },
     {
-      "front": "11. Définir la pression artérielle et lister les mécanismes de régulation de la pression artérielle ?",
+      "front": "Définir la pression artérielle et lister les mécanismes de régulation de la pression artérielle ?",
       "back": "La pression artérielle est la force qu’exerce le sang sur la paroi d’une artère.\nElle est exprimée en mm de mercure.\nElle dépend du débit cardiaque et des résistances vasculaires périphériques.\n\nMécanismes de régulation :\n- Régulation rapide par les systèmes sympathiques et parasympathiques\n- Régulation lente par le système rénine-angiotensine-aldostérone et l’hormone antidiurétique"
     },
     {
-      "front": "12. Définir les termes isotonique, hypertonique et hypotonique ?",
+      "front": "Définir les termes isotonique, hypertonique et hypotonique ?",
       "back": "Isotonique : solution qui présente la même concentration en ions que le plasma\nHypertonique : solution qui présente une plus grande concentration en ions que le plasma\nHypotonique : solution qui présente une moins grande concentration en ions que le plasma"
     },
     {
-      "front": "13. Détaillez le trajet d’une molécule d’O2 de son entrée dans l’organisme à une cellule du foie en nommant toutes les structures anatomiques ?",
+      "front": "Détaillez le trajet d’une molécule d’O2 de son entrée dans l’organisme à une cellule du foie en nommant toutes les structures anatomiques ?",
       "back": "Oxygène\nNez\nNasopharynx\nOropharynx\nHypopharynx\nLarynx\nTrachée\nBronche souche droite\nBronche lobaire\nBronche segmentaire\nBronchiole\nAlvéole\nMembrane alvéolo-capillaire\nVeinule\nVeine pulmonaire\nOreillette gauche\nValve mitrale\nVentricule gauche\nValve aortique\nCrosse de l’aorte\nAorte thoracique\nAorte abdominale\nTronc cœliaque\nArtériole\nCapillaire du foie\nCellule hépatique"
     },
     {
-      "front": "14. Détaillez le trajet d’une molécule de CO2 de sa sortie d’une cellule musculaire fémorale à l’extérieur du corps humain en nommant toutes les structures anatomiques ?",
+      "front": "Détaillez le trajet d’une molécule de CO2 de sa sortie d’une cellule musculaire fémorale à l’extérieur du corps humain en nommant toutes les structures anatomiques ?",
       "back": "Dioxyde de carbone\nCellule musculaire fémorale\nCapillaire\nVeinule\nVeine fémorale\nVeine iliaque\nVeine cave inférieure\nOreillette droite\nValve tricuspide\nVentricule droit\nValve pulmonaire\nTronc pulmonaire\nArtère pulmonaire\nArtériole\nMembrane alvéolo-capillaire\nAlvéole\nBronchiole\nBronche segmentaire\nBronche lobaire\nBronche souche gauche\nTrachée\nLarynx\nHypopharynx\nOropharynx\nNasopharynx\nNez\nExtérieur"
     },
     {
-      "front": "15. Sur un schéma du cœur, faire figurer les différentes cavités, valves et vaisseaux qui s’y rapportent ainsi que le système de conduction électrique ?",
+      "front": "Sur un schéma du cœur, faire figurer les différentes cavités, valves et vaisseaux qui s’y rapportent ainsi que le système de conduction électrique ?",
       "back": "Cavités : oreillette droite, ventricule droit, oreillette gauche, ventricule gauche\nValves : tricuspide, pulmonaire, mitrale, aortique\nVaisseaux : veines caves, tronc pulmonaire, veines pulmonaires, aorte\nConduction électrique : nœud sinusal, nœud auriculo-ventriculaire, faisceau de His, branches droite et gauche, fibres de Purkinje"
     },
     {
-      "front": "16. Comparer les effets du système sympathique et du système parasympathique sur les organes cibles suivants : cœur, vaisseaux, système digestif, respiration, yeux ?",
+      "front": "Comparer les effets du système sympathique et du système parasympathique sur les organes cibles suivants : cœur, vaisseaux, système digestif, respiration, yeux ?",
       "back": "Cœur :\n- Parasympathique : baisse de la fréquence\n- Sympathique : augmentation de la fréquence et de la force de contraction\n\nVaisseaux :\n- Parasympathique : peu d’effet\n- Sympathique : constriction ou dilatation\n\nSystème digestif :\n- Parasympathique : motilité et sécrétions augmentées\n- Sympathique : motilité et sécrétions diminuées\n\nRespiration :\n- Parasympathique : bronchoconstriction\n- Sympathique : bronchodilatation\n\nYeux :\n- Parasympathique : constriction pupillaire\n- Sympathique : dilatation pupillaire"
     },
     {
-      "front": "17. Définir le nerf vague ?",
+      "front": "Définir le nerf vague ?",
       "back": "10e paire de nerfs crâniens\nPrincipal nerf du système parasympathique"
     },
     {
-      "front": "18. Lister les différents modes d’administration d’un médicament utilisables en préhospitalier ?",
+      "front": "Lister les différents modes d’administration d’un médicament utilisables en préhospitalier ?",
       "back": "Intraveineux\nIntra-osseux\nPer os\nIntra-nasal\nIntra-rectal\nIntra-musculaire\nSub-lingual\nNébulisation\nSous-cutané"
     },
     {
-      "front": "19. Définir la pharmacocinétique en quatre étapes ?",
+      "front": "Définir la pharmacocinétique en quatre étapes ?",
       "back": "Absorption\nDistribution\nMétabolisation\nÉlimination"
     },
     {
-      "front": "20. Qu’est-ce que la demi-vie ?",
+      "front": "Qu’est-ce que la demi-vie ?",
       "back": "La demi-vie est le temps nécessaire pour que la concentration plasmatique d’un médicament diminue de moitié."
     },
     {
-      "front": "21. Décrire la classification de l’OMS concernant les antalgiques, donner un seul exemple pour chaque classe ?",
+      "front": "Décrire la classification de l’OMS concernant les antalgiques, donner un seul exemple pour chaque classe ?",
       "back": "Palier 1 : antalgique non opioïde, exemple paracétamol\nPalier 2 : antalgique opioïde faible, exemple codéine\nPalier 3 : antalgique opioïde fort, exemple fentanyl"
     },
     {
-      "front": "22. Qu’est-ce qu’une embarrure ?",
+      "front": "Qu’est-ce qu’une embarrure ?",
       "back": "C’est une fracture du crâne entraînant le détachement d’une partie d’os de la boîte crânienne, ce qui cause un enfoncement de cette dernière."
     },
     {
-      "front": "23. Définir l’ACSOS et lister les principaux ACSOS ?",
+      "front": "Définir l’ACSOS et lister les principaux ACSOS ?",
       "back": "ACSOS : Agression Cérébrale Secondaire d’Origine Systémique\nCe sont les modifications physiologiques qui vont engendrer de nouvelles lésions sur un cerveau déjà endommagé.\n\nPrincipaux ACSOS :\n- Hypoxie\n- Hypo/hyperglycémie\n- Choc\n- Hyperthermie\n- Hypo/hypercapnie\n- Convulsions\n- Anémie"
     },
     {
-      "front": "24. Lister les causes possibles de troubles de l’état de conscience ?",
+      "front": "Lister les causes possibles de troubles de l’état de conscience ?",
       "back": "Alcool\nAnaphylaxie\nInfarctus\nÉpilepsie\nCause endocrine ou exocrine\nOverdose\nUnderdose\nUrémie\nTraumatisme\nInfection\nCause intracrânienne\nPoisons\nStroke"
     },
     {
-      "front": "25. Lister les différents stades de l’hypothermie avec les principaux symptômes associés ?",
+      "front": "Lister les différents stades de l’hypothermie avec les principaux symptômes associés ?",
       "back": "Stade 1 : 32 à 35 °C, conscient, frissonne\nStade 2 : 28 à 32 °C, réveillable, ne frissonne plus\nStade 3 : 24 à 28 °C, inconscient\nStade 4 : moins de 24 °C, mort apparente\nStade 5 : décès sur hypothermie"
     },
     {
-      "front": "26. Citer dans l’ordre les organes du système digestif ?",
+      "front": "Citer dans l’ordre les organes du système digestif ?",
       "back": "Tube digestif :\n- Bouche\n- Pharynx\n- Œsophage\n- Estomac\n- Intestin grêle\n- Gros intestin\n- Anus\n\nOrganes annexes :\n- Dents\n- Langue\n- Glandes salivaires\n- Vésicule biliaire\n- Foie\n- Pancréas"
     },
     {
-      "front": "27. Définir l’ilus ?",
+      "front": "Définir l’ilus ?",
       "back": "Occlusion intestinale due à un arrêt du péristaltisme, entraînant un risque de péritonite."
     },
     {
-      "front": "28. Définir le diabète en distinguant les différents types ?",
+      "front": "Définir le diabète en distinguant les différents types ?",
       "back": "Le diabète est un trouble de l’assimilation, de l’utilisation et du stockage des sucres se traduisant par une hyperglycémie chronique.\n\nTypes :\n- Diabète de type 1 : insulino-dépendant, lié à la destruction des îlots de Langerhans du pancréas, le corps ne fabrique plus d’insuline\n- Diabète de type 2 : non insulino-dépendant, lié soit à un défaut de production d’insuline, soit à une diminution de l’efficacité de l’insuline\n- Diabète gestationnel : lié à une diminution de la sensibilité à l’insuline au cours de la grossesse"
     },
     {
-      "front": "29. Définir l’AVC en distinguant les différents types ?",
+      "front": "Définir l’AVC en distinguant les différents types ?",
       "back": "L’AVC est une lésion cérébrale se produisant lorsque le débit sanguin est brutalement interrompu, entraînant la mort des cellules cérébrales.\n\nTypes :\n- AVC ischémique : dû à un thrombus ou un embole qui obstrue un vaisseau\n- AVC hémorragique : lié à la rupture d’un vaisseau malade ou endommagé"
     },
     {
-      "front": "30. Qu’est-ce qu’un AIT ?",
+      "front": "Qu’est-ce qu’un AIT ?",
       "back": "L’accident ischémique transitoire mime les symptômes d’un AVC, mais ces derniers régressent en 24 h au plus."
     },
     {
-      "front": "31. Définir la méningite ?",
+      "front": "Définir la méningite ?",
       "back": "La méningite est une inflammation des méninges d’origine infectieuse, bactérienne ou virale, ou non.\nLes symptômes clés sont : céphalées, raideur de nuque, état fébrile, photophobie."
     },
     {
-      "front": "32. Définir état confusionnel et démence ?",
+      "front": "Définir état confusionnel et démence ?",
       "back": "État confusionnel : trouble de la conscience d’installation rapide ne résultant pas d’un vieillissement normal, lié à une cause traitable.\nDémence : trouble définitif d’apparition progressive résultant d’une dégénérescence des cellules nerveuses."
     },
     {
-      "front": "33. Définir le pneumothorax en distinguant les différents types ?",
+      "front": "Définir le pneumothorax en distinguant les différents types ?",
       "back": "Affection de la plèvre mettant en communication l’espace pleural et l’atmosphère.\n\nTypes :\n- Simple : air dans l’espace pleural\n- Ouvert : associé à une plaie thoracique soufflante\n- Sous tension : l’air entre dans l’espace pleural sans pouvoir s’en échapper"
     },
     {
-      "front": "34. Définir l’OAP ?",
+      "front": "Définir l’OAP ?",
       "back": "Œdème aigu pulmonaire.\nAccumulation de liquide intra-alvéolaire liée à une élévation de la pression veineuse pulmonaire, ce qui entraîne un passage d’eau plasmatique du secteur vasculaire dans la membrane alvéolo-capillaire.\nL’augmentation de la pression veineuse pulmonaire est liée à une insuffisance ventriculaire gauche qui entraîne une diminution du volume éjecté."
     },
     {
-      "front": "35. Définir l’asthme ?",
+      "front": "Définir l’asthme ?",
       "back": "Maladie touchant les voies aériennes inférieures causant une gêne expiratoire liée à une broncho-constriction et une hypersécrétion bronchique."
     },
     {
-      "front": "36. Décrire brièvement les trois phases de l’accouchement physiologique ?",
+      "front": "Décrire brièvement les trois phases de l’accouchement physiologique ?",
       "back": "1re phase de travail : dilatation du col\n2e phase de travail : expulsion du bébé\n3e phase de travail : délivrance placentaire"
     },
     {
-      "front": "37. Calculer l’autonomie d’une bouteille d’oxygène de 2 litres à 150 bars au débit de 9 litres par minute, détailler le calcul ?",
+      "front": "Calculer l’autonomie d’une bouteille d’oxygène de 2 litres à 150 bars au débit de 9 litres par minute, détailler le calcul ?",
       "back": "2 × 150 = 300 litres d’oxygène\n300 / 9 = 33,33\nSoit environ 33 minutes d’autonomie"
     },
     {
-      "front": "38. Lister les éléments cinétiques pertinents à relever concernant la chute d’un patient ?",
+      "front": "Lister les éléments cinétiques pertinents à relever concernant la chute d’un patient ?",
       "back": "Hauteur de la chute\nSurface de réception\nPosition du corps au moment de la chute"
     },
     {
-      "front": "39. Combien de mg de glucose contient une ampoule de 2 mL de G20 ? Détaillez le calcul ?",
+      "front": "Combien de mg de glucose contient une ampoule de 2 mL de G20 ? Détaillez le calcul ?",
       "back": "G20 correspond à 20 g de glucose pour 100 mL\nUne ampoule de 2 mL contient 0,4 g de glucose\n0,4 g = 400 mg\nUne ampoule de 2 mL de G20 contient 400 mg de glucose"
     },
     {
-      "front": "40. Vous devez passer 20 mg de KCl dilué dans une poche de 100 mL de NaCl en 10 heures. Quel débit réglez-vous la perfusion ? Résultat à donner en mL/h et en gouttes/min en détaillant le calcul ?",
+      "front": "Vous devez passer 20 mg de KCl dilué dans une poche de 100 mL de NaCl en 10 heures. Quel débit réglez-vous la perfusion ? Résultat à donner en mL/h et en gouttes/min en détaillant le calcul ?",
       "back": "100 mL en 10 heures = 10 mL/h\n1 mL = 20 gouttes\n10 mL/h = 200 gouttes/h\n200 / 60 = 3,33 gouttes/min\nDébit : 10 mL/h ou 3 gouttes/min"
     },
     {
-      "front": "41. Faire le schéma d’un tracé ECG physiologique en repérant l’activité électrique et l’activité mécanique du cœur ?",
+      "front": "Faire le schéma d’un tracé ECG physiologique en repérant l’activité électrique et l’activité mécanique du cœur ?",
       "back": "1. Contraction des oreillettes\n2. Contraction des ventricules\n3. Repolarisation des ventricules"
     },
     {
-      "front": "42. Selon les directives de l’IAS, combien d’heures de formation continue un ambulancier est-il soumis par année ?",
+      "front": "Selon les directives de l’IAS, combien d’heures de formation continue un ambulancier est-il soumis par année ?",
       "back": "Minimum 30 heures\nIdéalement 40 heures"
     },
     {
-      "front": "43. Définir le SCA en distinguant les différents types ?",
+      "front": "Définir le SCA en distinguant les différents types ?",
       "back": "Syndrome coronarien aigu.\n\nTypes :\n- Angor instable : douleur rétrosternale ne disparaissant pas au repos\n- NSTEMI : pas de sus-décalage du segment ST, troponines positives\n- STEMI : élévation du segment ST dans au moins 2 dérivations contiguës"
     },
     {
-      "front": "44. Définir la fibrillation auriculaire en expliquant les principaux risques qu’elle entraîne ?",
+      "front": "Définir la fibrillation auriculaire en expliquant les principaux risques qu’elle entraîne ?",
       "back": "La fibrillation auriculaire est une contraction anarchique des cellules myocardiques des oreillettes entraînant une efficacité mécanique nulle.\nComme le remplissage ventriculaire est 70 % passif, la conséquence hémodynamique est limitée et la FA peut être tolérée par le patient.\nIl existe néanmoins un risque non négligeable de formation de caillots, principalement dans l’oreillette gauche, lié aux turbulences, ce dernier peut alors migrer et entraîner un AVC."
     },
     {
-      "front": "45. Qu’est-ce qu’un protocole ?",
+      "front": "Qu’est-ce qu’un protocole ?",
       "back": "Un protocole est un acte médico-délégué ad personam et pour une durée limitée après évaluation par le médecin de l’entreprise."
     },
     {
-      "front": "46. Détaillez la prise en charge d’un arrêt cardiaque dans l’ordre ?",
+      "front": "Détaillez la prise en charge d’un arrêt cardiaque dans l’ordre ?",
       "back": "Reconnaissance de l’ACR\nMassage cardiaque\nPose des électrodes et analyse\nChoc si nécessaire\nDemande du SMUR\nVentilation et gestion des voies aériennes\nRanimation de haute qualité pendant 5 minutes\nPose de VVP\nAdrénaline toutes les 3 à 5 min\nRecherche et traitement des causes réversibles"
     },
     {
-      "front": "47. Quelles sont les différentes étapes d’un accouchement ?",
+      "front": "Quelles sont les différentes étapes d’un accouchement ?",
       "back": "Travail jusqu’à dilatation complète\nExpulsion sortie du ou des fœtus\nDélivrance : expulsion du placenta"
     },
     {
-      "front": "48. Listez l’ensemble des éléments cinétiques à rechercher lors d’un accident de circulation ?",
+      "front": "Listez l’ensemble des éléments cinétiques à rechercher lors d’un accident de circulation ?",
       "back": "Vitesse en cause\nDégâts et déformations du véhicule ou de l’environnement\nType de choc\nÉquipements de protection : air-bag, ceinture de sécurité, casque, etc."
     },
     {
-      "front": "49. Quels sont les éléments à rechercher lors d’un trouble de l’état de conscience ?",
+      "front": "Quels sont les éléments à rechercher lors d’un trouble de l’état de conscience ?",
       "back": "Alcool\nAnaphylaxie\nAcidose\nÉpilepsie\nCause endocrine ou exocrine\nÉlectrolytes\nInsuline\nInfarctus\nOverdose\nOxygène / hypoxie\nUrémie\nUnderdose\nTraumatisme\nIntoxication\nPsychogène\nPoisons\nStroke\nShock"
     },
     {
-      "front": "50. Décrivez les 4 stades de la réaction anaphylactique ?",
+      "front": "Décrivez les 4 stades de la réaction anaphylactique ?",
       "back": "Stade I : urticaire, prurit\nStade II : œdème, symptômes digestifs\nStade III : dyspnée\nStade IV : état de choc"
     },
     {
-      "front": "1. Après une intervention, le patient souhaiterait avoir une copie du FIP. Comment procédez-vous ?",
+      "front": "Après une intervention, le patient souhaiterait avoir une copie du FIP. Comment procédez-vous ?",
       "back": "Je l’imprime à l’hôpital ou dans l’ambulance et je le transmets en main propre au patient."
     },
     {
-      "front": "2. À quelles personnes êtes-vous autorisé à remettre une copie du FIP ?",
+      "front": "À quelles personnes êtes-vous autorisé à remettre une copie du FIP ?",
       "back": "Au médecin.\nAu patient lui-même.\nAu personnel soignant responsable."
     },
     {
-      "front": "3. Nommez 3 raisons pour lesquelles un protocole doit être écrit après chaque intervention effectuée.",
+      "front": "Nommez 3 raisons pour lesquelles un protocole doit être écrit après chaque intervention effectuée.",
       "back": "Transmission de l’intervention aux soignants.\nRaison légale : document médico-légal en cas de litige ou de plainte.\nArchivage du service, traçabilité, facturation, formation."
     },
     {
-      "front": "4. Combien de temps minimum doit-on conserver les protocoles d’intervention ?",
+      "front": "Combien de temps minimum doit-on conserver les protocoles d’intervention ?",
       "back": "10 ans."
     },
     {
-      "front": "5. Choisissez dans la liste les 4 données les plus importantes dont vous avez absolument besoin pour arriver au lieu de l’accident.",
+      "front": "Choisissez dans la liste les 4 données les plus importantes dont vous avez absolument besoin pour arriver au lieu de l’accident.",
       "back": "Adresse.\nType d’urgence.\nAvis d’intervention.\nParticularités de conditions d’accès."
     },
     {
-      "front": "6. Quelles sont les caractéristiques des interventions P3 ou S3 ?",
+      "front": "Quelles sont les caractéristiques des interventions P3 ou S3 ?",
       "back": "Intervention permettant un délai au départ ou intervention programmée."
     },
     {
-      "front": "7. Complétez les parties manquantes dans le texte ci-dessous.",
+      "front": "Complétez les parties manquantes dans le texte ci-dessous.",
       "back": "Lors d’une intervention primaire, l’urgence est toujours déterminée par la centrale 144.\nUne intervention immédiate pour une urgence sans mise en danger des fonctions vitales est nommée P2.\nUn transfert, commandé à l’avance, d’une résidence médicalisée vers un hôpital est nommé S3.\nUn transfert de patient, dont les fonctions vitales sont en danger, d’un cabinet médical vers un hôpital est nommé P1.\nUn transfert, commandé à l’avance, d’un domicile vers un hôpital est nommé P3."
     },
     {
-      "front": "8. Quelle est la manière correcte de procéder sur un lieu d’intervention ?",
+      "front": "Quelle est la manière correcte de procéder sur un lieu d’intervention ?",
       "back": "Protection personnelle.\nSécurité du patient.\nA, B, C, D, E.\nDécision stable/instable.\nBody-check complet et SAMPLER.\nRéévaluation."
     },
     {
-      "front": "9. Vous êtes appelés pour une chute avec traumatisme du bassin. La victime est blême et hypotoniqe. En quoi consiste la stratégie de Load and Go ?",
+      "front": "Vous êtes appelés pour une chute avec traumatisme du bassin. La victime est blême et hypotoniqe. En quoi consiste la stratégie de Load and Go ?",
       "back": "Elle consiste à faire un soin d’urgence pour maintenir les fonctions vitales, puis partir à l’hôpital très rapidement."
     },
     {
-      "front": "10. Un patient est pâle et très fatigué. De plus, il souffre d’une sévère gastro-entérite. Quels sont les 4 comportements à adopter ?",
+      "front": "Un patient est pâle et très fatigué. De plus, il souffre d’une sévère gastro-entérite. Quels sont les 4 comportements à adopter ?",
       "back": "Protection personnelle.\nDésinfecter le véhicule selon la disposition.\nInformer l’hôpital de destination.\nChanger de tenue de travail."
     },
     {
-      "front": "11. Quelle est la définition de l’infection ?",
+      "front": "Quelle est la définition de l’infection ?",
       "back": "Invasion de l’organisme par un agent étranger provoquant un état pathologique par réaction de défense de l’organisme, avec lésions cellulaires, libération de toxines et développement d’anticorps."
     },
     {
-      "front": "12. Situation : accident individuel, collision avec une colonne en béton. Listez 4 informations concernant le mécanisme d’accident que vous devez avoir.",
+      "front": "Situation : accident individuel, collision avec une colonne en béton. Listez 4 informations concernant le mécanisme d’accident que vous devez avoir.",
       "back": "Cinétique.\nMécanisme d’impact.\nVitesse.\nAvec ou sans ceinture de sécurité.\nRaison, maladie ou perte de maîtrise."
     },
     {
-      "front": "13. Que signifient les lettres du schéma SAMPLE ?",
+      "front": "Que signifient les lettres du schéma SAMPLE ?",
       "back": "S : Symptômes, signe.\nA : Allergies.\nM : Médicaments.\nP : Passé médical.\nL : Last meal.\nE : Événement.\nR : Risque facteur."
     },
     {
-      "front": "14. Que signifient les lettres du schéma OPQRST ?",
+      "front": "Que signifient les lettres du schéma OPQRST ?",
       "back": "O : Onset.\nP : Provoqué par.\nQ : Qualité.\nR : Région.\nS : Sévérité.\nT : Temps."
     },
     {
-      "front": "15. Le score de Glasgow sert à quoi ?",
+      "front": "Le score de Glasgow sert à quoi ?",
       "back": "Il sert à évaluer l’atteinte neurologique et l’état de conscience d’un patient en cas de traumatisme crânio-cérébral."
     },
     {
-      "front": "16. Vous mettez un patient sur un ECG 3 dérivations. Indiquez la position correcte des électrodes et leur couleur.",
+      "front": "Vous mettez un patient sur un ECG 3 dérivations. Indiquez la position correcte des électrodes et leur couleur.",
       "back": "1 : Rouge.\n2 : Jaune.\n3 : Vert."
     },
     {
-      "front": "17. Quels symptômes pouvez-vous observer chez un patient présentant une hémorragie interne subite ?",
+      "front": "Quels symptômes pouvez-vous observer chez un patient présentant une hémorragie interne subite ?",
       "back": "Abdomen dur.\nPouls filant.\nHypotension.\nAngoisse.\nTachycardie.\nPeau pâle.\nDiaphorèse."
     },
     {
-      "front": "18. Un patient se plaint d’étouffement. Il est assis au bord du lit, ses extrémités sont froides et moites, sa peau est légèrement cyanosée. Quelle mesure thérapeutique appliquez-vous en premier ?",
+      "front": "Un patient se plaint d’étouffement. Il est assis au bord du lit, ses extrémités sont froides et moites, sa peau est légèrement cyanosée. Quelle mesure thérapeutique appliquez-vous en premier ?",
       "back": "Administration d’oxygène à 100 % avec masque."
     },
     {
-      "front": "19. Nommez 3 symptômes qui conduisent à une perturbation de l’homéostase eau-électrolytes.",
+      "front": "Nommez 3 symptômes qui conduisent à une perturbation de l’homéostase eau-électrolytes.",
       "back": "Diarrhées.\nVomissements.\nTranspiration intense."
     },
     {
-      "front": "20. Attribuez chaque partie anatomique à la perte sanguine maximale correspondante en cas de fracture.",
+      "front": "Attribuez chaque partie anatomique à la perte sanguine maximale correspondante en cas de fracture.",
       "back": "Tibia/péroné : jusqu’à 800 ml.\nFémur : jusqu’à 2000 ml.\nHumérus : jusqu’à 500 ml.\nBassin : jusqu’à 5000 ml."
     },
     {
-      "front": "21. Différents symptômes sont numérés ci-dessous. Indiquer pour chacun s’il est typique d’une insolation, d’une déshydratation ou d’une méningite.",
+      "front": "Différents symptômes sont numérés ci-dessous. Indiquer pour chacun s’il est typique d’une insolation, d’une déshydratation ou d’une méningite.",
       "back": "Muqueuses sèches : déshydratation.\nRaideur de la nuque : méningite.\nFièvre : insolation, déshydratation, méningite.\nTachycardie : insolation, déshydratation, méningite.\nPeau rougie : insolation.\nPlis persistants de la peau : déshydratation.\nHypotonie : insolation, méningite.\nPhotophobie/phonophobie : méningite."
     },
     {
-      "front": "22. Classez les signes typiques d’une entorse et d’une luxation.",
+      "front": "Classez les signes typiques d’une entorse et d’une luxation.",
       "back": "Foulure : entorse.\nBlessure articulaire avec atteinte aux ligaments : entorse.\nDformation : entorse ou luxation selon le contexte.\nBlessure articulaire avec déchirure de la capsule articulaire : luxation.\nDplacement ou perte de contact des surfaces articulaires : luxation.\nSurface articulaire en position correcte : entorse."
     },
     {
-      "front": "23. Nommez deux causes d’un choc cardiogénique.",
+      "front": "Nommez deux causes d’un choc cardiogénique.",
       "back": "Infarctus du myocarde.\nTamponade.\nTrouble du rythme cardiaque ou de la conduction.\nEmbolie pulmonaire."
     },
     {
-      "front": "24. Nommez 4 moyens techniques afin de libérer ou maintenir débouchées les voies respiratoires d’un adulte dans un état d’inconscience profonde GCS 3.",
+      "front": "Nommez 4 moyens techniques afin de libérer ou maintenir débouchées les voies respiratoires d’un adulte dans un état d’inconscience profonde GCS 3.",
       "back": "Aspiration.\nCanule de Wendel.\nIntubation.\nCanule de Guedel."
     },
     {
-      "front": "25. Lorsque les compressions thoraciques sont effectuées correctement, que sont-elles censées diminuer ?",
+      "front": "Lorsque les compressions thoraciques sont effectuées correctement, que sont-elles censées diminuer ?",
       "back": "L’augmentation du CO2 dans le volume circulant."
     },
     {
-      "front": "26. Nommez 3 fonctions vitales pouvant être évaluées à l’aide de l’évaluation primaire ABCDE.",
+      "front": "Nommez 3 fonctions vitales pouvant être évaluées à l’aide de l’évaluation primaire ABCDE.",
       "back": "Respiration.\nCirculation sanguine.\nÉtat de conscience."
     },
     {
-      "front": "27. Nommez 4 complications possibles lors d’une ponction intraveineuse.",
+      "front": "Nommez 4 complications possibles lors d’une ponction intraveineuse.",
       "back": "Infection.\nPhlébite.\nPonction artérielle.\nEmbolie gazeuse.\nInjection para-veineuse."
     },
     {
-      "front": "28. Nommez un objet que vous pouvez utiliser chez un patient inconscient pour maintenir les voies respiratoires ouvertes au niveau de la bouche.",
+      "front": "Nommez un objet que vous pouvez utiliser chez un patient inconscient pour maintenir les voies respiratoires ouvertes au niveau de la bouche.",
       "back": "Canule de Guedel."
     },
     {
-      "front": "29. Complétez le tableau de la circulation sanguine.",
+      "front": "Complétez le tableau de la circulation sanguine.",
       "back": "Ventricule droit.\nArtère pulmonaire.\nAlvéoles / capillaires.\nVeine pulmonaire.\nOreillette gauche.\nVentricule gauche.\nAorte.\nArtères.\nArtérioles.\nCapillaires.\nVeinules.\nVeine.\nOreillette droite.\nVentricule droit."
     },
     {
-      "front": "30. Complétez le tableau des effets sympathiques et parasympathiques du système nerveux végétatif.",
+      "front": "Complétez le tableau des effets sympathiques et parasympathiques du système nerveux végétatif.",
       "back": "Myocarde : tachycardie / bradycardie.\nBronches : bronchodilatation / bronchoconstriction.\nGlandes salivaires : hyposalivation / hypersalivation.\nTractus gastro-intestinal : diminution de la digestion / augmentation de la digestion.\nPupilles : mydriase / myosis."
     },
     {
-      "front": "31. Donnez 8 éléments de matériel à préparer avant une intubation endo-trachéale.",
+      "front": "Donnez 8 éléments de matériel à préparer avant une intubation endo-trachéale.",
       "back": "Tube.\nLubrifiant.\nLaryngoscope.\nStéthoscope.\nBallon de ventilation.\nPince de Magill.\nAspiration.\nCanule de Guedel.\nSeringue.\nMandrin.\nFixation.\nOxygène."
     },
     {
-      "front": "32. Ordonnez les composants sanguins.",
+      "front": "Ordonnez les composants sanguins.",
       "back": "Plasma sanguin : composant liquide du sang, avec facteurs de coagulation et sans cellules.\nSérum sanguin : composant liquide du sang, sans facteurs de coagulation et sans cellules.\nÉrythrocytes : globules rouges, transport de l’oxygène.\nLeucocytes : globules blancs, combat contre les maladies.\nThrombocytes : plaquettes sanguines."
     },
     {
-      "front": "33. Nommez le pacemaker primaire du cœur et indiquez sa fréquence au repos.",
+      "front": "Nommez le pacemaker primaire du cœur et indiquez sa fréquence au repos.",
       "back": "Le nœud sinusal, environ 80 pulsations par minute."
     },
     {
-      "front": "34. Listez 4 différentes voies d’administration de médicaments.",
+      "front": "Listez 4 différentes voies d’administration de médicaments.",
       "back": "Per os.\nIntraveineuse.\nIntramusculaire.\nCutanée."
     },
     {
-      "front": "35. Listez 6 causes non traumatiques d’inconscience.",
+      "front": "Listez 6 causes non traumatiques d’inconscience.",
       "back": "Hypoglycémie.\nArrêt respiratoire ou cardiaque.\nACR.\nHypoxie.\nAVC.\nConvulsions.\nIntoxication."
     },
     {
-      "front": "36. Votre patient a une fracture du tibia. Nommez 2 mesures non médicamenteuses pour soulager ses douleurs.",
+      "front": "Votre patient a une fracture du tibia. Nommez 2 mesures non médicamenteuses pour soulager ses douleurs.",
       "back": "Bonne immobilisation.\nPosition antalgique."
     },
     {
-      "front": "37. Différentes fonctions corporelles sont listées ci-dessous. Indiquez s’il s’agit d’une fonction du foie ou du pancréas.",
+      "front": "Différentes fonctions corporelles sont listées ci-dessous. Indiquez s’il s’agit d’une fonction du foie ou du pancréas.",
       "back": "Épuration du sang : foie.\nProduction d’hormones : pancréas.\nProduction de bile : foie.\nProduction d’enzymes digestives : foie et pancréas."
     },
     {
-      "front": "38. Nommez 3 médicaments utilisés dans la réanimation.",
+      "front": "Nommez 3 médicaments utilisés dans la réanimation.",
       "back": "Adrénaline.\nAmiodarone.\nBicarbonate de sodium."
     },
     {
-      "front": "39. Dans quels buts les médicaments suivants sont-ils utilisés dans les services d’urgences initiales ?",
+      "front": "Dans quels buts les médicaments suivants sont-ils utilisés dans les services d’urgences initiales ?",
       "back": "Aspegic : protocole SCA / DRS.\nPrimperan / Navoban / DHBP : contre les vomissements, antiémétique.\nMorphine : antalgie.\nKetalar : analgésique et anesthésique."
     },
     {
-      "front": "40. Attribuez les articulations au type d’articulation correspondant.",
+      "front": "Attribuez les articulations au type d’articulation correspondant.",
       "back": "Articulation carpo-métacarpienne du pouce : en selle.\nArticulation radio-ulnaire : trochoïde.\nArticulation de la hanche : sphéroïde.\nArticulation atlanto-occipitale : ellipsoïde.\nArticulation du coude : trochléenne."
     },
     {
-      "front": "41. À quoi sert la pince de Magill ?",
+      "front": "À quoi sert la pince de Magill ?",
       "back": "À saisir un corps étranger situé dans les voies aériennes supérieures."
     },
     {
-      "front": "42. Dans quel ordre l’air traverse-t-il les structures anatomiques lors d’une inspiration ?",
+      "front": "Dans quel ordre l’air traverse-t-il les structures anatomiques lors d’une inspiration ?",
       "back": "Pharynx.\nLarynx.\nTrachée.\nBronches.\nBronchioles."
     },
     {
-      "front": "43. Nommez 3 effets indésirables après administration de morphine par voie intraveineuse.",
+      "front": "Nommez 3 effets indésirables après administration de morphine par voie intraveineuse.",
       "back": "Vomissement.\nNausée.\nDétresse respiratoire.\nAllergie.\nAltération de la conscience."
     },
     {
-      "front": "44. Nommez 3 muscles qui participent à la respiration.",
+      "front": "Nommez 3 muscles qui participent à la respiration.",
       "back": "Diaphragme.\nSterno-cléido-mastoïdien.\nIntercostaux."
     },
     {
-      "front": "45. Nommez pour chaque lettre de l’algorithme ABCD une possible cause de problème.",
+      "front": "Nommez pour chaque lettre de l’algorithme ABCD une possible cause de problème.",
       "back": "A : obstruction complète ou partielle par un corps étranger.\nB : difficultés respiratoires, pneumonie, asthme.\nC : troubles du rythme cardiaque, arythmie, hémorragie.\nD : déficit neurologique, AVC, fracture d’un membre."
     },
     {
-      "front": "46. À quoi sert la pose d’une voie veineuse ?",
+      "front": "À quoi sert la pose d’une voie veineuse ?",
       "back": "Administration de médicaments.\nAdministration d’antimétiques.\nApport de volume après perte de liquide.\nAdministration d’analgésiques.\nAdministration de produits de contraste.\nChimiothérapie.\nAlimentation parentérale."
     },
     {
-      "front": "47. Notez dans les cases les 3 propositions qui s’appliquent au service de secours en intervention primaire.",
+      "front": "Notez dans les cases les 3 propositions qui s’appliquent au service de secours en intervention primaire.",
       "back": "Ouverture des habits.\nMise à l’abri de la chaleur et du soleil.\nHydratation.\nContrôle de la température centrale."
     },
     {
-      "front": "48. Vous préparez un transfert de patient d’environ 60 minutes. Une bouteille d’oxygène de 10 L indique une pression de 45 bars. Le patient reçoit 5 L/min. Les réserves sont-elles suffisantes ?",
+      "front": "Vous préparez un transfert de patient d’environ 60 minutes. Une bouteille d’oxygène de 10 L indique une pression de 45 bars. Le patient reçoit 5 L/min. Les réserves sont-elles suffisantes ?",
       "back": "Oui, les réserves sont suffisantes. Le calcul donne environ 81 minutes d’autonomie."
     },
     {
-      "front": "49. Quel est l’ordre du système de conduction cardiaque ?",
+      "front": "Quel est l’ordre du système de conduction cardiaque ?",
       "back": "Nœud sinusal.\nNœud atrio-ventriculaire.\nFaisceau de His.\nBranches de Tawara.\nFibres de Purkinje."
     },
     {
-      "front": "50. Nommez les organes indiqués par les flèches.",
+      "front": "Nommez les organes indiqués par les flèches.",
       "back": "Trachée.\nPoumon droit.\nCœur.\nFoie.\nGros intestin."
     },
     {
-      "front": "51. Quels symptômes peut-on observer en cas d’atteinte du cervelet, par exemple en cas d’intoxication à l’alcool ?",
+      "front": "Quels symptômes peut-on observer en cas d’atteinte du cervelet, par exemple en cas d’intoxication à l’alcool ?",
       "back": "Troubles cognitifs / langage.\nPerte d’équilibre.\nTroubles de la coordination."
     },
     {
-      "front": "52. Nommez les 4 valves cardiaques et mettez-les dans l’ordre dans lequel le sang traverse le cœur.",
+      "front": "Nommez les 4 valves cardiaques et mettez-les dans l’ordre dans lequel le sang traverse le cœur.",
       "back": "Valve tricuspide.\nValve pulmonaire.\nValve mitrale.\nValve aortique."
     },
     {
-      "front": "53. Nommez 3 signes qui laissent penser à une fracture du col du fémur.",
+      "front": "Nommez 3 signes qui laissent penser à une fracture du col du fémur.",
       "back": "Rotation du membre inférieur.\nRaccourcissement du membre.\nDéformation.\nDouleur."
     },
     {
-      "front": "54. Nommez 5 symptômes d’une infection locale.",
+      "front": "Nommez 5 symptômes d’une infection locale.",
       "back": "Rougeur.\nDouleur.\nTempérature.\nGonflement.\nŒdème.\nÉcoulement."
     },
     {
-      "front": "55. Associez les symptômes au diagnostic correspondant.",
+      "front": "Associez les symptômes au diagnostic correspondant.",
       "back": "Tachypnée : hyperventilation.\nDouleur abdominale : calcul biliaire.\nDouleur thoracique : infarctus du myocarde.\nFaiblesse du bras gauche : AVC.\nŒdème : fracture du tibia et du péroné.\nToux : pneumonie."
     },
     {
-      "front": "56. Classez les symptômes typiques d’hypertension et d’hypotension.",
+      "front": "Classez les symptômes typiques d’hypertension et d’hypotension.",
       "back": "Hypertension : épistaxis, troubles de la mémoire.\nHypotension : fatigue, extrémités froides, étourdissements, pâleur."
     },
     {
-      "front": "57. Nommez les trois couches constituant le cœur, de la plus interne à la plus externe.",
+      "front": "Nommez les trois couches constituant le cœur, de la plus interne à la plus externe.",
       "back": "Endocarde.\nMyocarde.\nPéricarde."
     },
     {
-      "front": "58. Quels sont les 5 segments constituant la colonne vertébrale, dans l’ordre de haut en bas ?",
+      "front": "Quels sont les 5 segments constituant la colonne vertébrale, dans l’ordre de haut en bas ?",
       "back": "Cervicales.\nThoraciques / dorsales.\nLombaires.\nSacrum.\nCoccyx."
     },
     {
-      "front": "59. Attribuez les termes suivants aux voies aériennes supérieures ou inférieures.",
+      "front": "Attribuez les termes suivants aux voies aériennes supérieures ou inférieures.",
       "back": "Voies aériennes supérieures : cavité nasale, cavité buccale, pharynx, larynx.\nVoies aériennes inférieures : trachée, bronches, bronchioles, alvéoles."
     },
     {
-      "front": "60. Classez, selon leur ordre d’importance, les éléments à analyser et/ou actions à réaliser face à un patient dont le pronostic vital est engagé.",
+      "front": "Classez, selon leur ordre d’importance, les éléments à analyser et/ou actions à réaliser face à un patient dont le pronostic vital est engagé.",
       "back": "Voies respiratoires.\nActivité respiratoire.\nOxygénation.\nPerfusion.\nFonction neurologique."
     },
     {
-      "front": "61. Nommer les méninges, de la surface vers la profondeur.",
+      "front": "Nommer les méninges, de la surface vers la profondeur.",
       "back": "Dure-mère.\nArachnoïde.\nPie-mère."
     },
     {
-      "front": "62. À quoi sert le liquide cérébro-spinal ?",
+      "front": "À quoi sert le liquide cérébro-spinal ?",
       "back": "Protection.\nNutrition.\nÉlimination des déchets."
     },
     {
-      "front": "63. Citez trois complications que peut entraîner la perte de conscience.",
+      "front": "Citez trois complications que peut entraîner la perte de conscience.",
       "back": "Broncho-aspiration.\nObstruction mécanique des voies aériennes.\nLangue au fond du pharynx.\nACR.\nHypoxie."
     },
     {
-      "front": "64. Reliez mode d’administration et voie d’administration correspondante.",
+      "front": "Reliez mode d’administration et voie d’administration correspondante.",
       "back": "Sous-cutané : sous la peau.\nIntramusculaire : muscle.\nIntraveineux : veine.\nPulmonaire : poumon.\nRectal : rectum.\nSublingual : muqueuse buccale.\nIntra-osseux : os spongieux.\nTransdermique : sur la peau, patch."
     },
     {
-      "front": "65. Une femme de 93 ans est presque sourde. Notez 4 gestes afin qu’elle puisse mieux vous comprendre.",
+      "front": "Une femme de 93 ans est presque sourde. Notez 4 gestes afin qu’elle puisse mieux vous comprendre.",
       "back": "Articuler.\nParler lentement.\nParler face à elle.\nParler fort sans crier."
     },
     {
-      "front": "66. Comment les patients avec des douleurs abdominales aiguës doivent-ils être couchés ?",
+      "front": "Comment les patients avec des douleurs abdominales aiguës doivent-ils être couchés ?",
       "back": "En chiens de fusil, position antalgique fœtale."
     },
     {
-      "front": "67. Listez 4 règles de base relatives au soulèvement de charges.",
+      "front": "Listez 4 règles de base relatives au soulèvement de charges.",
       "back": "Plier les genoux.\nGarder le dos droit.\nGarder la charge au plus près du corps.\nCoordonner les mouvements avec le collègue."
     },
     {
-      "front": "68. Quel est le but de la position de Trendelenburg ?",
+      "front": "Quel est le but de la position de Trendelenburg ?",
       "back": "Permettre de ramener le sang des membres inférieurs vers les organes vitaux."
     },
     {
-      "front": "69. Nommez la position typique dans laquelle placer un patient selon la situation médicale.",
+      "front": "Nommez la position typique dans laquelle placer un patient selon la situation médicale.",
       "back": "Patient inconscient : PLS.\nPatient avec artériopathie oblitérante des membres inférieurs : décubitus dorsal.\nPatient avec thrombose veineuse profonde : membre surélevé.\nPatient avec insuffisance respiratoire : assis ou semi-assis, dossier à 90°.\nPatiente enceinte de 33 semaines : légèrement couchée sur la gauche."
     },
     {
-      "front": "70. Nommez 4 mesures autres que le monitoring pour la surveillance du système cardio-vasculaire.",
+      "front": "Nommez 4 mesures autres que le monitoring pour la surveillance du système cardio-vasculaire.",
       "back": "Prise de pouls.\nCouleur de la peau.\nTension manuelle.\nContrôle de la recoloration capillaire."
     },
     {
-      "front": "71. Indiquez 3 mesures de surveillance lors de l’immobilisation d’un membre.",
+      "front": "Indiquez 3 mesures de surveillance lors de l’immobilisation d’un membre.",
       "back": "Sensibilité.\nMotricité.\nPouls."
     },
     {
-      "front": "72. Soudainement, une perfusion ne coule plus. Nommez 4 causes possibles.",
+      "front": "Soudainement, une perfusion ne coule plus. Nommez 4 causes possibles.",
       "back": "Veine trop bouchée / caillot / para-veineux.\nPerfusion vide.\nTubulure clampe ou coincée.\nRobinet 3 voies en position fermée."
     },
     {
-      "front": "73. Vocabulaire médical : inscrivez le terme technique correspondant.",
+      "front": "Vocabulaire médical : inscrivez le terme technique correspondant.",
       "back": "Fréquence respiratoire élevée > 20/min : tachypnée.\nDétresse respiratoire : dyspnée.\nContorsion d’une articulation avec perte de contact des surfaces articulaires : luxation.\nForte infection généralisée : septicémie.\nVomissement de sang : hématémèse.\nPerte de mémoire : amnésie.\nBlessure : traumatisme.\nLégers engourdissements : paresthésie.\nDiminution des facultés intellectuelles et mémorielles : démence.\nPrise du pouls artériel : pouls radial.\nMédicaments sans substance active : placebo.\nDifférence de taille entre les deux pupilles : anisocorie.\nParalysie des membres inférieurs : paraplégie.\nParalysie des 4 membres : tétraplégie.\nRotule : patella.\nAccumulation d’eau dans un tissu : œdème.\nRespiration de substances : inhalation.\nMort de tissu : nécrose."
     },
     {
-      "front": "74. Indiquez 2 mesures favorisant la durabilité des médicaments.",
+      "front": "Indiquez 2 mesures favorisant la durabilité des médicaments.",
       "back": "Stockage à l’abri de la lumière.\nStockage à l’abri de l’humidité.\nBonne température."
     },
     {
-      "front": "75. Nommez 4 maladies infectieuses connues en préhospitalier dont vous devez vous protéger lors du contact avec le patient. Dites pour chacune son mode de transmission et une mesure de protection/hygiène.",
+      "front": "Nommez 4 maladies infectieuses connues en préhospitalier dont vous devez vous protéger lors du contact avec le patient. Dites pour chacune son mode de transmission et une mesure de protection/hygiène.",
       "back": "Gastroentérite : contact, gants et lavage des mains.\nGrippe : gouttelettes, masque et gants.\nPneumonie : salive/gouttelettes, masque, gants, lunettes.\nMRSA : contact, masque, gants, blouse."
     },
     {
-      "front": "76. Nommez 5 manières dont les maladies infectieuses peuvent se transmettre.",
+      "front": "Nommez 5 manières dont les maladies infectieuses peuvent se transmettre.",
       "back": "Salive.\nSang.\nSexuelle.\nAérosol.\nContact."
     },
     {
-      "front": "1. Citer les quatre couleurs normalisées d’une carte en donnant leur signification ?",
+      "front": "Citer les quatre couleurs normalisées d’une carte en donnant leur signification ?",
       "back": "Vert : végétation\nBleu : eau\nBrun : terrain\nNoir : constructions humaines"
     },
     {
-      "front": "2. Définir les courbes de niveau ?",
+      "front": "Définir les courbes de niveau ?",
       "back": "Lignes imaginaires reliant sur la carte les points de même altitude. Elles sont équidistantes entre elles et permettent de montrer le relief du terrain."
     },
     {
-      "front": "3. À combien de kilomètres sur le terrain correspondent 3 cm mesurés sur une carte au 1/250 000e ? Détaillez le calcul.",
+      "front": "À combien de kilomètres sur le terrain correspondent 3 cm mesurés sur une carte au 1/250 000e ? Détaillez le calcul.",
       "back": "1 cm sur la carte correspond à 250 000 cm sur le terrain.\n250 000 cm = 2,5 km.\n3 cm = 3 × 2,5 km = 7,5 km."
     },
     {
-      "front": "4. À combien de cm sur une carte au 1/20 000e correspondent 400 mètres sur le terrain ? Détaillez le calcul.",
+      "front": "À combien de cm sur une carte au 1/20 000e correspondent 400 mètres sur le terrain ? Détaillez le calcul.",
       "back": "1 cm sur la carte correspond à 20 000 cm sur le terrain.\n20 000 cm = 200 m.\n400 m correspondent donc à 2 cm sur la carte."
     },
     {
-      "front": "5. Définir une intervention primaire ?",
+      "front": "Définir une intervention primaire ?",
       "back": "Une intervention primaire est une intervention dans un lieu non médicalisé ou une intervention en milieu hospitalier pour un problème différent du motif d’hospitalisation."
     },
     {
-      "front": "6. Lister et décrire les différents degrés de priorité ?",
+      "front": "Lister et décrire les différents degrés de priorité ?",
       "back": "Degré 1 : départ immédiat, feux bleus et sirène, intervention urgente avec risque vital.\nDegré 2 : départ immédiat sans feux bleus ni sirène sauf si rendus nécessaires à la progression, pas de risque vital.\nDegré 3 : départ sans feux bleus ni sirène, arrivée dans l’heure ou rendez-vous."
     },
     {
-      "front": "7. Donner les indications de pose d’une voie veineuse périphérique en préhospitalier ?",
+      "front": "Donner les indications de pose d’une voie veineuse périphérique en préhospitalier ?",
       "back": "Hydratation\nRemplissage\nAbord veineux\nAdministration de médicaments"
     },
     {
-      "front": "8. Lister le matériel nécessaire pour la pose d’une voie veineuse périphérique ?",
+      "front": "Lister le matériel nécessaire pour la pose d’une voie veineuse périphérique ?",
       "back": "Sac poubelle\nBoîte à aiguilles\nGarrot\nCathéter de taille adaptée selon l’indication et le capital veineux\nTampons désinfectants\nTampons secs\nPansement fixateur\nVeca-C\nBande ou scotch\nSoluté\nTubulure avec robinet 3 voies\nGants\nLunettes de protection"
     },
     {
-      "front": "9. Lister les complications pouvant être liées à une voie veineuse périphérique ?",
+      "front": "Lister les complications pouvant être liées à une voie veineuse périphérique ?",
       "back": "Embolie\nSepticémie\nChoc anaphylactique\nŒdème\nHématome\nNécrose"
     },
     {
-      "front": "10. Définir les termes suivants et leur relation entre eux : distance de freinage, distance d’arrêt, temps de réaction ?",
+      "front": "Définir les termes suivants et leur relation entre eux : distance de freinage, distance d’arrêt, temps de réaction ?",
       "back": "Distance d’arrêt : distance parcourue pendant le temps de réaction + distance de freinage.\nDistance de freinage : distance parcourue entre le moment où le freinage débute et celui où le véhicule s’immobilise.\nTemps de réaction : temps s’écoulant entre le moment où le cerveau perçoit un événement et le moment où il déclenche la réaction appropriée."
     },
     {
-      "front": "11. Expliquer comment réduire l’impact du transport sur le patient ?",
+      "front": "Expliquer comment réduire l’impact du transport sur le patient ?",
       "back": "Conduite souple et adaptée, itinéraire adéquat, concentration du conducteur, véhicule en bon état.\nImmobilisation correcte, analgésie suffisante, anti-nauséeux si nécessaire, information correcte du patient, température adaptée."
     },
     {
-      "front": "12. Expliquer quelles sont les conditions nécessaires pour bénéficier du droit spécial de priorité ?",
+      "front": "Expliquer quelles sont les conditions nécessaires pour bénéficier du droit spécial de priorité ?",
       "back": "Feux bleus et sirène enclenchés lors d’une course officielle ordonnée par le 144 et urgente avec risque vital pour le patient."
     },
     {
-      "front": "13. Quels points sont à contrôler sur l’ambulance à chaque prise de service ?",
+      "front": "Quels points sont à contrôler sur l’ambulance à chaque prise de service ?",
       "back": "Niveaux\nPlein de carburant\nPneumatiques\nAspect extérieur\nIntérieur\nÉclairages"
     },
     {
-      "front": "14. Décrire la conduite à tenir en cas d’accident impliquant l’ambulance ?",
+      "front": "Décrire la conduite à tenir en cas d’accident impliquant l’ambulance ?",
       "back": "Assurer la sécurité\nNe pas mobiliser l’ambulance sauf extrême nécessité\nS’assurer qu’il n’y a pas de blessés\nDemander les renforts appropriés"
     },
     {
-      "front": "15. À quelle distance minimale doit se trouver le véhicule suivant une ambulance avec signaux prioritaires ?",
+      "front": "À quelle distance minimale doit se trouver le véhicule suivant une ambulance avec signaux prioritaires ?",
       "back": "100 mètres"
     },
     {
-      "front": "16. Quelle est la précaution à prendre lors de la traversée d’un tunnel bi-directionnel en urgence et pourquoi ?",
+      "front": "Quelle est la précaution à prendre lors de la traversée d’un tunnel bi-directionnel en urgence et pourquoi ?",
       "back": "Il faut couper les feux bleus et la sirène."
     },
     {
-      "front": "17. Décrire le RAG ?",
+      "front": "Décrire le RAG ?",
       "back": "Le RAG est un enregistreur de fin de parcours qui enregistre au minimum les 30 dernières secondes ou les 250 derniers mètres précédant un accident. Il mémorise le statut des feux de croisement, des feux stop, des clignotants, des feux bleus, de la sirène et la vitesse."
     },
     {
-      "front": "18. Quels sont les risques liés à une usure des pneumatiques ?",
+      "front": "Quels sont les risques liés à une usure des pneumatiques ?",
       "back": "Diminution de la tenue de route\nPerte d’adhérence\nDistances de freinage allongées"
     },
     {
-      "front": "19. Qu’est-ce que la capacité de discernement ?",
+      "front": "Qu’est-ce que la capacité de discernement ?",
       "back": "Capacité de comprendre les informations pertinentes, d’apprécier leur importance dans la situation concrète, de raisonner avec ces éléments de façon cohérente et d’exprimer un choix."
     },
     {
-      "front": "20. Définir le secret professionnel ?",
+      "front": "Définir le secret professionnel ?",
       "back": "Le secret professionnel concerne tout ce qui aura pu être vu, lu, entendu ou compris dans le cadre de la prise en charge. Il s’applique également entre professionnels de la santé hormis certains cas spécifiques ; seule la justice peut délier le professionnel du secret."
     },
     {
-      "front": "21. Que sont les directives anticipées ?",
+      "front": "Que sont les directives anticipées ?",
       "back": "Directives rédigées à l’avance par le patient capable de discernement pour le cas où il ne serait plus capable d’exprimer sa volonté concernant le type de soins qu’il aimerait ou non recevoir."
     },
     {
-      "front": "22. Qu’est-ce que l’omission de prêter secours ?",
+      "front": "Qu’est-ce que l’omission de prêter secours ?",
       "back": "Art. 128 du code pénal suisse : celui qui n’aura pas prêté secours à une personne qu’il a blessée ou à une personne en danger de mort imminent, alors que l’on pouvait raisonnablement l’exiger de lui, ou celui qui aura empêché un tiers de prêter secours ou l’aura entravé, sera puni d’une peine privative de liberté de trois ans au plus ou d’une peine pécuniaire."
     },
     {
-      "front": "23. Définir la légitime défense ?",
+      "front": "Définir la légitime défense ?",
       "back": "Art. 15 al. 3 du Code pénal suisse : quiconque, de manière contraire au droit, est attaqué ou menacé d’une attaque imminente a le droit de repousser l’attaque par des moyens proportionnés aux circonstances ; le même droit appartient aux tiers."
     },
     {
-      "front": "24. Lister les 5 stades du deuil ?",
+      "front": "Lister les 5 stades du deuil ?",
       "back": "Déni\nColère\nDépression\nMarchandage\nAcceptation"
     },
     {
-      "front": "25. Définir l’empathie ?",
+      "front": "Définir l’empathie ?",
       "back": "Faculté de s’identifier à quelqu’un, de ressentir ce qu’il ressent."
     },
     {
-      "front": "26. Décrire les termes suivants : désinfection et antisepsie ?",
+      "front": "Décrire les termes suivants : désinfection et antisepsie ?",
       "back": "Désinfection : élimination momentanée des germes sur les milieux inertes.\nAntisepsie : élimination momentanée des germes sur les tissus vivants."
     },
     {
-      "front": "27. Lister les principales voies de transmission des infections ?",
+      "front": "Lister les principales voies de transmission des infections ?",
       "back": "Mains\nAir\nLiquides biologiques\nObjets"
     },
     {
-      "front": "28. Qu’est-ce qu’une bactérie ?",
+      "front": "Qu’est-ce qu’une bactérie ?",
       "back": "Organisme vivant unicellulaire qui vit au dépend des ressources du milieu pour sa croissance et se reproduit par fission."
     },
     {
-      "front": "29. Qu’est-ce qu’un virus ?",
+      "front": "Qu’est-ce qu’un virus ?",
       "back": "Micro-organisme constitué d’un fragment de code génétique et de protéine ne pouvant pas se reproduire à l’extérieur d’une cellule."
     },
     {
-      "front": "30. Faire un schéma du triangle épidémiologique ?",
+      "front": "Faire un schéma du triangle épidémiologique ?",
       "back": "Agent : virulence, infectiosité, potentiel de dépendance.\nHôte : susceptibilité génétique, résilience, statut nutritionnel, motivation.\nEnvironnement : hygiène publique, contexte social, disponibilité des soins de santé."
     },
     {
-      "front": "31. Donner cinq règles de communication radio ?",
+      "front": "Donner cinq règles de communication radio ?",
       "back": "Attendre que la fréquence soit libre avant de transmettre\nUtiliser le vouvoiement\nParler distinctement\nS’abstenir de toute polémique sur la fréquence\nÊtre en mesure de noter les messages par écrit"
     },
     {
-      "front": "32. Donner les informations à transmettre lors de l’annonce radio ?",
+      "front": "Donner les informations à transmettre lors de l’annonce radio ?",
       "back": "Qui appelle\nDélai d’arrivée\nSexe\nÂge\nProblème principal\nÉquipement pertinent\nBesoins de déchoquage, de secourisme, d’équipement ou de compétences spéciales"
     },
     {
-      "front": "33. Lister, dans l’ordre, les éléments à transmettre pour une remise structurée à l’hôpital ?",
+      "front": "Lister, dans l’ordre, les éléments à transmettre pour une remise structurée à l’hôpital ?",
       "back": "Sexe\nÂge\nCirconstances\nProblème principal\nATCD\nAllergies\nConstantes\nTraitements habituels\nDonnées pendant la prise en charge"
     },
     {
-      "front": "34. Faire un schéma détaillé d’un neurone en mentionnant le sens de l’influx nerveux ?",
+      "front": "Faire un schéma détaillé d’un neurone en mentionnant le sens de l’influx nerveux ?",
       "back": "L’influx nerveux parcourt l’axone depuis le corps neuronal vers l’arborisation terminale.\nLégendes : dendrite, corps cellulaire, noyau, axone, gaine de myéline, nœud de Ranvier, cellule de Schwann, arborisation terminale."
     },
     {
-      "front": "35. Quel est le rôle de la gaine de myéline ?",
+      "front": "Quel est le rôle de la gaine de myéline ?",
       "back": "La gaine de myéline protège les axones et les isole électriquement les uns des autres ; elle accroît la vitesse de transmission des influx nerveux."
     },
     {
-      "front": "36. Lister, de la partie la plus distale vers la plus proximale, les structures protégeant le cerveau ?",
+      "front": "Lister, de la partie la plus distale vers la plus proximale, les structures protégeant le cerveau ?",
       "back": "Boîte crânienne\nDure-mère\nArachnoïde\nPie-mère"
     },
     {
-      "front": "37. Définir la pression de perfusion cérébrale ?",
+      "front": "Définir la pression de perfusion cérébrale ?",
       "back": "Pression de perfusion cérébrale = pression artérielle moyenne - pression intra-crânienne."
     },
     {
-      "front": "38. Décrire la triade de Cushing ?",
+      "front": "Décrire la triade de Cushing ?",
       "back": "Mécanisme de protection du cerveau visant à maintenir la PPC malgré une élévation de la PIC lors d’HTIC : HTA, bradycardie, respiration de Cheynes-Stokes."
     },
     {
-      "front": "39. Lister précisément les items composant le score de Glasgow adulte ?",
+      "front": "Lister précisément les items composant le score de Glasgow adulte ?",
       "back": "Évaluation de la profondeur d’un coma sur une échelle de 3 à 15.\nOuverture des yeux : spontanée 4, à l’appel 3, à la douleur 2, aucune 1.\nRéponse verbale : normale 5, confuse 4, mots 3, sons 2, aucune 1.\nRéponse motrice : normale 6, localise 5, retrait 4, décortication 3, décérébration 2, aucune 1."
     },
     {
-      "front": "40. Lister les six niveaux d’organisation du corps humain ?",
+      "front": "Lister les six niveaux d’organisation du corps humain ?",
       "back": "Atomes\nCellules\nTissus\nOrganes\nSystèmes\nOrganisme"
     },
     {
-      "front": "41. Définir l’homéostasie ?",
+      "front": "Définir l’homéostasie ?",
       "back": "Capacité de l’organisme à maintenir une stabilité relative du milieu interne malgré les fluctuations de l’environnement."
     },
     {
-      "front": "42. Définir l’état de choc ?",
+      "front": "Définir l’état de choc ?",
       "back": "État d’hypoperfusion tissulaire généralisée conduisant à une production énergétique inadéquate au niveau cellulaire et à une acidose due à un passage en métabolisme anaérobie."
     },
     {
-      "front": "43. Lister tous les états de choc que vous connaissez en les décrivant brièvement ?",
+      "front": "Lister tous les états de choc que vous connaissez en les décrivant brièvement ?",
       "back": "Hypovolémique : manque de volume, hémorragie, brûlure, déshydratation.\nObstructif : obstruction vasculaire, embolie pulmonaire, pneumothorax sous tension, tamponnade péricardique.\nDistributif : hypovolémie relative par augmentation du contenant, septique, anaphylactique, neurogénique.\nCardiogénique : problème d’origine cardiaque, infarctus, décompensation cardiaque, trouble du rythme."
     },
     {
-      "front": "44. Faire le schéma d’une boucle homostatique de base ?",
+      "front": "Faire le schéma d’une boucle homostatique de base ?",
       "back": "Stimulus ? détection capteur ? centre de régulation ? réponse effecteur ? rétroaction."
     },
     {
-      "front": "45. Lister les trois états possibles de la matière ?",
+      "front": "Lister les trois états possibles de la matière ?",
       "back": "Solide\nLiquide\nGazeux"
     },
     {
-      "front": "46. Décrire précisément la composition d’un atome ?",
+      "front": "Décrire précisément la composition d’un atome ?",
       "back": "Un atome est constitué d’un noyau autour duquel gravitent des électrons chargés négativement. Le noyau concentre la masse de l’atome et est constitué de neutrons sans charge électrique et de protons chargés positivement. La charge électrique d’un atome est nulle car il possède le même nombre d’électrons et de protons."
     },
     {
-      "front": "47. Sur l’échelle du pH, faire figurer avec précision les éléments suivants : base, neutre, acide, pH sanguin ?",
+      "front": "Sur l’échelle du pH, faire figurer avec précision les éléments suivants : base, neutre, acide, pH sanguin ?",
       "back": "Base : supérieur à 7.\nNeutre : 7.\nAcide : inférieur à 7.\npH sanguin : 7,35 à 7,45."
     },
     {
-      "front": "48. Faire un schéma de la cellule en y faisant figurer les termes suivants : mitochondries, noyau, membrane plasmique, cytoplasme, membrane nucléaire, ADN ?",
+      "front": "Faire un schéma de la cellule en y faisant figurer les termes suivants : mitochondries, noyau, membrane plasmique, cytoplasme, membrane nucléaire, ADN ?",
       "back": "La membrane nucléaire protège le noyau. L’ADN est situé dans le noyau."
     },
     {
-      "front": "49. Énumérer les différentes catégories de tissus ?",
+      "front": "Énumérer les différentes catégories de tissus ?",
       "back": "Tissu épithélial\nTissu conjonctif\nTissu musculaire\nTissu nerveux"
     },
     {
-      "front": "50. Énumérer l’ensemble des facteurs de risque cardio-vasculaires ?",
+      "front": "Énumérer l’ensemble des facteurs de risque cardio-vasculaires ?",
       "back": "Âge\nSexe\nTabac\nAlcool\nStress\nSédentarité\nSurpoids, obésité\nDyslipidémie\nAntécédents familiaux ou personnels"
     },
     {
-      "front": "1. Citer les quatre couleurs normalisées d’une carte en donnant leur signification ?",
+      "front": "Citer les quatre couleurs normalisées d’une carte en donnant leur signification ?",
       "back": "Vert : végétation\nBleu : eau\nBrun : terrain\nNoir : constructions humaines"
     },
     {
-      "front": "2. Définir les courbes de niveau ?",
+      "front": "Définir les courbes de niveau ?",
       "back": "Lignes imaginaires reliant sur la carte les points de même altitude. Elles sont équidistantes entre elles et permettent de montrer le relief du terrain."
     },
     {
-      "front": "3. À combien de kilomètres sur le terrain correspondent 3 cm mesurés sur une carte au 1/250 000e ? Détaillez le calcul.",
+      "front": "À combien de kilomètres sur le terrain correspondent 3 cm mesurés sur une carte au 1/250 000e ? Détaillez le calcul.",
       "back": "1 cm sur la carte correspond à 250 000 cm sur le terrain.\n250 000 cm = 2,5 km.\n3 cm = 3 × 2,5 km = 7,5 km."
     },
     {
-      "front": "4. À combien de cm sur une carte au 1/20 000e correspondent 400 mètres sur le terrain ? Détaillez le calcul.",
+      "front": "À combien de cm sur une carte au 1/20 000e correspondent 400 mètres sur le terrain ? Détaillez le calcul.",
       "back": "1 cm sur la carte correspond à 20 000 cm sur le terrain.\n20 000 cm = 200 m.\n400 m correspondent donc à 2 cm sur la carte."
     },
     {
-      "front": "5. Définir une intervention primaire ?",
+      "front": "Définir une intervention primaire ?",
       "back": "Une intervention primaire est une intervention dans un lieu non médicalisé ou une intervention en milieu hospitalier pour un problème différent du motif d’hospitalisation."
     },
     {
-      "front": "6. Lister et décrire les différents degrés de priorité ?",
+      "front": "Lister et décrire les différents degrés de priorité ?",
       "back": "Degré 1 : départ immédiat, feux bleus et sirène, intervention urgente avec risque vital.\nDegré 2 : départ immédiat sans feux bleus ni sirène sauf si rendus nécessaires à la progression, pas de risque vital.\nDegré 3 : départ sans feux bleus ni sirène, arrivée dans l’heure ou rendez-vous."
     },
     {
-      "front": "7. Donner les indications de pose d’une voie veineuse périphérique en préhospitalier ?",
+      "front": "Donner les indications de pose d’une voie veineuse périphérique en préhospitalier ?",
       "back": "Hydratation\nRemplissage\nAbord veineux\nAdministration de médicaments"
     },
     {
-      "front": "8. Lister le matériel nécessaire pour la pose d’une voie veineuse périphérique ?",
+      "front": "Lister le matériel nécessaire pour la pose d’une voie veineuse périphérique ?",
       "back": "Sac poubelle\nBoîte à aiguilles\nGarrot\nCathéter de taille adaptée selon l’indication et le capital veineux\nTampons désinfectants\nTampons secs\nPansement fixateur\nVeca-C\nBande ou scotch\nSoluté\nTubulure avec robinet 3 voies\nGants\nLunettes de protection"
     },
     {
-      "front": "9. Lister les complications pouvant être liées à une voie veineuse périphérique ?",
+      "front": "Lister les complications pouvant être liées à une voie veineuse périphérique ?",
       "back": "Embolie\nSepticémie\nChoc anaphylactique\nŒdème\nHématome\nNécrose"
     },
     {
-      "front": "10. Définir les termes suivants et leur relation entre eux : distance de freinage, distance d’arrêt, temps de réaction ?",
+      "front": "Définir les termes suivants et leur relation entre eux : distance de freinage, distance d’arrêt, temps de réaction ?",
       "back": "Distance d’arrêt : distance parcourue pendant le temps de réaction + distance de freinage.\nDistance de freinage : distance parcourue entre le moment où le freinage débute et celui où le véhicule s’immobilise.\nTemps de réaction : temps s’écoulant entre le moment où le cerveau perçoit un événement et le moment où il déclenche la réaction appropriée."
     },
     {
-      "front": "11. Expliquer comment réduire l’impact du transport sur le patient ?",
+      "front": "Expliquer comment réduire l’impact du transport sur le patient ?",
       "back": "Conduite souple et adaptée, itinéraire adéquat, concentration du conducteur, véhicule en bon état.\nImmobilisation correcte, analgésie suffisante, anti-nauséeux si nécessaire, information correcte du patient, température adaptée."
     },
     {
-      "front": "12. Expliquer quelles sont les conditions nécessaires pour bénéficier du droit spécial de priorité ?",
+      "front": "Expliquer quelles sont les conditions nécessaires pour bénéficier du droit spécial de priorité ?",
       "back": "Feux bleus et sirène enclenchés lors d’une course officielle ordonnée par le 144 et urgente avec risque vital pour le patient."
     },
     {
-      "front": "13. Quels points sont à contrôler sur l’ambulance à chaque prise de service ?",
+      "front": "Quels points sont à contrôler sur l’ambulance à chaque prise de service ?",
       "back": "Niveaux\nPlein de carburant\nPneumatiques\nAspect extérieur\nIntérieur\nÉclairages"
     },
     {
-      "front": "14. Décrire la conduite à tenir en cas d’accident impliquant l’ambulance ?",
+      "front": "Décrire la conduite à tenir en cas d’accident impliquant l’ambulance ?",
       "back": "Assurer la sécurité\nNe pas mobiliser l’ambulance sauf extrême nécessité\nS’assurer qu’il n’y a pas de blessés\nDemander les renforts appropriés"
     },
     {
-      "front": "15. À quelle distance minimale doit se trouver le véhicule suivant une ambulance avec signaux prioritaires ?",
+      "front": "À quelle distance minimale doit se trouver le véhicule suivant une ambulance avec signaux prioritaires ?",
       "back": "100 mètres"
     },
     {
-      "front": "16. Quelle est la précaution à prendre lors de la traversée d’un tunnel bi-directionnel en urgence et pourquoi ?",
+      "front": "Quelle est la précaution à prendre lors de la traversée d’un tunnel bi-directionnel en urgence et pourquoi ?",
       "back": "Il faut couper les feux bleus et la sirène."
     },
     {
-      "front": "17. Décrire le RAG ?",
+      "front": "Décrire le RAG ?",
       "back": "Le RAG est un enregistreur de fin de parcours qui enregistre au minimum les 30 dernières secondes ou les 250 derniers mètres précédant un accident. Il mémorise le statut des feux de croisement, des feux stop, des clignotants, des feux bleus, de la sirène et la vitesse."
     },
     {
-      "front": "18. Quels sont les risques liés à une usure des pneumatiques ?",
+      "front": "Quels sont les risques liés à une usure des pneumatiques ?",
       "back": "Diminution de la tenue de route\nPerte d’adhérence\nDistances de freinage allongées"
     },
     {
-      "front": "19. Qu’est-ce que la capacité de discernement ?",
+      "front": "Qu’est-ce que la capacité de discernement ?",
       "back": "Capacité de comprendre les informations pertinentes, d’apprécier leur importance dans la situation concrète, de raisonner avec ces éléments de façon cohérente et d’exprimer un choix."
     },
     {
-      "front": "20. Définir le secret professionnel ?",
+      "front": "Définir le secret professionnel ?",
       "back": "Le secret professionnel concerne tout ce qui aura pu être vu, lu, entendu ou compris dans le cadre de la prise en charge. Il s’applique également entre professionnels de la santé hormis certains cas spécifiques ; seule la justice peut délier le professionnel du secret."
     },
     {
-      "front": "21. Que sont les directives anticipées ?",
+      "front": "Que sont les directives anticipées ?",
       "back": "Directives rédigées à l’avance par le patient capable de discernement pour le cas où il ne serait plus capable d’exprimer sa volonté concernant le type de soins qu’il aimerait ou non recevoir."
     },
     {
-      "front": "22. Qu’est-ce que l’omission de prêter secours ?",
+      "front": "Qu’est-ce que l’omission de prêter secours ?",
       "back": "Art. 128 du code pénal suisse : celui qui n’aura pas prêté secours à une personne qu’il a blessée ou à une personne en danger de mort imminent, alors que l’on pouvait raisonnablement l’exiger de lui, ou celui qui aura empêché un tiers de prêter secours ou l’aura entravé, sera puni d’une peine privative de liberté de trois ans au plus ou d’une peine pécuniaire."
     },
     {
-      "front": "23. Définir la légitime défense ?",
+      "front": "Définir la légitime défense ?",
       "back": "Art. 15 al. 3 du Code pénal suisse : quiconque, de manière contraire au droit, est attaqué ou menacé d’une attaque imminente a le droit de repousser l’attaque par des moyens proportionnés aux circonstances ; le même droit appartient aux tiers."
     },
     {
-      "front": "24. Lister les 5 stades du deuil ?",
+      "front": "Lister les 5 stades du deuil ?",
       "back": "Déni\nColère\nDépression\nMarchandage\nAcceptation"
     },
     {
-      "front": "25. Définir l’empathie ?",
+      "front": "Définir l’empathie ?",
       "back": "Faculté de s’identifier à quelqu’un, de ressentir ce qu’il ressent."
     },
     {
-      "front": "26. Décrire les termes suivants : désinfection et antisepsie ?",
+      "front": "Décrire les termes suivants : désinfection et antisepsie ?",
       "back": "Désinfection : élimination momentanée des germes sur les milieux inertes.\nAntisepsie : élimination momentanée des germes sur les tissus vivants."
     },
     {
-      "front": "27. Lister les principales voies de transmission des infections ?",
+      "front": "Lister les principales voies de transmission des infections ?",
       "back": "Mains\nAir\nLiquides biologiques\nObjets"
     },
     {
-      "front": "28. Qu’est-ce qu’une bactérie ?",
+      "front": "Qu’est-ce qu’une bactérie ?",
       "back": "Organisme vivant unicellulaire qui vit au dépend des ressources du milieu pour sa croissance et se reproduit par fission."
     },
     {
-      "front": "29. Qu’est-ce qu’un virus ?",
+      "front": "Qu’est-ce qu’un virus ?",
       "back": "Micro-organisme constitué d’un fragment de code génétique et de protéine ne pouvant pas se reproduire à l’extérieur d’une cellule."
     },
     {
-      "front": "30. Faire un schéma du triangle épidémiologique ?",
+      "front": "Faire un schéma du triangle épidémiologique ?",
       "back": "Agent : virulence, infectiosité, potentiel de dépendance.\nHôte : susceptibilité génétique, résilience, statut nutritionnel, motivation.\nEnvironnement : hygiène publique, contexte social, disponibilité des soins de santé."
     },
     {
-      "front": "31. Donner cinq règles de communication radio ?",
+      "front": "Donner cinq règles de communication radio ?",
       "back": "Attendre que la fréquence soit libre avant de transmettre\nUtiliser le vouvoiement\nParler distinctement\nS’abstenir de toute polémique sur la fréquence\nÊtre en mesure de noter les messages par écrit"
     },
     {
-      "front": "32. Donner les informations à transmettre lors de l’annonce radio ?",
+      "front": "Donner les informations à transmettre lors de l’annonce radio ?",
       "back": "Qui appelle\nDélai d’arrivée\nSexe\nÂge\nProblème principal\nÉquipement pertinent\nBesoins de déchoquage, de secourisme, d’équipement ou de compétences spéciales"
     },
     {
-      "front": "33. Lister, dans l’ordre, les éléments à transmettre pour une remise structurée à l’hôpital ?",
+      "front": "Lister, dans l’ordre, les éléments à transmettre pour une remise structurée à l’hôpital ?",
       "back": "Sexe\nÂge\nCirconstances\nProblème principal\nATCD\nAllergies\nConstantes\nTraitements habituels\nDonnées pendant la prise en charge"
     },
     {
-      "front": "34. Faire un schéma détaillé d’un neurone en mentionnant le sens de l’influx nerveux ?",
+      "front": "Faire un schéma détaillé d’un neurone en mentionnant le sens de l’influx nerveux ?",
       "back": "L’influx nerveux parcourt l’axone depuis le corps neuronal vers l’arborisation terminale.\nLégendes : dendrite, corps cellulaire, noyau, axone, gaine de myéline, nœud de Ranvier, cellule de Schwann, arborisation terminale."
     },
     {
-      "front": "35. Quel est le rôle de la gaine de myéline ?",
+      "front": "Quel est le rôle de la gaine de myéline ?",
       "back": "La gaine de myéline protège les axones et les isole électriquement les uns des autres ; elle accroît la vitesse de transmission des influx nerveux."
     },
     {
-      "front": "36. Lister, de la partie la plus distale vers la plus proximale, les structures protégeant le cerveau ?",
+      "front": "Lister, de la partie la plus distale vers la plus proximale, les structures protégeant le cerveau ?",
       "back": "Boîte crânienne\nDure-mère\nArachnoïde\nPie-mère"
     },
     {
-      "front": "37. Définir la pression de perfusion cérébrale ?",
+      "front": "Définir la pression de perfusion cérébrale ?",
       "back": "Pression de perfusion cérébrale = pression artérielle moyenne - pression intra-crânienne."
     },
     {
-      "front": "38. Décrire la triade de Cushing ?",
+      "front": "Décrire la triade de Cushing ?",
       "back": "Mécanisme de protection du cerveau visant à maintenir la PPC malgré une élévation de la PIC lors d’HTIC : HTA, bradycardie, respiration de Cheynes-Stokes."
     },
     {
-      "front": "39. Lister précisément les items composant le score de Glasgow adulte ?",
+      "front": "Lister précisément les items composant le score de Glasgow adulte ?",
       "back": "Évaluation de la profondeur d’un coma sur une échelle de 3 à 15.\nOuverture des yeux : spontanée 4, à l’appel 3, à la douleur 2, aucune 1.\nRéponse verbale : normale 5, confuse 4, mots 3, sons 2, aucune 1.\nRéponse motrice : normale 6, localise 5, retrait 4, décortication 3, décérébration 2, aucune 1."
     },
     {
-      "front": "40. Lister les six niveaux d’organisation du corps humain ?",
+      "front": "Lister les six niveaux d’organisation du corps humain ?",
       "back": "Atomes\nCellules\nTissus\nOrganes\nSystèmes\nOrganisme"
     },
     {
-      "front": "41. Définir l’homéostasie ?",
+      "front": "Définir l’homéostasie ?",
       "back": "Capacité de l’organisme à maintenir une stabilité relative du milieu interne malgré les fluctuations de l’environnement."
     },
     {
-      "front": "42. Définir l’état de choc ?",
+      "front": "Définir l’état de choc ?",
       "back": "État d’hypoperfusion tissulaire généralisée conduisant à une production énergétique inadéquate au niveau cellulaire et à une acidose due à un passage en métabolisme anaérobie."
     },
     {
-      "front": "43. Lister tous les états de choc que vous connaissez en les décrivant brièvement ?",
+      "front": "Lister tous les états de choc que vous connaissez en les décrivant brièvement ?",
       "back": "Hypovolémique : manque de volume, hémorragie, brûlure, déshydratation.\nObstructif : obstruction vasculaire, embolie pulmonaire, pneumothorax sous tension, tamponnade péricardique.\nDistributif : hypovolémie relative par augmentation du contenant, septique, anaphylactique, neurogénique.\nCardiogénique : problème d’origine cardiaque, infarctus, décompensation cardiaque, trouble du rythme."
     },
     {
-      "front": "44. Faire le schéma d’une boucle homostatique de base ?",
+      "front": "Faire le schéma d’une boucle homostatique de base ?",
       "back": "Stimulus ? détection capteur ? centre de régulation ? réponse effecteur ? rétroaction."
     },
     {
-      "front": "45. Lister les trois états possibles de la matière ?",
+      "front": "Lister les trois états possibles de la matière ?",
       "back": "Solide\nLiquide\nGazeux"
     },
     {
-      "front": "46. Décrire précisément la composition d’un atome ?",
+      "front": "Décrire précisément la composition d’un atome ?",
       "back": "Un atome est constitué d’un noyau autour duquel gravitent des électrons chargés négativement. Le noyau concentre la masse de l’atome et est constitué de neutrons sans charge électrique et de protons chargés positivement. La charge électrique d’un atome est nulle car il possède le même nombre d’électrons et de protons."
     },
     {
-      "front": "47. Sur l’échelle du pH, faire figurer avec précision les éléments suivants : base, neutre, acide, pH sanguin ?",
+      "front": "Sur l’échelle du pH, faire figurer avec précision les éléments suivants : base, neutre, acide, pH sanguin ?",
       "back": "Base : supérieur à 7.\nNeutre : 7.\nAcide : inférieur à 7.\npH sanguin : 7,35 à 7,45."
     },
     {
-      "front": "48. Faire un schéma de la cellule en y faisant figurer les termes suivants : mitochondries, noyau, membrane plasmique, cytoplasme, membrane nucléaire, ADN ?",
+      "front": "Faire un schéma de la cellule en y faisant figurer les termes suivants : mitochondries, noyau, membrane plasmique, cytoplasme, membrane nucléaire, ADN ?",
       "back": "La membrane nucléaire protège le noyau. L’ADN est situé dans le noyau."
     },
     {
-      "front": "49. Énumérer les différentes catégories de tissus ?",
+      "front": "Énumérer les différentes catégories de tissus ?",
       "back": "Tissu épithélial\nTissu conjonctif\nTissu musculaire\nTissu nerveux"
     },
     {
-      "front": "50. Énumérer l’ensemble des facteurs de risque cardio-vasculaires ?",
+      "front": "Énumérer l’ensemble des facteurs de risque cardio-vasculaires ?",
       "back": "Âge\nSexe\nTabac\nAlcool\nStress\nSédentarité\nSurpoids, obésité\nDyslipidémie\nAntécédents familiaux ou personnels"
     }
   ]
