@@ -720,7 +720,7 @@ var flashcardDecks = [
   "Système Cardio-vasculaire","Système Lymphatique","Système Respiratoire",
   "Système Nerveux","Système Endocrinien","Système Digestif",
   "Système Urinaire","Système Reproducteur","Système Locomoteur",
-  "Les Sens","Traumatologie"
+  "Les Sens","Traumatologie","Questionnaire d'entraînement"
 ];
 
 function showFlashcards() {
