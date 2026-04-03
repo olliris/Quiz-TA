@@ -597,7 +597,7 @@
 "Système Locomoteur": [],
 "Les Sens": [],
 "Traumatologie": [],
-"Questionnaires d'entraînement": [
+"Questionnaire d'entraînement": [
 
     { "front": "Expliquer ce qu’est le diabète", "back": "Maladie métabolique chronique due à un trouble de l’utilisation des hydrates de carbone (glucose) due à un manque total ou partiel d’insuline ou à une résistance à l’insuline par les cellules. Elle est caractérisée par une hyperglycémie et une glycosurie." },
     { "front": "Décrire le déroulement du processus durant l’activité du système digestif", "back": "Ingestion\nPropulsion (déglutition + péristaltisme)\nDigestion mécanique\nDigestion chimique\nAbsorption\nDéfécation" },
