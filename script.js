@@ -891,10 +891,10 @@ function renderCard() {
   cardDiv.id = "fcCard";
   var front = document.createElement("div");
   front.className = "fc-front";
-  front.textContent = card.front;
+  front.innerHTML = card.front.replace(/\n/g, '<br>');
   var back = document.createElement("div");
   back.className = "fc-back hidden";
-  back.textContent = card.back;
+  back.innerHTML = card.back.replace(/\n/g, '<br>');
   cardDiv.appendChild(front);
   cardDiv.appendChild(back);
   cardDiv.addEventListener("click", function() { flipCard(); });
