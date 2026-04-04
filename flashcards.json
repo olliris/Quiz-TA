@@ -2455,204 +2455,223 @@
       "back": "Âge\nSexe\nTabac\nAlcool\nStress\nSédentarité\nSurpoids, obésité\nDyslipidémie\nAntécédents familiaux ou personnels"
     },
     {
-      "front": "Citer les quatre couleurs normalisées d’une carte en donnant leur signification ?",
-      "back": "Vert : végétation\nBleu : eau\nBrun : terrain\nNoir : constructions humaines"
-    },
-    {
-      "front": "Définir les courbes de niveau ?",
-      "back": "Lignes imaginaires reliant sur la carte les points de même altitude. Elles sont équidistantes entre elles et permettent de montrer le relief du terrain."
-    },
-    {
-      "front": "À combien de kilomètres sur le terrain correspondent 3 cm mesurés sur une carte au 1/250 000e ? Détaillez le calcul.",
-      "back": "1 cm sur la carte correspond à 250 000 cm sur le terrain.\n250 000 cm = 2,5 km.\n3 cm = 3 × 2,5 km = 7,5 km."
-    },
-    {
-      "front": "À combien de cm sur une carte au 1/20 000e correspondent 400 mètres sur le terrain ? Détaillez le calcul.",
-      "back": "1 cm sur la carte correspond à 20 000 cm sur le terrain.\n20 000 cm = 200 m.\n400 m correspondent donc à 2 cm sur la carte."
-    },
-    {
-      "front": "Définir une intervention primaire ?",
-      "back": "Une intervention primaire est une intervention dans un lieu non médicalisé ou une intervention en milieu hospitalier pour un problème différent du motif d’hospitalisation."
-    },
-    {
-      "front": "Lister et décrire les différents degrés de priorité ?",
-      "back": "Degré 1 : départ immédiat, feux bleus et sirène, intervention urgente avec risque vital.\nDegré 2 : départ immédiat sans feux bleus ni sirène sauf si rendus nécessaires à la progression, pas de risque vital.\nDegré 3 : départ sans feux bleus ni sirène, arrivée dans l’heure ou rendez-vous."
-    },
-    {
-      "front": "Donner les indications de pose d’une voie veineuse périphérique en préhospitalier ?",
-      "back": "Hydratation\nRemplissage\nAbord veineux\nAdministration de médicaments"
-    },
-    {
-      "front": "Lister le matériel nécessaire pour la pose d’une voie veineuse périphérique ?",
-      "back": "Sac poubelle\nBoîte à aiguilles\nGarrot\nCathéter de taille adaptée selon l’indication et le capital veineux\nTampons désinfectants\nTampons secs\nPansement fixateur\nVeca-C\nBande ou scotch\nSoluté\nTubulure avec robinet 3 voies\nGants\nLunettes de protection"
-    },
-    {
-      "front": "Lister les complications pouvant être liées à une voie veineuse périphérique ?",
-      "back": "Embolie\nSepticémie\nChoc anaphylactique\nŒdème\nHématome\nNécrose"
-    },
-    {
-      "front": "Définir les termes suivants et leur relation entre eux : distance de freinage, distance d’arrêt, temps de réaction ?",
-      "back": "Distance d’arrêt : distance parcourue pendant le temps de réaction + distance de freinage.\nDistance de freinage : distance parcourue entre le moment où le freinage débute et celui où le véhicule s’immobilise.\nTemps de réaction : temps s’écoulant entre le moment où le cerveau perçoit un événement et le moment où il déclenche la réaction appropriée."
-    },
-    {
-      "front": "Expliquer comment réduire l’impact du transport sur le patient ?",
-      "back": "Conduite souple et adaptée, itinéraire adéquat, concentration du conducteur, véhicule en bon état.\nImmobilisation correcte, analgésie suffisante, anti-nauséeux si nécessaire, information correcte du patient, température adaptée."
-    },
-    {
-      "front": "Expliquer quelles sont les conditions nécessaires pour bénéficier du droit spécial de priorité ?",
-      "back": "Feux bleus et sirène enclenchés lors d’une course officielle ordonnée par le 144 et urgente avec risque vital pour le patient."
-    },
-    {
-      "front": "Quels points sont à contrôler sur l’ambulance à chaque prise de service ?",
-      "back": "Niveaux\nPlein de carburant\nPneumatiques\nAspect extérieur\nIntérieur\nÉclairages"
-    },
-    {
-      "front": "Décrire la conduite à tenir en cas d’accident impliquant l’ambulance ?",
-      "back": "Assurer la sécurité\nNe pas mobiliser l’ambulance sauf extrême nécessité\nS’assurer qu’il n’y a pas de blessés\nDemander les renforts appropriés"
-    },
-    {
-      "front": "À quelle distance minimale doit se trouver le véhicule suivant une ambulance avec signaux prioritaires ?",
-      "back": "100 mètres"
-    },
-    {
-      "front": "Quelle est la précaution à prendre lors de la traversée d’un tunnel bi-directionnel en urgence et pourquoi ?",
-      "back": "Il faut couper les feux bleus et la sirène."
-    },
-    {
-      "front": "Décrire le RAG ?",
-      "back": "Le RAG est un enregistreur de fin de parcours qui enregistre au minimum les 30 dernières secondes ou les 250 derniers mètres précédant un accident. Il mémorise le statut des feux de croisement, des feux stop, des clignotants, des feux bleus, de la sirène et la vitesse."
-    },
-    {
-      "front": "Quels sont les risques liés à une usure des pneumatiques ?",
-      "back": "Diminution de la tenue de route\nPerte d’adhérence\nDistances de freinage allongées"
-    },
-    {
-      "front": "Qu’est-ce que la capacité de discernement ?",
-      "back": "Capacité de comprendre les informations pertinentes, d’apprécier leur importance dans la situation concrète, de raisonner avec ces éléments de façon cohérente et d’exprimer un choix."
-    },
-    {
-      "front": "Définir le secret professionnel ?",
-      "back": "Le secret professionnel concerne tout ce qui aura pu être vu, lu, entendu ou compris dans le cadre de la prise en charge. Il s’applique également entre professionnels de la santé hormis certains cas spécifiques ; seule la justice peut délier le professionnel du secret."
-    },
-    {
-      "front": "Que sont les directives anticipées ?",
-      "back": "Directives rédigées à l’avance par le patient capable de discernement pour le cas où il ne serait plus capable d’exprimer sa volonté concernant le type de soins qu’il aimerait ou non recevoir."
-    },
-    {
-      "front": "Qu’est-ce que l’omission de prêter secours ?",
-      "back": "Art. 128 du code pénal suisse : celui qui n’aura pas prêté secours à une personne qu’il a blessée ou à une personne en danger de mort imminent, alors que l’on pouvait raisonnablement l’exiger de lui, ou celui qui aura empêché un tiers de prêter secours ou l’aura entravé, sera puni d’une peine privative de liberté de trois ans au plus ou d’une peine pécuniaire."
-    },
-    {
-      "front": "Définir la légitime défense ?",
-      "back": "Art. 15 al. 3 du Code pénal suisse : quiconque, de manière contraire au droit, est attaqué ou menacé d’une attaque imminente a le droit de repousser l’attaque par des moyens proportionnés aux circonstances ; le même droit appartient aux tiers."
-    },
-    {
-      "front": "Lister les 5 stades du deuil ?",
-      "back": "Déni\nColère\nDépression\nMarchandage\nAcceptation"
-    },
-    {
-      "front": "Définir l’empathie ?",
-      "back": "Faculté de s’identifier à quelqu’un, de ressentir ce qu’il ressent."
-    },
-    {
-      "front": "Décrire les termes suivants : désinfection et antisepsie ?",
-      "back": "Désinfection : élimination momentanée des germes sur les milieux inertes.\nAntisepsie : élimination momentanée des germes sur les tissus vivants."
-    },
-    {
-      "front": "Lister les principales voies de transmission des infections ?",
-      "back": "Mains\nAir\nLiquides biologiques\nObjets"
-    },
-    {
-      "front": "Qu’est-ce qu’une bactérie ?",
-      "back": "Organisme vivant unicellulaire qui vit au dépend des ressources du milieu pour sa croissance et se reproduit par fission."
-    },
-    {
-      "front": "Qu’est-ce qu’un virus ?",
-      "back": "Micro-organisme constitué d’un fragment de code génétique et de protéine ne pouvant pas se reproduire à l’extérieur d’une cellule."
-    },
-    {
-      "front": "Faire un schéma du triangle épidémiologique ?",
-      "back": "Agent : virulence, infectiosité, potentiel de dépendance.\nHôte : susceptibilité génétique, résilience, statut nutritionnel, motivation.\nEnvironnement : hygiène publique, contexte social, disponibilité des soins de santé."
-    },
-    {
-      "front": "Donner cinq règles de communication radio ?",
-      "back": "Attendre que la fréquence soit libre avant de transmettre\nUtiliser le vouvoiement\nParler distinctement\nS’abstenir de toute polémique sur la fréquence\nÊtre en mesure de noter les messages par écrit"
-    },
-    {
-      "front": "Donner les informations à transmettre lors de l’annonce radio ?",
-      "back": "Qui appelle\nDélai d’arrivée\nSexe\nÂge\nProblème principal\nÉquipement pertinent\nBesoins de déchoquage, de secourisme, d’équipement ou de compétences spéciales"
-    },
-    {
-      "front": "Lister, dans l’ordre, les éléments à transmettre pour une remise structurée à l’hôpital ?",
-      "back": "Sexe\nÂge\nCirconstances\nProblème principal\nATCD\nAllergies\nConstantes\nTraitements habituels\nDonnées pendant la prise en charge"
-    },
-    {
-      "front": "Faire un schéma détaillé d’un neurone en mentionnant le sens de l’influx nerveux ?",
-      "back": "L’influx nerveux parcourt l’axone depuis le corps neuronal vers l’arborisation terminale.\nLégendes : dendrite, corps cellulaire, noyau, axone, gaine de myéline, nœud de Ranvier, cellule de Schwann, arborisation terminale."
-    },
-    {
-      "front": "Quel est le rôle de la gaine de myéline ?",
-      "back": "La gaine de myéline protège les axones et les isole électriquement les uns des autres ; elle accroît la vitesse de transmission des influx nerveux."
-    },
-    {
-      "front": "Lister, de la partie la plus distale vers la plus proximale, les structures protégeant le cerveau ?",
-      "back": "Boîte crânienne\nDure-mère\nArachnoïde\nPie-mère"
-    },
-    {
-      "front": "Définir la pression de perfusion cérébrale ?",
-      "back": "Pression de perfusion cérébrale = pression artérielle moyenne - pression intra-crânienne."
-    },
-    {
-      "front": "Décrire la triade de Cushing ?",
-      "back": "Mécanisme de protection du cerveau visant à maintenir la PPC malgré une élévation de la PIC lors d’HTIC : HTA, bradycardie, respiration de Cheynes-Stokes."
-    },
-    {
-      "front": "Lister précisément les items composant le score de Glasgow adulte ?",
-      "back": "Évaluation de la profondeur d’un coma sur une échelle de 3 à 15.\nOuverture des yeux : spontanée 4, à l’appel 3, à la douleur 2, aucune 1.\nRéponse verbale : normale 5, confuse 4, mots 3, sons 2, aucune 1.\nRéponse motrice : normale 6, localise 5, retrait 4, décortication 3, décérébration 2, aucune 1."
-    },
-    {
-      "front": "Lister les six niveaux d’organisation du corps humain ?",
-      "back": "Atomes\nCellules\nTissus\nOrganes\nSystèmes\nOrganisme"
-    },
-    {
-      "front": "Définir l’homéostasie ?",
-      "back": "Capacité de l’organisme à maintenir une stabilité relative du milieu interne malgré les fluctuations de l’environnement."
-    },
-    {
-      "front": "Définir l’état de choc ?",
-      "back": "État d’hypoperfusion tissulaire généralisée conduisant à une production énergétique inadéquate au niveau cellulaire et à une acidose due à un passage en métabolisme anaérobie."
-    },
-    {
-      "front": "Lister tous les états de choc que vous connaissez en les décrivant brièvement ?",
-      "back": "Hypovolémique : manque de volume, hémorragie, brûlure, déshydratation.\nObstructif : obstruction vasculaire, embolie pulmonaire, pneumothorax sous tension, tamponnade péricardique.\nDistributif : hypovolémie relative par augmentation du contenant, septique, anaphylactique, neurogénique.\nCardiogénique : problème d’origine cardiaque, infarctus, décompensation cardiaque, trouble du rythme."
-    },
-    {
-      "front": "Faire le schéma d’une boucle homostatique de base ?",
-      "back": "Stimulus ? détection capteur ? centre de régulation ? réponse effecteur ? rétroaction."
-    },
-    {
-      "front": "Lister les trois états possibles de la matière ?",
-      "back": "Solide\nLiquide\nGazeux"
-    },
-    {
-      "front": "Décrire précisément la composition d’un atome ?",
-      "back": "Un atome est constitué d’un noyau autour duquel gravitent des électrons chargés négativement. Le noyau concentre la masse de l’atome et est constitué de neutrons sans charge électrique et de protons chargés positivement. La charge électrique d’un atome est nulle car il possède le même nombre d’électrons et de protons."
-    },
-    {
-      "front": "Sur l’échelle du pH, faire figurer avec précision les éléments suivants : base, neutre, acide, pH sanguin ?",
-      "back": "Base : supérieur à 7.\nNeutre : 7.\nAcide : inférieur à 7.\npH sanguin : 7,35 à 7,45."
-    },
-    {
-      "front": "Faire un schéma de la cellule en y faisant figurer les termes suivants : mitochondries, noyau, membrane plasmique, cytoplasme, membrane nucléaire, ADN ?",
-      "back": "La membrane nucléaire protège le noyau. L’ADN est situé dans le noyau."
-    },
-    {
-      "front": "Énumérer les différentes catégories de tissus ?",
-      "back": "Tissu épithélial\nTissu conjonctif\nTissu musculaire\nTissu nerveux"
-    },
-    {
-      "front": "Énumérer l’ensemble des facteurs de risque cardio-vasculaires ?",
-      "back": "Âge\nSexe\nTabac\nAlcool\nStress\nSédentarité\nSurpoids, obésité\nDyslipidémie\nAntécédents familiaux ou personnels"
-    }
-  ]
-}
+    "front": "177. Définissez l'espace mort ?",
+    "back": "Espace anatomique où l'air transite mais il n'y a pas d'échanges gazeux (trachée, bouche...). Le filtre du ballon + tubulure O2 peuvent également augmenter l'espace mort."
+  },
+  {
+    "front": "178. Comment s'adapte l'organisme à une baisse de tension artérielle ?",
+    "back": "Les barorécepteurs situés dans la crosse de l'aorte et dans les carotides sont sensibles aux variations de pression. Dès qu'il y a un changement, le centre de régulation dans le bulbe va être informé et le système nerveux autonome va se mettre en action (excite/inhibe).\nDe manière hormonale, la médullo-surrénale sécrète l'adrénaline et son effet est immédiat."
+  },
+  {
+    "front": "179. Par quel organe sont créées les protéines plasmatiques ?",
+    "back": "Par le foie."
+  },
+  {
+    "front": "180. Quelle est la meilleure position d'attente et de transport d'une personne chez qui l'on suspecte une phlébite ?",
+    "back": "Assise, jambes en bas, pendantes."
+  },
+  {
+    "front": "181. Comment se nomme la paroi artérielle interne ?",
+    "back": "L'intima."
+  },
+  {
+    "front": "182. Expliquez ce qu'est une fracture ?",
+    "back": "Rupture de la continuité osseuse."
+  },
+  {
+    "front": "183. A) Qu'est-ce que le débit cardiaque ?\nB) Comment le calcule-t-on ?",
+    "back": "A) Quantité de sang éjecté en une minute.\nB) DC = FC x VS"
+  },
+  {
+    "front": "184. Expliquez les trois phases de l'hémostase ?",
+    "back": "1. Formation du clou plaquettaire : les plaquettes libèrent des substances chimiques qui attirent d'autres plaquettes, se collent entre elles et forment un petit thrombus.\n2. Spasmes vasculaires : les plaquettes libèrent des substances créant des spasmes vasculaires, provoquant le rétrécissement local du vaisseau.\n3. Coagulation : cascade de réactions aboutissant à la formation de filaments de fibrine :\n   - formation de la prothrombinase\n   - la prothrombinase convertit la prothrombine en thrombine\n   - la thrombine convertit le fibrinogène (soluble) en fibrine (insoluble)"
+  },
+  {
+    "front": "185. Quelle est la définition de l'état de choc ?",
+    "back": "État d'hypoperfusion tissulaire et hypoxie cellulaire induite par une insuffisance circulatoire aiguë."
+  },
+  {
+    "front": "186. Pourquoi la canule de Guedel ne doit être insérée qu'à un patient en Glasgow 3 ?",
+    "back": "Absence de réflexe de déglutition, donc pas de risque de vomissement ni de broncho-aspiration."
+  },
+  {
+    "front": "187. Dans quelles valeurs se situe le pH sanguin normal ?",
+    "back": "7,35 – 7,45"
+  },
+  {
+    "front": "188. Expliquez le rôle des mitochondries dans la cellule ?",
+    "back": "Les nutriments sont dégradés par des enzymes dans les mitochondries. Ces réactions de dégradation font intervenir de l'oxygène, ce qui libère de l'énergie, captée pour constituer les molécules d'ATP qui sont la source d'énergie du travail cellulaire."
+  },
+  {
+    "front": "189. Expliquez quel phénomène se produit lorsqu'une personne développe chroniquement des œdèmes des membres inférieurs ?",
+    "back": "Insuffisance cardiaque droite."
+  },
+  {
+    "front": "190. Citez 5 types d'articulations ainsi qu'un exemple pour chacune ?",
+    "back": "Plane : os du carpe\nTrochléenne (charnière) : humérus\nSphérique : tête humérale\nCondylaire (ellipsoïde) : phalanges\nTrochoïde (pivot) : ulna/radius"
+  },
+  {
+    "front": "191. Nommez les cinq principaux segments de la colonne vertébrale ainsi que le nombre de vertèbres à chaque segment ?",
+    "back": "Cervicales : 7\nDorsales/Thoraciques : 12\nLombaires : 5\nSacrées : 5\nCoccygiennes : 4\nTotal : 33"
+  },
+  {
+    "front": "192. Quel est le rôle des articulations ?",
+    "back": "Mobilité du squelette et relier solidement les os entre eux."
+  },
+  {
+    "front": "193. Citez 4 fonctions des muscles ?",
+    "back": "Produisent le mouvement, maintiennent la posture, dégagent de la chaleur et stabilisent les articulations."
+  },
+  {
+    "front": "194. Quel(s) élément(s) compose(nt) le système nerveux central ?",
+    "back": "Moelle épinière et encéphale (cerveau, cervelet et tronc cérébral)."
+  },
+  {
+    "front": "195. Nommez 3 fonctions des reins ?",
+    "back": "Filtration et élimination des déchets, régulation du volume sanguin/circulant, sécrétion de l'EPO (stimule la formation de GR) et de la rénine."
+  },
+  {
+    "front": "196. Citez les principaux organes du système lymphatique ?",
+    "back": "Rate, thymus, amygdales, follicules lymphatiques agrégés (plaques de Peyer) situés dans la paroi de l'intestin grêle."
+  },
+  {
+    "front": "197. Le pancréas sécrète deux hormones. Citez-les et expliquez leurs fonctions ?",
+    "back": "Glucagon : hormone hyperglycémiante, agit sur le foie ? dégrade le glycogène en glucose pour le libérer dans le sang.\nInsuline : hormone hypoglycémiante, aide les cellules à transporter et utiliser le glucose."
+  },
+  {
+    "front": "198. Expliquez les phénomènes aérobie et anaérobie ?",
+    "back": "Aérobie : glucose dégradé en présence d'oxygène.\nAnaérobie : sans oxygène, provoque des quantités importantes de déchets et de l'acide lactique (lactates)."
+  },
+  {
+    "front": "199. Lequel de ces médicaments ne doit en aucun cas être administré lors d'une TAS inférieure à 140 mmHg ?\nA) Méthylprednisolone\nB) Métoclopramide\nC) Dinitrate d'isosorbide\nD) Fentanyl",
+    "back": "C) Dinitrate d'isosorbide"
+  },
+  {
+    "front": "200. Votre débit minute est de 12 L, bouteille de 2 L, il reste 120 bars. Combien de temps d'autonomie ? Détaillez le calcul.",
+    "back": "Volume x Pression = 2 x 120 = 240 L\nMoins 10% de marge de sécurité : 240 - 24 = 216 L\n216 / 12 L/min = 18 minutes"
+  },
+  {
+    "front": "201. En cas d'infection, nommez 3 voies de transmission des germes ?",
+    "back": "Gouttelettes, salive, contact."
+  },
+  {
+    "front": "202. Expliquez la formation de l'urine ?",
+    "back": "Par les néphrons :\n1. Filtration : l'eau et les petits solutés sont poussés à travers les parois des capillaires dans le tubule rénal (phénomène passif).\n2. Réabsorption tubulaire : l'eau, le glucose, les acides aminés sont récupérés du filtrat et retournent dans les capillaires sanguins.\n3. Sécrétion tubulaire : les ions et déchets sont retirés du sang pour aller dans le filtrat et être éliminés en urine."
+  },
+  {
+    "front": "203. Citez 3 symptômes de gravité pouvant être associés à une hypertension artérielle (180/110 mmHg) ?",
+    "back": "Céphalées, troubles de la vision, douleur rétrosternale (DRS)."
+  },
+  {
+    "front": "204. Expliquer ce qu'est le diabète ?",
+    "back": "Maladie métabolique chronique due à un trouble de l'utilisation des hydrates de carbone (glucose), due à un manque total ou partiel d'insuline ou à une résistance à l'insuline par les cellules. Elle est caractérisée par une hyperglycémie et une glycosurie."
+  },
+  {
+    "front": "205. Décrire le déroulement du processus durant l'activité du système digestif et expliquer brièvement chaque étape ?",
+    "back": "L'ingestion : introduction de la nourriture dans le tube digestif.\nLa propulsion : déglutition (volontaire) et péristaltisme (involontaire).\nLa digestion mécanique : segmentation lors de la mastication et pétrissage dans l'estomac.\nLa digestion chimique : dégradation des grosses molécules pour absorption.\nL'absorption : passage des nutriments du système digestif au système sanguin.\nLa défécation : évacuation des matières non digestibles ou non absorbées."
+  },
+  {
+    "front": "206. Quelles sont les contre-indications lorsqu'un patient est porteur d'une fistule artério-veineuse (FAV) ?",
+    "back": "Pas de prise de TA ni de VVP sur le membre portant une FAV."
+  },
+  {
+    "front": "207. Expliquer la notion des trois chocs ?",
+    "back": "L'élément va se déformer.\nEncastrement du conducteur dans le véhicule.\nLes organes se déplacent vers l'avant dans le corps."
+  },
+  {
+    "front": "208. Citer les 4 types de choc et donner une cause pour chaque type ?",
+    "back": "Choc hypovolémique : hémorragie, déshydratation.\nChoc distributif : septique, anaphylactique, neurogénique, toxique.\nChoc cardiogénique : infarctus massif, OAP, insuffisance cardiaque, dissection coronarienne.\nChoc obstructif : tamponnade cardiaque, embolie pulmonaire, pneumothorax sous-tension."
+  },
+  {
+    "front": "209. Quelles sont les 6 pathologies principales provoquées par l'athérosclérose ?",
+    "back": "Insuffisance coronarienne\nArtériopathie oblitérante des membres inférieurs\nAccident vasculaire cérébral\nEmbolie (formation de thrombus périphérique)\nAnévrisme\nInfarctus"
+  },
+  {
+    "front": "210. Citer les signes et symptômes d'une hypertension intracrânienne ?",
+    "back": "Céphalées, nausées/vomissements (en jet), prostration/apathie/agressivité/coma éventuel, HTA, mydriase évoluant vers mydriase non réactive, bombement des fontanelles (petits enfants), HTIC (diminution GCS de 2pts), triade de Cushing, décérébration/décortication."
+  },
+  {
+    "front": "211. Différencier hématome extra-dural et sous-dural ?",
+    "back": "Extra-dural : épanchement sanguin (sang artériel) siégeant entre la dure-mère et la face interne du crâne. En général dans la région temporale, sous-frontale, sous-temporale, occipitale.\nSous-dural : épanchement sanguin (sang veineux) siégeant entre la dure-mère et la face externe de l'arachnoïde."
+  },
+  {
+    "front": "212. Un virus est capable de se développer en dehors de la cellule hôte. Vrai / Faux ?",
+    "back": "Faux. Le virus doit utiliser une cellule hôte pour se reproduire et pour sa production métabolique. Il ne peut pas survivre en dehors de la cellule."
+  },
+  {
+    "front": "213. Les antibiotiques constituent le meilleur traitement des infections virales. Vrai / Faux ?",
+    "back": "Faux. Le traitement antibiotique lutte contre les affections bactériennes, il n'a aucune action sur les affections virales."
+  },
+  {
+    "front": "214. Qu'entend-on par « engagement » ? Et quels en sont les signes ?",
+    "back": "Le cerveau est poussé vers le trou occipital par augmentation de la pression intracrânienne, comprimant le bulbe rachidien ? mort.\nSignes : décortication et décérébration.\nTriade de Cushing : bradycardie, bradypnée (Cheyne-Stokes), hypertension."
+  },
+  {
+    "front": "215. Différencier l'insuline et le glucagon ?",
+    "back": "Insuline : hormone hypoglycémiante, sécrétée par les cellules bêta des îlots de Langerhans. Permet l'entrée du glucose dans les cellules. Le cerveau, le foie et les reins n'ont pas besoin d'insuline pour absorber le glucose.\nGlucagon : hormone hyperglycémiante, sécrétée par les cellules alpha des îlots de Langerhans. Effet inverse de l'insuline."
+  },
+  {
+    "front": "216. Définir le système porte ?",
+    "back": "Le sang provenant des organes digestifs par la veine porte et par l'artère hépatique va être filtré par le foie. Une fois filtré, le sang est déversé dans la veine cave inférieure par la veine hépatique et repart dans la circulation."
+  },
+  {
+    "front": "217. Citer les fonctions rénales et expliquer brièvement chacune d'elles ?",
+    "back": "Équilibre hydrique : permet d'éviter la déshydratation.\nÉquilibre électrolytique : régule la concentration des ions (conduction électrique).\nÉquilibre acido-basique : maintien du pH sanguin."
+  },
+  {
+    "front": "218. A) Quelle est la formule de l'énergie cinétique ?\nB) Quelle est l'énergie cinétique d'un corps de 10 kg se déplaçant à 15 m/s ?",
+    "back": "A) Ec = (½ x Masse) x Vitesse²  —  Ec en Joules, masse en kg, vitesse en m/s\nB) Ec = ½ x 10 x 15² = 1125 J"
+  },
+  {
+    "front": "219. Définir le diabète de type I (DID) et le diabète de type II (DNID) ?",
+    "back": "Type I : cellules bêta des îlots de Langerhans détruites, impossibilité de produire de l'insuline. Touche en général les enfants ou jeunes adultes. Traitement : insuline.\nType II : résistance à l'insuline, le glucose n'arrive plus à être absorbé par les cellules. Facteurs de risque : âge, terrain familial, surcharge pondérale, grossesse, stress, certains médicaments. Traitement : mesures hygiéno-diététiques, antidiabétiques oraux, insuline."
+  },
+  {
+    "front": "220. Citer les 3 principaux neurotransmetteurs du système nerveux ?",
+    "back": "Acétylcholine, noradrénaline, adrénaline."
+  },
+  {
+    "front": "221. Quelle sera la distance de freinage pour un véhicule roulant à 60 km/h sur route sèche ? Et sur route mouillée ?",
+    "back": "Route sèche : (60 ÷ 10)² ÷ 2 = 18 m\nRoute mouillée : ((60 ÷ 10)² ÷ 2) x 1,5 = 27 m"
+  },
+  {
+    "front": "222. A) Expliquer le rôle du système nerveux autonome.\nB) Le système nerveux est divisé en deux parties. Citer les deux parties, leur rôle et leurs réactions ?",
+    "back": "A) Il régule les fonctions internes de l'organisme afin de maintenir un équilibre physiologique.\nB) Sympathique : fonction stimulante ? tachycardie, bronchodilatation, vasoconstriction, mydriase.\nParasympathique : fonction inhibitrice, ralentit ? bradycardie, bronchoconstriction, myosis."
+  },
+  {
+    "front": "223. A) Quelle est la valeur d'une hypoglycémie et quels sont les symptômes (minimum 5) ?\nB) Quelle est la valeur d'une hyperglycémie et quels sont les symptômes (minimum 5) ?",
+    "back": "A) Glycémie < 4 mmol/L. Symptômes : palpitations, tachycardie, nervosité, fatigue, pâleur, sueurs, sensation de faim, tremblements, flou visuel, vertiges, état confusionnel.\nB) Glycémie > 7 mmol/L. Symptômes : céphalées, fatigue, besoin fréquent d'uriner, langue et peau sèches, haleine fruitée, sensation de soif, faiblesse, malaise, glycosurie, douleurs abdominales, nausées, vomissements."
+  },
+  {
+    "front": "224. Donner la définition d'anticorps et d'antigène ?",
+    "back": "Anticorps : substance spécialisée produite par l'organisme qui donne l'immunité contre un antigène spécifique.\nAntigène : substance capable d'activer le système immunitaire et de provoquer une réponse immunitaire."
+  },
+  {
+    "front": "225. Citer 6 pathologies abdominales ?",
+    "back": "Anévrisme de l'aorte, grossesse extra-utérine, varices œsophagiennes, cholécystite aiguë, cirrhose, occlusion intestinale, péritonite, pancréatite, insuffisance hépatique, appendicite."
+  },
+  {
+    "front": "226. Qu'est-ce qu'une lésion de la queue de cheval ? Dans quelle situation peut-on la rencontrer ?",
+    "back": "Atteinte neurologique due à une compression de la moelle épinière spécifique dans la région lombaire et/ou sacrée (L2 à L5, S1 à S5) provoquant douleurs dans les membres inférieurs, faiblesse, paralysie, incontinence urinaire/fécale et perte des fonctions sexuelles.\nSituation : hernie discale, vertébrale, tumeur, métastase."
+  },
+  {
+    "front": "227. Expliquer la doctrine de Monroe-Kellie ?",
+    "back": "Le cerveau est enfermé dans un espace clos, totalement occupé par le cerveau, le sang et le LCR. Si n'importe quelle autre masse occupe plus de volume, certaines structures seront poussées vers l'extérieur du crâne. L'augmentation du volume intracrânien conduit à une diminution du sang et du LCR. Une fois ce moyen de compensation dépassé, la pression intracrânienne augmente rapidement ? engagement."
+  },
+  {
+    "front": "228. Quelle est la différence entre le syndrome des loges et le Crush syndrome ?",
+    "back": "Syndrome des loges : pression grandissante dans un membre comprimant les vaisseaux ? muscle gonflé et comprimé dans sa loge ? libération de toxines. Affecte un muscle.\nCrush syndrome : écrasement ou membre incarcéré durant un temps prolongé ? destruction musculaire massive ? libération de myoglobine (lèse les reins) et de potassium (risque d'arythmie mortelle). Affecte un ensemble de muscles."
+  },
+  {
+    "front": "229. Citer les différentes couches de tissus qui forment la structure du système digestif, de l'intérieur vers l'extérieur ?",
+    "back": "La muqueuse, la sous-muqueuse, la musculeuse, la séreuse, le péritoine."
+  },
+  {
+    "front": "230. Citer les différentes fonctions du foie ?",
+    "back": "Métabolisation des protéines, lipides, glucides, synthèse de protéines, stockage (glycogène, lipides, vitamines, fer...), production de la bile, détoxification, effet de 1er passage pour les médicaments, inactivation d'hormones."
+  },
+  {
+    "front": "231. Quelles sont les différentes phases de la réaction inflammatoire ?",
+    "back": "Vasodilatation locale et augmentation de la perméabilité capillaire.\nMigration des leucocytes.\nPhagocytose."
+  }
+]
